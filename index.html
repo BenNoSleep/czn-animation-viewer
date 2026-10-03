@@ -178,26 +178,25 @@ function render() {
     grid.appendChild(a);
   });
 }
-/* ---- animated-webp player (ImageDecoder + canvas): play/pause + seekable timeline.
-        Chains "cutins/<slug>_cont.webp" (rendered burst continuation) when it exists. ---- */
-var wp = { segs:null, map:null, starts:null, dur:0, gi:-1, t:0, playing:false, raf:0, last:0, gen:0 };
+/* ---- animated-webp player (ImageDecoder + canvas): play/pause + seekable timeline ---- */
+var wp = { dec:null, starts:null, dur:0, idx:-1, t:0, playing:false, raf:0, last:0, gen:0 };
 
 function stopWp() {
   wp.gen++;
   if (wp.raf) { cancelAnimationFrame(wp.raf); wp.raf = 0; }
-  if (wp.segs) { for (var k = 0; k < wp.segs.length; k++) { try { wp.segs[k].dec.close(); } catch (e) {} } }
-  wp.segs = null; wp.map = null; wp.starts = null; wp.dur = 0; wp.gi = -1; wp.playing = false;
+  if (wp.dec) { try { wp.dec.close(); } catch (e) {} }
+  wp.dec = null; wp.starts = null; wp.dur = 0; wp.idx = -1; wp.playing = false;
 }
 function wpIdxAt(t) {
   var s = wp.starts, lo = 0, hi = s.length - 2;
   while (lo < hi) { var mid = (lo + hi + 1) >> 1; if (s[mid] <= t) lo = mid; else hi = mid - 1; }
   return Math.max(0, lo);
 }
-function wpDraw(gi) {
-  if (!wp.segs || gi === wp.gi) return;
-  wp.gi = gi;
-  var g = wp.gen, m = wp.map[gi];
-  wp.segs[m[0]].dec.decode({ frameIndex: m[1] }).then(function (res) {
+function wpDraw(i) {
+  if (!wp.dec || i === wp.idx) return;
+  wp.idx = i;
+  var g = wp.gen;
+  wp.dec.decode({ frameIndex: i }).then(function (res) {
     if (g !== wp.gen) { res.image.close(); return; }
     var im = res.image, c = document.getElementById("wpc");
     if (!c) { im.close(); return; }
@@ -214,7 +213,7 @@ function wpUi() {
   if (!seek || !wp.starts || !wp.dur) return;
   seek.value = String(Math.round(wp.t / wp.dur * 1000) || 0);
   lbl.textContent = (wp.t / 1000).toFixed(2) + " / " + (wp.dur / 1000).toFixed(2) + "s \u00b7 f" +
-                    (wp.gi + 1) + "/" + wp.map.length;
+                    (wp.idx + 1) + "/" + (wp.starts.length - 1);
 }
 function wpPlay(on) {
   var b = document.getElementById("wpPlay");
@@ -230,31 +229,6 @@ function wpTick(now) {
   if (wp.t >= wp.dur) wp.t -= wp.dur;                 /* loop */
   wpDraw(wpIdxAt(wp.t));
   wp.raf = requestAnimationFrame(wpTick);
-}
-/* decode one webp buffer into {dec, starts, n, dur}; resolves via chain to keep order */
-function wpSeg(g, buf) {
-  var dec = new ImageDecoder({ data: buf, type: "image/webp" });
-  return dec.tracks ? dec.tracks.ready.then(function () {
-    if (g !== wp.gen) { try { dec.close(); } catch (e) {} return null; }
-    var track = dec.tracks.selectedTrack, starts = [], total = 0, i = 0;
-    function step() {
-      var lbl = document.getElementById("wpTime");
-      if (lbl && track.frameCount > 60 && (i % 20 === 0)) {
-        lbl.textContent = "preparing\u2026 " + Math.round(i / track.frameCount * 100) + "%";
-      }
-      if (g !== wp.gen || i >= track.frameCount) return Promise.resolve();
-      return dec.decode({ frameIndex: i }).then(function (res) {
-        starts.push(total);
-        total += (res.image.duration || 33000) / 1000;
-        res.image.close();
-        i++;
-        return step();
-      });
-    }
-    return step().then(function () {
-      return { dec: dec, starts: starts, n: i, dur: total };
-    });
-  }) : Promise.resolve(null);
 }
 function openWp(slug) {
   var url = "cutins/" + slug + ".webp";
@@ -272,24 +246,31 @@ function openWp(slug) {
     wp.t = Number(e.target.value) / 1000 * wp.dur;
     wpDraw(wpIdxAt(wp.t));
   });
-  Promise.all([
-    fetch(url).then(function (r) { if (!r.ok) throw new Error("cutin load"); return r.arrayBuffer(); }),
-    fetch("cutins/" + slug + "_cont.webp").then(function (r) { return r.ok ? r.arrayBuffer() : null; })
-      .catch(function () { return null; })
-  ]).then(function (bufs) {
+  fetch(url).then(function (r) { return r.arrayBuffer(); }).then(function (buf) {
     if (g !== wp.gen) return;
-    return wpSeg(g, bufs[0]).then(function (s0) {
-      if (g !== wp.gen || !s0) return;
-      return wpSeg(g, bufs[1]).then(function (s1) {
-        if (g !== wp.gen) return;
-        var segs = s1 ? [s0, s1] : [s0];
-        var starts = [], map = [], base = 0;
-        segs.forEach(function (s, si) {
-          for (var k = 0; k < s.n; k++) { starts.push(base + s.starts[k]); map.push([si, k]); }
-          base += s.dur;
+    var dec = new ImageDecoder({ data: buf, type: "image/webp" });
+    wp.dec = dec;
+    return dec.tracks.ready.then(function () {
+      if (g !== wp.gen) return;
+      var track = dec.tracks.selectedTrack, starts = [0], total = 0, i = 0;
+      /* one pre-pass decode to read each frame's duration (PIL/ANMF timings) */
+      function step() {
+        var lbl = document.getElementById("wpTime");
+        if (lbl && track.frameCount > 60 && (i % 20 === 0)) {
+          lbl.textContent = "preparing\u2026 " + Math.round(i / track.frameCount * 100) + "%";
+        }
+        if (g !== wp.gen || i >= track.frameCount) return Promise.resolve();
+        return dec.decode({ frameIndex: i }).then(function (res) {
+          total += (res.image.duration || 33000) / 1000;
+          starts.push(total);
+          res.image.close();
+          i++;
+          return step();
         });
-        if (wp.segs) { for (var k2 = 0; k2 < wp.segs.length; k2++) { try { wp.segs[k2].dec.close(); } catch (e) {} } }
-        wp.segs = segs; wp.starts = starts; wp.map = map; wp.dur = base || 1; wp.t = 0; wp.gi = -1;
+      }
+      return step().then(function () {
+        if (g !== wp.gen) return;
+        wp.starts = starts; wp.dur = total || 1; wp.t = 0; wp.idx = -1;
         wpDraw(0);
         wpPlay(true);
       });
