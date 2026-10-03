@@ -63,16 +63,20 @@
   /* animated-webp player: canvas + seekable timeline (native <img> cannot seek) */
   #wp { position:absolute; inset:0; display:flex; flex-direction:column; }
   #wpc { flex:1; min-height:0; width:100%; object-fit:contain; cursor:pointer; background:#0d0d0d; }
-  #wpb { flex:none; height:38px; display:flex; align-items:center; gap:10px; padding:0 10px;
+  #wpb { flex:none; display:flex; flex-direction:column; padding:7px 10px 8px;
          background:#141414; border-top:1px solid rgba(255,255,255,.08); }
+  .brow { display:flex; gap:9px; align-items:center; }
+  .brow + .brow { margin:6px -10px 0; padding:6px 10px 0; border-top:1px solid rgba(255,255,255,.25);
+                  background:rgba(255,255,255,.035); }
+  .sep { flex:none; width:1px; height:18px; background:rgba(255,255,255,.28); margin:0 2px; }
   #wpPlay { flex:none; width:28px; height:24px; background:#1d1d1d; border:1px solid rgba(255,255,255,.12);
             border-radius:5px; color:#D6D6D6; font-size:11px; cursor:pointer; }
   #wpSeek { flex:1; min-width:60px; accent-color:#3D6AFF; cursor:pointer; }
   #wpTime { flex:none; color:#8C8C8C; font-size:12px; font-variant-numeric:tabular-nums; white-space:nowrap; }
   #wpDl { flex:none; background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:5px;
           color:#D6D6D6; padding:3px 8px; font-size:12px; text-decoration:none; }
-  #wpRec { flex:none; width:28px; height:24px; background:#1d1d1d; border:1px solid rgba(255,255,255,.12);
-           border-radius:5px; color:#D6D6D6; font-size:11px; cursor:pointer; }
+  #wpRec { flex:none; width:30px; height:24px; background:#1d1d1d; border:1px solid rgba(255,255,255,.12);
+           border-radius:5px; color:#D6D6D6; font-size:13px; cursor:pointer; }
   #wpb select { flex:none; background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:5px;
                 color:#D6D6D6; padding:3px 4px; font-size:12px; }
   #sideHint { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
@@ -301,14 +305,16 @@ function openWp(slug) {
   var g = ++wp.gen;                                   /* invalidates any in-flight load */
   sideBody.innerHTML =
     '<div id="wp"><canvas id="wpc"></canvas>' +
-    '<div id="wpb"><button id="wpPlay" title="Play/Pause">\u275a\u275a</button>' +
+    '<div id="wpb">' +
+    '<div class="brow"><button id="wpPlay" title="Play/Pause">\u275a\u275a</button>' +
     '<input type="range" id="wpSeek" min="0" max="1000" value="0">' +
-    '<span id="wpTime">decoding\u2026</span>' +
-    '<a id="wpDl" download title="Download the original animated WebP (keeps transparency)">webp</a>' +
+    '<span id="wpTime">decoding\u2026</span></div>' +
+    '<div class="brow"><a id="wpDl" download title="Download the original animated WebP (keeps transparency)">webp</a>' +
+    '<span class="sep"></span>' +
     '<select id="wpMbps" title="Recording bitrate (Mbps)">' +
     '<option value="8">8M</option><option value="20" selected>20M</option>' +
     '<option value="35">35M</option><option value="60">60M</option></select>' +
-    '<button id="wpRec" title="Record one loop as .webm">\uD83C\uDFA5</button></div></div>';
+    '<button id="wpRec" title="Record one loop as .webm">\uD83C\uDFA5</button></div></div></div>';
   document.getElementById("wpPlay").addEventListener("click", function () { wpPlay(!wp.playing); });
   document.getElementById("wpc").addEventListener("click", function () { wpPlay(!wp.playing); });
   document.getElementById("wpSeek").addEventListener("input", function (e) {

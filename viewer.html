@@ -7,14 +7,17 @@
 <style>
   html, body { margin:0; height:100%; background:#161616; overflow:hidden;
                font:12px Inter, system-ui, sans-serif; color:#8C8C8C; }
-  #stage { position:absolute; inset:0 0 46px 0; overflow:hidden; }
+  #stage { position:absolute; inset:0 0 78px 0; overflow:hidden; }
   #c { width:100%; height:100%; display:block; cursor:grab; }
   #img { position:absolute; left:0; top:0; transform-origin:0 0; cursor:grab;
          user-select:none; -webkit-user-drag:none; }
   #msg { position:absolute; left:16px; top:14px; white-space:pre-wrap; max-width:80%; z-index:3; }
-  #bar { position:absolute; left:10px; right:10px; bottom:8px; min-height:30px;
-         display:flex; flex-wrap:wrap; row-gap:4px; gap:6px; align-items:center; }
+  #bar { position:absolute; left:10px; right:10px; bottom:8px;
+         display:flex; flex-direction:column; }
   #bar[hidden] { display:none; }        /* id selector would beat the hidden attribute */
+  .brow { display:flex; gap:9px; align-items:center; }
+  .brow + .brow { margin-top:7px; padding-top:7px; border-top:1px solid rgba(255,255,255,.25); }
+  .sep { flex:none; width:1px; height:18px; background:rgba(255,255,255,.28); margin:0 2px; }
   #bar button { background:#232323; color:#D6D6D6; border:1px solid rgba(255,255,255,0.12);
                 border-radius:6px; min-width:30px; height:26px; font:13px Inter, sans-serif; cursor:pointer; }
   #bar button:hover { background:#2C2C2C; }
@@ -27,7 +30,7 @@
   #bgcol { width:34px; height:22px; padding:0; border:1px solid rgba(255,255,255,0.12);
            border-radius:4px; background:none; cursor:pointer; }
   #bar label { display:flex; align-items:center; gap:4px; cursor:pointer; }
-  #zoomhint { position:absolute; right:12px; bottom:52px; color:#5A5A5A; }
+  #zoomhint { position:absolute; right:12px; bottom:88px; color:#5A5A5A; }
   #back { position:absolute; right:12px; top:12px; z-index:4; color:#9A9A9A; text-decoration:none;
           background:#232323; border:1px solid rgba(255,255,255,0.12); border-radius:6px; padding:5px 10px; }
   #back:hover { color:#fff; background:#2C2C2C; }
@@ -39,29 +42,34 @@
 <div id="msg">Loading...</div>
 <div id="zoomhint" hidden>wheel: zoom &middot; drag: pan &middot; double-click: fit</div>
 <div id="bar" hidden>
-  <button id="play" title="Play / Pause">&#10074;&#10074;</button>
-  <input id="seek" type="range" min="0" max="1000" value="0" title="Timeline">
-  <span id="time">0.0 / 0.0 s</span>
-  <select id="speed" title="Playback speed">
-    <option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="0.75">0.75x</option>
-    <option value="1" selected>1x</option><option value="1.5">1.5x</option><option value="2">2x</option>
-  </select>
-  <label title="Loop the animation"><input id="loop" type="checkbox" checked>loop</label>
-  <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
-  <select id="recres" title="Recording resolution (the render is redone at this size - vector, not upscaled)">
-    <option value="0">Win</option>
-    <option value="1080" selected>1080p</option>
-    <option value="1440">1440p</option>
-    <option value="2160">4K</option>
-  </select>
-  <select id="recmbps" title="Recording bitrate (Mbps)">
-    <option value="8">8M</option>
-    <option value="20" selected>20M</option>
-    <option value="35">35M</option>
-    <option value="60">60M</option>
-  </select>
-  <button id="rec" title="Record one animation loop as .webm">&#127909;</button>
-  <select id="anim" title="Animation" style="visibility:hidden"></select>
+  <div class="brow">
+    <button id="play" title="Play / Pause">&#10074;&#10074;</button>
+    <input id="seek" type="range" min="0" max="1000" value="0" title="Timeline">
+    <span id="time">0.0 / 0.0 s</span>
+    <select id="speed" title="Playback speed">
+      <option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="0.75">0.75x</option>
+      <option value="1" selected>1x</option><option value="1.5">1.5x</option><option value="2">2x</option>
+    </select>
+    <label title="Loop the animation"><input id="loop" type="checkbox" checked>loop</label>
+    <select id="anim" title="Animation" style="visibility:hidden"></select>
+  </div>
+  <div class="brow">
+    <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
+    <span class="sep"></span>
+    <select id="recres" title="Recording resolution (the render is redone at this size - vector, not upscaled)">
+      <option value="0">Win</option>
+      <option value="1080" selected>1080p</option>
+      <option value="1440">1440p</option>
+      <option value="2160">4K</option>
+    </select>
+    <select id="recmbps" title="Recording bitrate (Mbps)">
+      <option value="8">8M</option>
+      <option value="20" selected>20M</option>
+      <option value="35">35M</option>
+      <option value="60">60M</option>
+    </select>
+    <button id="rec" title="Record one animation loop as .webm">&#127909;</button>
+  </div>
 </div>
 <script src="spine-webgl.js"></script>
 <script>
