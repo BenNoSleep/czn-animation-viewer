@@ -47,12 +47,8 @@ var CFG = [
   ["ug_cutin1_m",  "animation",  0.12, 2.17, "hide"],
   ["ug_cutin1_f",  "animation",  0.16, 2.27, "hide"],
   ["ug_cutin2_f",  "animation",  0.10, 2.00, "hide"],
-  /* phase B - ux composite scene, draw order = real z */
-  ["ux_impactframe2",   "animation", 3.35, 3.00, "hide"],
-  ["ux_impactframe1_2", "animation", 3.16, 0.60, "hide"],
-  ["ux_impactframe1_1", "animation", 3.12, 0.37, "hide"],
+  /* phase B - ux composite scene, draw order = real z (scene first) */
   ["ux_bg1_1",     "animation",  1.35, 1.30, ""],
-  ["ux_screen2",   "animation",  3.68, 3.50, ""],
   ["ux_bg4_b",     "animation3", 1.45, 3.33, ""],
   ["ux_b1_2",      "animation",  3.10, 2.60, ""],
   ["ux_bg4_2",     "animation",  1.45, 2.33, ""],
@@ -74,6 +70,11 @@ var CFG = [
   ["ux_f1_1",      "animation",  3.25, 2.63, ""],
   ["ux_f2_2",      "animation",  3.38, 2.63, ""],
   ["ux_f2_1",      "animation",  3.35, 2.63, ""],
+  /* screen group (from ux_screen_1/2.cfx) - flashes/reticle composite OVER the scene */
+  ["ux_screen2",   "animation",  3.68, 3.50, ""],
+  ["ux_impactframe1_1", "animation", 3.12, 0.37, "hide"],
+  ["ux_impactframe1_2", "animation", 3.16, 0.60, "hide"],
+  ["ux_impactframe2",   "animation", 3.35, 3.00, "hide"],
   ["ux_screen1",   "animation",  1.33, 1.00, "hide"]
 ];
 /* ?d=slug:delta;slug:delta - dev-only delay overrides */
