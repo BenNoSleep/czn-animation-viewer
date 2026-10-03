@@ -188,7 +188,12 @@ function draw() {
 }
 function syncSize() {
   var w = canvas.clientWidth | 0, h = canvas.clientHeight | 0;
-  if (w > 3 && h > 3 && (w !== canvas.width || h !== canvas.height)) renderer.resize(spine.webgl.ResizeMode.Expand);
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var bw = (w * dpr) | 0, bh = (h * dpr) | 0;
+  if (w > 3 && h > 3 && (bw !== canvas.width || bh !== canvas.height)) {
+    canvas.width = bw; canvas.height = bh;
+    gl.viewport(0, 0, bw, bh);
+  }
 }
 function ui() {
   document.getElementById("seek").value = String(Math.round(t / TOTAL * 1000) || 0);

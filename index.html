@@ -286,7 +286,7 @@ function open(r) {
   sideTitle.textContent = label(r) + (r.id ? "  #" + r.id : "");
   stopWp();
   if (r.kind === "scene") {
-    sideBody.innerHTML = '<iframe src="skill.html" allowfullscreen></iframe>';
+    sideBody.innerHTML = '<iframe src="skill.html?v=3" allowfullscreen></iframe>';
   } else if (r.kind === "cutin" || r.kind === "gacha") {
     openWp(r.slug);
   } else {
