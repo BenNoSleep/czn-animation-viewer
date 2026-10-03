@@ -1,0 +1,20 @@
+
+3000175.webp
+size: 728,412
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_chaos_religion_prisoner_pile
+  rotate: false
+  xy: 2, 2
+  size: 689, 405
+  orig: 689, 405
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 693, 2
+  size: 394, 30
+  orig: 394, 30
+  offset: 0, 0
+  index: -1

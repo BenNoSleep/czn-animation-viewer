@@ -1,0 +1,20 @@
+
+3000165.webp
+size: 572,292
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shabby_container
+  rotate: false
+  xy: 2, 41
+  size: 562, 248
+  orig: 562, 248
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 565, 37
+  orig: 565, 37
+  offset: 0, 0
+  index: -1

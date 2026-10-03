@@ -1,0 +1,90 @@
+
+3000102.webp
+size: 588,1296
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back
+  rotate: true
+  xy: 2, 304
+  size: 262, 338
+  orig: 262, 338
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 2, 541
+  size: 561, 752
+  orig: 561, 752
+  offset: 0, 0
+  index: -1
+body_top
+  rotate: true
+  xy: 489, 541
+  size: 212, 93
+  orig: 212, 93
+  offset: 0, 0
+  index: -1
+bottom
+  rotate: true
+  xy: 75, 133
+  size: 175, 265
+  orig: 175, 265
+  offset: 0, 0
+  index: -1
+door_1
+  rotate: false
+  xy: 108, 786
+  size: 62, 214
+  orig: 62, 214
+  offset: 0, 0
+  index: -1
+door_2
+  rotate: false
+  xy: 107, 568
+  size: 67, 216
+  orig: 67, 216
+  offset: 0, 0
+  index: -1
+eff1
+  rotate: false
+  xy: 108, 1002
+  size: 15, 53
+  orig: 15, 53
+  offset: 0, 0
+  index: -1
+eff2
+  rotate: false
+  xy: 108, 1057
+  size: 44, 17
+  orig: 44, 17
+  offset: 0, 0
+  index: -1
+eff3
+  rotate: true
+  xy: 342, 35
+  size: 143, 226
+  orig: 143, 226
+  offset: 0, 0
+  index: -1
+front
+  rotate: false
+  xy: 342, 180
+  size: 204, 359
+  orig: 204, 359
+  offset: 0, 0
+  index: -1
+guard
+  rotate: true
+  xy: 2, 3
+  size: 128, 191
+  orig: 128, 191
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 941
+  size: 284, 42
+  orig: 284, 42
+  offset: 0, 0
+  index: -1

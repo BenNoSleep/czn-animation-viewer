@@ -1,0 +1,13 @@
+
+cha_m.webp
+size: 520,1284
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cha_m
+  rotate: false
+  xy: 2, 2
+  size: 515, 1280
+  orig: 515, 1280
+  offset: 0, 0
+  index: -1

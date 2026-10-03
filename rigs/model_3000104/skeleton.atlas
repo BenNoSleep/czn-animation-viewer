@@ -1,0 +1,13 @@
+
+3000104.webp
+size: 84,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_shelter_giant_nail
+  rotate: false
+  xy: 2, 2
+  size: 78, 123
+  orig: 78, 123
+  offset: 0, 0
+  index: -1

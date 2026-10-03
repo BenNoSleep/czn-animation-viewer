@@ -1,0 +1,20 @@
+
+3000297.webp
+size: 1380,584
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+base
+  rotate: false
+  xy: 2, 24
+  size: 1373, 557
+  orig: 1373, 557
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 694, 20
+  orig: 694, 20
+  offset: 0, 0
+  index: -1

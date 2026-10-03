@@ -1,0 +1,13 @@
+
+2302202.webp
+size: 100,400
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+invader_spear
+  rotate: false
+  xy: 2, 2
+  size: 96, 395
+  orig: 96, 395
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+3000132.webp
+size: 452,104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Particle
+  rotate: false
+  xy: 140, 2
+  size: 121, 99
+  orig: 121, 99
+  offset: 0, 0
+  index: -1
+effect_1
+  rotate: false
+  xy: 2, 10
+  size: 136, 91
+  orig: 136, 91
+  offset: 0, 0
+  index: -1
+effect_2
+  rotate: true
+  xy: 263, 7
+  size: 94, 50
+  orig: 94, 50
+  offset: 0, 0
+  index: -1
+lamp_body_1
+  rotate: false
+  xy: 315, 9
+  size: 39, 17
+  orig: 39, 18
+  offset: 0, 1
+  index: -1
+lamp_body_2
+  rotate: false
+  xy: 315, 29
+  size: 131, 73
+  orig: 131, 73
+  offset: 0, 0
+  index: -1
+lamp_lid
+  rotate: false
+  xy: 348, 6
+  size: 35, 40
+  orig: 35, 41
+  offset: 0, 0
+  index: -1

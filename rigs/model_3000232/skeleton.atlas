@@ -1,0 +1,20 @@
+
+3000232.webp
+size: 104,84
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+darkstar_helmet
+  rotate: false
+  xy: 2, 2
+  size: 81, 80
+  orig: 81, 80
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 85, 36
+  size: 46, 15
+  orig: 46, 15
+  offset: 0, 0
+  index: -1

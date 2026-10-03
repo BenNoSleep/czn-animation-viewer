@@ -1,0 +1,111 @@
+
+3000312.webp
+size: 440,284
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 378, 77
+  size: 42, 104
+  orig: 59, 120
+  offset: 8, 8
+  index: -1
+1_b
+  rotate: false
+  xy: 2, 199
+  size: 11, 18
+  orig: 27, 35
+  offset: 8, 9
+  index: -1
+2
+  rotate: false
+  xy: 185, 35
+  size: 40, 127
+  orig: 51, 140
+  offset: 6, 6
+  index: -1
+3
+  rotate: false
+  xy: 124, 183
+  size: 54, 88
+  orig: 68, 103
+  offset: 7, 7
+  index: -1
+3_b
+  rotate: false
+  xy: 2, 218
+  size: 11, 16
+  orig: 27, 33
+  offset: 8, 8
+  index: -1
+4
+  rotate: false
+  xy: 43, 35
+  size: 43, 114
+  orig: 59, 129
+  offset: 7, 8
+  index: -1
+deco_small
+  rotate: false
+  xy: 2, 186
+  size: 34, 94
+  orig: 49, 108
+  offset: 7, 6
+  index: -1
+knife_big
+  rotate: false
+  xy: 66, 67
+  size: 82, 204
+  orig: 99, 221
+  offset: 9, 8
+  index: -1
+knife_small
+  rotate: false
+  xy: 209, 160
+  size: 27, 100
+  orig: 43, 110
+  offset: 8, 3
+  index: -1
+meat
+  rotate: true
+  xy: 387, 174
+  size: 88, 49
+  orig: 99, 62
+  offset: 6, 6
+  index: -1
+rope
+  rotate: 270
+  xy: 362, 3
+  size: 277, 45
+  orig: 283, 55
+  offset: 4, 7
+  index: -1
+rope_b
+  rotate: false
+  xy: 139, 133
+  size: 17, 49
+  orig: 31, 66
+  offset: 7, 9
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 16
+  size: 378, 18
+  orig: 387, 32
+  offset: 9, 7
+  index: -1
+wood_R_1
+  rotate: false
+  xy: 2, 35
+  size: 335, 246
+  orig: 345, 257
+  offset: 6, 7
+  index: -1
+wood_R_2
+  rotate: false
+  xy: 145, 36
+  size: 64, 198
+  orig: 78, 214
+  offset: 5, 9
+  index: -1

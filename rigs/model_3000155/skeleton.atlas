@@ -1,0 +1,13 @@
+
+3000155.webp
+size: 260,180
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rusty_drum_barrel
+  rotate: false
+  xy: 2, 2
+  size: 255, 174
+  orig: 255, 174
+  offset: 0, 0
+  index: -1

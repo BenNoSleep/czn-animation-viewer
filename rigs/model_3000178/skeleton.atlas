@@ -1,0 +1,27 @@
+
+3000178.webp
+size: 212,76
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_invader_purple_powder
+  rotate: false
+  xy: 2, 26
+  size: 181, 45
+  orig: 181, 45
+  offset: 0, 0
+  index: -1
+p_invader_purple_powder_1
+  rotate: false
+  xy: 185, 46
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 186, 22
+  orig: 186, 22
+  offset: 0, 0
+  index: -1

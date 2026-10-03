@@ -1,0 +1,111 @@
+
+3000150.webp
+size: 1040,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_light_01
+  rotate: false
+  xy: 265, 6
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+body_light_02
+  rotate: false
+  xy: 280, 8
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+body_light_03
+  rotate: false
+  xy: 329, 4
+  size: 115, 75
+  orig: 115, 75
+  offset: 0, 0
+  index: -1
+light_01
+  rotate: false
+  xy: 238, 8
+  size: 25, 10
+  orig: 25, 10
+  offset: 0, 0
+  index: -1
+light_02
+  rotate: false
+  xy: 171, 6
+  size: 65, 12
+  orig: 65, 12
+  offset: 0, 0
+  index: -1
+light_03
+  rotate: false
+  xy: 446, 20
+  size: 6, 18
+  orig: 6, 18
+  offset: 0, 0
+  index: -1
+light_04
+  rotate: false
+  xy: 446, 40
+  size: 12, 30
+  orig: 12, 30
+  offset: 0, 0
+  index: -1
+light_05
+  rotate: true
+  xy: 986, 53
+  size: 52, 50
+  orig: 52, 50
+  offset: 0, 0
+  index: -1
+p_spaitz_treasure_body
+  rotate: false
+  xy: 2, 2
+  size: 178, 103
+  orig: 178, 103
+  offset: 0, 0
+  index: -1
+p_spaitz_treasure_in
+  rotate: 180
+  xy: 181, 20
+  size: 146, 85
+  orig: 157, 85
+  offset: 11, 0
+  index: -1
+p_spaitz_treasure_lid_1
+  rotate: 180
+  xy: 665, 49
+  size: 141, 56
+  orig: 141, 56
+  offset: 0, 0
+  index: -1
+p_spaitz_treasure_lid_1_2
+  rotate: false
+  xy: 705, 4
+  size: 143, 43
+  orig: 143, 43
+  offset: 0, 0
+  index: -1
+p_spaitz_treasure_lid_1_3
+  rotate: false
+  xy: 575, 5
+  size: 128, 63
+  orig: 128, 63
+  offset: 0, 0
+  index: -1
+p_spaitz_treasure_lid_2
+  rotate: false
+  xy: 446, 34
+  size: 141, 71
+  orig: 146, 71
+  offset: 5, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 800, 42
+  size: 184, 22
+  orig: 184, 22
+  offset: 0, 0
+  index: -1

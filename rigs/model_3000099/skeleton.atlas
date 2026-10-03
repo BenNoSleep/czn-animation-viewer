@@ -1,0 +1,27 @@
+
+3000099.webp
+size: 1400,388
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_cannibal_underground_tunnel_normal_idle
+  rotate: 180
+  xy: 633, 31
+  size: 763, 352
+  orig: 763, 352
+  offset: 0, 0
+  index: -1
+p_earth_cannibal_underground_tunnel_stance1
+  rotate: false
+  xy: 2, 31
+  size: 763, 352
+  orig: 763, 352
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 387, 27
+  orig: 387, 27
+  offset: 0, 0
+  index: -1

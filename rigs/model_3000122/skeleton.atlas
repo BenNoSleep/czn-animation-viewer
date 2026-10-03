@@ -1,0 +1,20 @@
+
+3000122.webp
+size: 1004,416
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_blackmarket_auction_outside
+  rotate: false
+  xy: 2, 2
+  size: 997, 412
+  orig: 997, 412
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 74
+  size: 493, 31
+  orig: 493, 31
+  offset: 0, 0
+  index: -1

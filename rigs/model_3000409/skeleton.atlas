@@ -1,0 +1,132 @@
+
+3000409.webp
+size: 60,668
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lumen_blue_base_color
+  rotate: false
+  xy: 2, 612
+  size: 54, 54
+  orig: 70, 70
+  offset: 8, 8
+  index: -1
+lumen_blue_bubble_1
+  rotate: false
+  xy: 2, 454
+  size: 54, 47
+  orig: 67, 60
+  offset: 6, 7
+  index: -1
+lumen_blue_bubble_2
+  rotate: 270
+  xy: 2, 338
+  size: 37, 55
+  orig: 54, 70
+  offset: 8, 8
+  index: -1
+lumen_blue_bubble_3
+  rotate: false
+  xy: 2, 219
+  size: 53, 43
+  orig: 66, 59
+  offset: 6, 8
+  index: -1
+lumen_blue_deco1_color
+  rotate: true
+  xy: 2, 105
+  size: 34, 31
+  orig: 49, 45
+  offset: 8, 6
+  index: -1
+lumen_blue_deco2_color
+  rotate: false
+  xy: 15, 36
+  size: 33, 36
+  orig: 45, 46
+  offset: 5, 4
+  index: -1
+lumen_red_base_color
+  rotate: 180
+  xy: 2, 557
+  size: 54, 54
+  orig: 70, 70
+  offset: 8, 8
+  index: -1
+lumen_red_bubble_1
+  rotate: 180
+  xy: 2, 415
+  size: 54, 47
+  orig: 67, 60
+  offset: 6, 7
+  index: -1
+lumen_red_bubble_2
+  rotate: true
+  xy: 2, 300
+  size: 37, 55
+  orig: 54, 70
+  offset: 8, 8
+  index: -1
+lumen_red_bubble_3
+  rotate: 180
+  xy: 2, 176
+  size: 53, 43
+  orig: 66, 59
+  offset: 6, 8
+  index: -1
+lumen_red_deco1_color
+  rotate: false
+  xy: 15, 87
+  size: 34, 31
+  orig: 49, 45
+  offset: 8, 6
+  index: -1
+lumen_red_deco2_color
+  rotate: 180
+  xy: 2, 19
+  size: 33, 36
+  orig: 45, 46
+  offset: 5, 4
+  index: -1
+lumen_yellow_base_color
+  rotate: false
+  xy: 2, 502
+  size: 54, 54
+  orig: 70, 70
+  offset: 8, 8
+  index: -1
+lumen_yellow_bubble_1
+  rotate: false
+  xy: 2, 370
+  size: 54, 47
+  orig: 67, 60
+  offset: 6, 7
+  index: -1
+lumen_yellow_bubble_2
+  rotate: true
+  xy: 2, 262
+  size: 37, 55
+  orig: 54, 70
+  offset: 8, 8
+  index: -1
+lumen_yellow_bubble_3
+  rotate: false
+  xy: 2, 132
+  size: 53, 43
+  orig: 66, 59
+  offset: 6, 8
+  index: -1
+lumen_yellow_deco1_color
+  rotate: 180
+  xy: 2, 58
+  size: 34, 31
+  orig: 49, 45
+  offset: 8, 6
+  index: -1
+lumen_yellow_deco2_color
+  rotate: false
+  xy: 15, 3
+  size: 33, 36
+  orig: 45, 46
+  offset: 5, 4
+  index: -1

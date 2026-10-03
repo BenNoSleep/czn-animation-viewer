@@ -1,0 +1,104 @@
+
+3000328.webp
+size: 528,408
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+acc1
+  rotate: false
+  xy: 2, 242
+  size: 18, 73
+  orig: 18, 73
+  offset: 0, 0
+  index: -1
+acc2
+  rotate: false
+  xy: 23, 92
+  size: 19, 41
+  orig: 19, 41
+  offset: 0, 0
+  index: -1
+amulet1
+  rotate: false
+  xy: 2, 207
+  size: 10, 32
+  orig: 10, 32
+  offset: 0, 0
+  index: -1
+amulet2
+  rotate: false
+  xy: 54, 266
+  size: 10, 29
+  orig: 10, 30
+  offset: 0, 0
+  index: -1
+amulet3
+  rotate: false
+  xy: 50, 136
+  size: 11, 32
+  orig: 11, 35
+  offset: 0, 3
+  index: -1
+amulet4
+  rotate: false
+  xy: 48, 296
+  size: 13, 32
+  orig: 13, 32
+  offset: 0, 0
+  index: -1
+ribbon1
+  rotate: false
+  xy: 33, 49
+  size: 15, 41
+  orig: 19, 41
+  offset: 4, 0
+  index: -1
+ribbon2
+  rotate: false
+  xy: 49, 42
+  size: 13, 29
+  orig: 13, 29
+  offset: 0, 0
+  index: -1
+ribbon3
+  rotate: false
+  xy: 43, 92
+  size: 12, 41
+  orig: 12, 41
+  offset: 0, 0
+  index: -1
+ribbon4
+  rotate: false
+  xy: 18, 43
+  size: 13, 49
+  orig: 13, 50
+  offset: 0, 1
+  index: -1
+ribbon5
+  rotate: false
+  xy: 2, 78
+  size: 16, 44
+  orig: 16, 44
+  offset: 0, 0
+  index: -1
+rope
+  rotate: true
+  xy: 2, 124
+  size: 230, 59
+  orig: 230, 67
+  offset: 0, 6
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 3
+  size: 521, 37
+  orig: 521, 37
+  offset: 0, 0
+  index: -1
+stone_altar
+  rotate: false
+  xy: 2, 42
+  size: 498, 362
+  orig: 512, 378
+  offset: 8, 9
+  index: -1

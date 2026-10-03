@@ -1,0 +1,20 @@
+
+3000426.webp
+size: 968,544
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_delta_debris
+  rotate: false
+  xy: 2, 2
+  size: 928, 540
+  orig: 928, 540
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 932, 3
+  size: 474, 33
+  orig: 484, 61
+  offset: 0, 13
+  index: -1

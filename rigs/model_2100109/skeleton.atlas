@@ -1,0 +1,55 @@
+
+2100109.webp
+size: 468,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nor1_bottom_01
+  rotate: false
+  xy: 2, 23
+  size: 154, 83
+  orig: 154, 83
+  offset: 0, 0
+  index: -1
+nor1_top_01
+  rotate: false
+  xy: 286, 2
+  size: 153, 32
+  orig: 153, 32
+  offset: 0, 0
+  index: -1
+nor1_top_02
+  rotate: false
+  xy: 158, 21
+  size: 126, 85
+  orig: 126, 85
+  offset: 0, 0
+  index: -1
+nor1_top_03
+  rotate: false
+  xy: 286, 36
+  size: 162, 70
+  orig: 162, 70
+  offset: 0, 0
+  index: -1
+nor1_top_acc_01
+  rotate: true
+  xy: 441, 30
+  size: 38, 23
+  orig: 38, 23
+  offset: 0, 0
+  index: -1
+nor1_top_acc_02
+  rotate: false
+  xy: 20, 6
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+nor1_top_acc_03
+  rotate: false
+  xy: 2, 3
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1

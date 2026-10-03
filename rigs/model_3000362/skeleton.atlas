@@ -1,0 +1,76 @@
+
+3000362.webp
+size: 1404,1932
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+action0_idle1
+  rotate: true
+  xy: 1018, 1175
+  size: 753, 334
+  orig: 753, 334
+  offset: 0, 0
+  index: -1
+action0_idle2
+  rotate: false
+  xy: 2, 123
+  size: 641, 349
+  orig: 641, 349
+  offset: 0, 0
+  index: -1
+action0_idle3
+  rotate: false
+  xy: 791, 622
+  size: 557, 632
+  orig: 557, 632
+  offset: 0, 0
+  index: -1
+action1_idle
+  rotate: false
+  xy: 2, 1005
+  size: 840, 923
+  orig: 840, 923
+  offset: 0, 0
+  index: -1
+action1_idle_1
+  rotate: 270
+  xy: 645, 4
+  size: 471, 401
+  orig: 840, 923
+  offset: 108, 16
+  index: -1
+action2_door_1
+  rotate: true
+  xy: 1046, 26
+  size: 193, 355
+  orig: 193, 355
+  offset: 0, 0
+  index: -1
+action2_door_2
+  rotate: false
+  xy: 798, 1521
+  size: 208, 355
+  orig: 208, 355
+  offset: 0, 0
+  index: -1
+action2_idle
+  rotate: 180
+  xy: 2, 475
+  size: 840, 530
+  orig: 840, 923
+  offset: 0, 0
+  index: -1
+action3_idle
+  rotate: true
+  xy: 1045, 221
+  size: 399, 355
+  orig: 399, 355
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 1073
+  size: 817, 28
+  orig: 817, 28
+  offset: 0, 0
+  index: -1

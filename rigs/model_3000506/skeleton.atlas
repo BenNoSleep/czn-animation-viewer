@@ -1,0 +1,174 @@
+
+3000506.webp
+size: 1160,104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 331, 16
+  size: 109, 85
+  orig: 116, 96
+  offset: 0, 5
+  index: -1
+calf_l
+  rotate: 270
+  xy: 675, 16
+  size: 86, 40
+  orig: 99, 54
+  offset: 7, 7
+  index: -1
+calf_r
+  rotate: true
+  xy: 761, 10
+  size: 89, 35
+  orig: 100, 48
+  offset: 5, 7
+  index: -1
+face
+  rotate: 180
+  xy: 1034, 15
+  size: 36, 64
+  orig: 46, 71
+  offset: 7, 7
+  index: -1
+foot_l
+  rotate: 270
+  xy: 1103, 58
+  size: 44, 43
+  orig: 58, 57
+  offset: 7, 9
+  index: -1
+foot_r
+  rotate: false
+  xy: 1070, 20
+  size: 54, 31
+  orig: 65, 44
+  offset: 7, 6
+  index: -1
+forearm_l_1
+  rotate: 180
+  xy: 904, 13
+  size: 57, 71
+  orig: 92, 82
+  offset: 8, 7
+  index: -1
+forearm_l_2
+  rotate: 270
+  xy: 992, 45
+  size: 56, 45
+  orig: 69, 57
+  offset: 6, 5
+  index: -1
+forearm_r_1
+  rotate: 180
+  xy: 796, 5
+  size: 67, 33
+  orig: 81, 47
+  offset: 7, 8
+  index: -1
+hair_1
+  rotate: false
+  xy: 439, 8
+  size: 107, 94
+  orig: 120, 108
+  offset: 6, 7
+  index: -1
+hair_2
+  rotate: 270
+  xy: 539, 20
+  size: 80, 77
+  orig: 86, 87
+  offset: 6, 5
+  index: -1
+hair_3
+  rotate: false
+  xy: 538, 6
+  size: 40, 34
+  orig: 50, 46
+  offset: 6, 6
+  index: -1
+hair_4
+  rotate: 270
+  xy: 583, 6
+  size: 34, 37
+  orig: 49, 52
+  offset: 7, 8
+  index: -1
+hand_l_1
+  rotate: true
+  xy: 1121, 14
+  size: 44, 35
+  orig: 60, 48
+  offset: 7, 8
+  index: -1
+hand_r_1
+  rotate: false
+  xy: 2, 6
+  size: 49, 28
+  orig: 64, 42
+  offset: 9, 7
+  index: -1
+hand_r_2
+  rotate: true
+  xy: 1069, 49
+  size: 53, 40
+  orig: 64, 56
+  offset: 5, 6
+  index: -1
+pelvis_1
+  rotate: 180
+  xy: 612, 24
+  size: 62, 78
+  orig: 72, 85
+  offset: 5, 5
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 34
+  size: 327, 66
+  orig: 327, 66
+  offset: 0, 0
+  index: -1
+thigh_l
+  rotate: 180
+  xy: 960, 20
+  size: 41, 57
+  orig: 54, 70
+  offset: 7, 6
+  index: -1
+thigh_l_2
+  rotate: true
+  xy: 714, 30
+  size: 72, 47
+  orig: 84, 59
+  offset: 4, 8
+  index: -1
+thigh_r
+  rotate: 180
+  xy: 993, 4
+  size: 53, 41
+  orig: 61, 55
+  offset: 3, 7
+  index: -1
+thigh_r_2
+  rotate: true
+  xy: 856, 32
+  size: 70, 49
+  orig: 84, 59
+  offset: 7, 7
+  index: -1
+upper_arm_l
+  rotate: 270
+  xy: 797, 36
+  size: 65, 60
+  orig: 73, 71
+  offset: 5, 4
+  index: -1
+upper_arm_r
+  rotate: false
+  xy: 277, 4
+  size: 71, 31
+  orig: 79, 44
+  offset: 6, 6
+  index: -1

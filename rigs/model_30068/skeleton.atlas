@@ -1,0 +1,160 @@
+
+30068.webp
+size: 548,192
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cat4_body
+  rotate: false
+  xy: 2, 31
+  size: 247, 159
+  orig: 440, 353
+  offset: 96, 97
+  index: -1
+cat4_claw
+  rotate: false
+  xy: 31, 44
+  size: 6, 11
+  orig: 206, 210
+  offset: 99, 99
+  index: -1
+cat4_ear_1
+  rotate: 270
+  xy: 179, 25
+  size: 58, 88
+  orig: 253, 279
+  offset: 98, 94
+  index: -1
+cat4_ear_2
+  rotate: true
+  xy: 426, 26
+  size: 48, 80
+  orig: 245, 273
+  offset: 99, 97
+  index: -1
+cat4_eye1
+  rotate: false
+  xy: 138, 9
+  size: 40, 37
+  orig: 237, 233
+  offset: 98, 98
+  index: -1
+cat4_eye1_cover
+  rotate: false
+  xy: 38, 5
+  size: 49, 27
+  orig: 237, 233
+  offset: 95, 110
+  index: -1
+cat4_eye1_pika
+  rotate: false
+  xy: 2, 78
+  size: 10, 12
+  orig: 207, 207
+  offset: 98, 98
+  index: -1
+cat4_eye2
+  rotate: false
+  xy: 507, 10
+  size: 28, 36
+  orig: 224, 232
+  offset: 98, 98
+  index: -1
+cat4_eye2_pika
+  rotate: false
+  xy: 11, 180
+  size: 9, 10
+  orig: 207, 207
+  offset: 99, 99
+  index: -1
+cat4_head
+  rotate: true
+  xy: 243, 35
+  size: 112, 97
+  orig: 308, 295
+  offset: 97, 99
+  index: -1
+cat4_leg
+  rotate: 180
+  xy: 2, 11
+  size: 37, 64
+  orig: 235, 263
+  offset: 97, 100
+  index: -1
+cat4_leg2
+  rotate: 270
+  xy: 324, 19
+  size: 41, 64
+  orig: 238, 262
+  offset: 97, 99
+  index: -1
+cat4_leg_s
+  rotate: true
+  xy: 324, 83
+  size: 106, 97
+  orig: 109, 112
+  offset: 3, 10
+  index: -1
+cat4_pupil_narrow1
+  rotate: false
+  xy: 2, 165
+  size: 10, 25
+  orig: 207, 223
+  offset: 98, 98
+  index: -1
+cat4_pupil_narrow2
+  rotate: false
+  xy: 87, 6
+  size: 10, 25
+  orig: 207, 223
+  offset: 99, 100
+  index: -1
+cat4_pupil_wide1
+  rotate: false
+  xy: 108, 5
+  size: 29, 27
+  orig: 224, 225
+  offset: 97, 99
+  index: -1
+cat4_pupil_wide2
+  rotate: false
+  xy: 257, 5
+  size: 21, 29
+  orig: 217, 226
+  offset: 98, 99
+  index: -1
+cat4_tail
+  rotate: 180
+  xy: 341, 54
+  size: 160, 130
+  orig: 354, 323
+  offset: 97, 97
+  index: -1
+cat4_tongue
+  rotate: false
+  xy: 35, 35
+  size: 19, 12
+  orig: 217, 209
+  offset: 99, 99
+  index: -1
+mouth_1
+  rotate: false
+  xy: 174, 6
+  size: 16, 10
+  orig: 34, 28
+  offset: 9, 10
+  index: -1
+mouth_3
+  rotate: true
+  xy: 377, 4
+  size: 50, 53
+  orig: 237, 233
+  offset: 90, 98
+  index: -1
+shadow
+  rotate: true
+  xy: 502, 52
+  size: 136, 40
+  orig: 136, 40
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+3000075.webp
+size: 268,104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/p_diallos_corridor_paper
+  rotate: false
+  xy: 184, 6
+  size: 80, 94
+  orig: 80, 94
+  offset: 0, 0
+  index: -1
+images/p_diallos_corridor_paper3
+  rotate: false
+  xy: 2, 2
+  size: 89, 98
+  orig: 89, 98
+  offset: 0, 0
+  index: -1
+images/p_diallos_corridor_paper4
+  rotate: false
+  xy: 93, 2
+  size: 89, 98
+  orig: 89, 98
+  offset: 0, 0
+  index: -1

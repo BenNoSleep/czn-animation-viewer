@@ -1,0 +1,125 @@
+
+3000327.webp
+size: 1004,432
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_r
+  rotate: 180
+  xy: 864, 300
+  size: 97, 130
+  orig: 120, 130
+  offset: 23, 0
+  index: -1
+body
+  rotate: 270
+  xy: 551, 159
+  size: 251, 213
+  orig: 380, 260
+  offset: 114, 42
+  index: -1
+body2
+  rotate: 270
+  xy: 740, 102
+  size: 328, 131
+  orig: 330, 150
+  offset: 0, 7
+  index: -1
+cloth_b
+  rotate: false
+  xy: 958, 90
+  size: 39, 78
+  orig: 40, 80
+  offset: 1, 1
+  index: -1
+cloth_f_f
+  rotate: false
+  xy: 2, 131
+  size: 120, 93
+  orig: 132, 108
+  offset: 6, 8
+  index: -1
+face
+  rotate: false
+  xy: 444, 120
+  size: 162, 176
+  orig: 162, 176
+  offset: 0, 0
+  index: -1
+hair_b
+  rotate: false
+  xy: 571, 9
+  size: 58, 95
+  orig: 73, 110
+  offset: 7, 8
+  index: -1
+hair_f_01
+  rotate: 270
+  xy: 909, 3
+  size: 65, 91
+  orig: 88, 107
+  offset: 19, 7
+  index: -1
+hair_f_02
+  rotate: 180
+  xy: 910, 197
+  size: 91, 108
+  orig: 140, 123
+  offset: 44, 8
+  index: -1
+hair_f_03
+  rotate: 180
+  xy: 946, 296
+  size: 55, 117
+  orig: 70, 130
+  offset: 9, 8
+  index: -1
+hair_f_04
+  rotate: false
+  xy: 878, 127
+  size: 73, 126
+  orig: 88, 139
+  offset: 6, 5
+  index: -1
+hood_b
+  rotate: true
+  xy: 776, 5
+  size: 131, 187
+  orig: 141, 197
+  offset: 6, 6
+  index: -1
+hood_f
+  rotate: true
+  xy: 616, 20
+  size: 216, 185
+  orig: 232, 201
+  offset: 8, 8
+  index: -1
+hood_f_b
+  rotate: false
+  xy: 2, 376
+  size: 122, 55
+  orig: 139, 67
+  offset: 8, 9
+  index: -1
+rock
+  rotate: false
+  xy: 2, 120
+  size: 491, 312
+  orig: 548, 341
+  offset: 50, 24
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 6
+  size: 567, 112
+  orig: 567, 112
+  offset: 0, 0
+  index: -1
+stone
+  rotate: false
+  xy: 121, 402
+  size: 49, 29
+  orig: 50, 30
+  offset: 1, 0
+  index: -1

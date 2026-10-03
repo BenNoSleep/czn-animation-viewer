@@ -1,0 +1,20 @@
+
+3000063.webp
+size: 188,288
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+prayer_back_sit_2
+  rotate: false
+  xy: 2, 14
+  size: 183, 272
+  orig: 183, 272
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 34, 10
+  orig: 34, 10
+  offset: 0, 0
+  index: -1

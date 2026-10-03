@@ -1,0 +1,20 @@
+
+3000429.webp
+size: 472,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_divine_beast_flesh
+  rotate: false
+  xy: 2, 45
+  size: 456, 176
+  orig: 456, 176
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 3
+  size: 466, 40
+  orig: 466, 40
+  offset: 0, 0
+  index: -1

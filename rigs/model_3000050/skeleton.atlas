@@ -1,0 +1,181 @@
+
+3000050.webp
+size: 200,592
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_b_b
+  rotate: true
+  xy: 74, 69
+  size: 44, 79
+  orig: 45, 79
+  offset: 0, 0
+  index: -1
+arm_b_f
+  rotate: 180
+  xy: 140, 354
+  size: 44, 79
+  orig: 45, 79
+  offset: 0, 0
+  index: -1
+arm_b_in
+  rotate: false
+  xy: 153, 291
+  size: 36, 61
+  orig: 36, 61
+  offset: 0, 0
+  index: -1
+arm_f_01
+  rotate: true
+  xy: 2, 64
+  size: 47, 70
+  orig: 47, 70
+  offset: 0, 0
+  index: -1
+arm_f_02
+  rotate: 270
+  xy: 122, 4
+  size: 36, 50
+  orig: 39, 51
+  offset: 2, 1
+  index: -1
+chest_f
+  rotate: true
+  xy: 96, 160
+  size: 68, 80
+  orig: 68, 81
+  offset: 0, 1
+  index: -1
+dress
+  rotate: false
+  xy: 79, 390
+  size: 87, 200
+  orig: 88, 200
+  offset: 1, 0
+  index: -1
+face
+  rotate: 180
+  xy: 2, 158
+  size: 70, 76
+  orig: 85, 90
+  offset: 7, 8
+  index: -1
+foot_b
+  rotate: 270
+  xy: 110, 37
+  size: 43, 61
+  orig: 44, 62
+  offset: 1, 1
+  index: -1
+foot_f
+  rotate: false
+  xy: 159, 431
+  size: 34, 63
+  orig: 35, 65
+  offset: 0, 1
+  index: -1
+hair_b
+  rotate: false
+  xy: 184, 30
+  size: 11, 34
+  orig: 29, 47
+  offset: 9, 6
+  index: -1
+hair_f_b
+  rotate: false
+  xy: 168, 9
+  size: 24, 44
+  orig: 38, 58
+  offset: 8, 7
+  index: -1
+hair_f_f
+  rotate: false
+  xy: 158, 146
+  size: 37, 51
+  orig: 50, 62
+  offset: 6, 5
+  index: -1
+hand_b
+  rotate: true
+  xy: 2, 8
+  size: 27, 41
+  orig: 27, 41
+  offset: 0, 0
+  index: -1
+hand_f
+  rotate: false
+  xy: 2, 385
+  size: 75, 205
+  orig: 75, 205
+  offset: 0, 0
+  index: -1
+hood_b_b
+  rotate: true
+  xy: 38, 285
+  size: 105, 109
+  orig: 117, 120
+  offset: 7, 5
+  index: -1
+hood_b_f
+  rotate: 270
+  xy: 2, 283
+  size: 101, 50
+  orig: 117, 66
+  offset: 8, 7
+  index: -1
+hood_clip
+  rotate: false
+  xy: 45, 16
+  size: 17, 19
+  orig: 17, 19
+  offset: 0, 0
+  index: -1
+hood_f
+  rotate: false
+  xy: 53, 214
+  size: 101, 90
+  orig: 117, 105
+  offset: 9, 8
+  index: -1
+neck
+  rotate: false
+  xy: 154, 230
+  size: 42, 51
+  orig: 42, 51
+  offset: 0, 0
+  index: -1
+necklace
+  rotate: true
+  xy: 74, 15
+  size: 65, 35
+  orig: 65, 36
+  offset: 0, 0
+  index: -1
+scape_b
+  rotate: false
+  xy: 41, 113
+  size: 119, 56
+  orig: 120, 57
+  offset: 0, 1
+  index: -1
+scape_f
+  rotate: 270
+  xy: 150, 69
+  size: 58, 47
+  orig: 120, 57
+  offset: 0, 8
+  index: -1
+turtle_neck_b
+  rotate: true
+  xy: 167, 494
+  size: 62, 27
+  orig: 62, 27
+  offset: 0, 0
+  index: -1
+turtle_neck_f
+  rotate: false
+  xy: 2, 37
+  size: 62, 25
+  orig: 62, 25
+  offset: 0, 0
+  index: -1

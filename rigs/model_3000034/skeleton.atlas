@@ -1,0 +1,76 @@
+
+3000034.webp
+size: 264,120
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gramophone_music_body
+  rotate: false
+  xy: 2, 26
+  size: 153, 92
+  orig: 180, 184
+  offset: 27, 0
+  index: -1
+gramophone_music_head
+  rotate: true
+  xy: 129, 6
+  size: 112, 105
+  orig: 180, 184
+  offset: 0, 78
+  index: -1
+note_02
+  rotate: false
+  xy: 235, 85
+  size: 18, 32
+  orig: 18, 32
+  offset: 0, 0
+  index: -1
+note_03
+  rotate: true
+  xy: 35, 3
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+note_04
+  rotate: false
+  xy: 235, 17
+  size: 17, 24
+  orig: 17, 24
+  offset: 0, 0
+  index: -1
+note_05
+  rotate: false
+  xy: 2, 8
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+note_06
+  rotate: false
+  xy: 235, 63
+  size: 18, 20
+  orig: 18, 20
+  offset: 0, 0
+  index: -1
+note_07
+  rotate: true
+  xy: 235, 46
+  size: 15, 23
+  orig: 15, 23
+  offset: 0, 0
+  index: -1
+note_08
+  rotate: true
+  xy: 73, 4
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+note_09
+  rotate: false
+  xy: 105, 10
+  size: 23, 28
+  orig: 23, 28
+  offset: 0, 0
+  index: -1

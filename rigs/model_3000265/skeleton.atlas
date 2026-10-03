@@ -1,0 +1,34 @@
+
+3000265.webp
+size: 1804,984
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nihilum_m2
+  rotate: true
+  xy: 668, 3
+  size: 424, 569
+  orig: 424, 569
+  offset: 0, 0
+  index: -1
+nihilum_m4
+  rotate: false
+  xy: 1260, 246
+  size: 540, 645
+  orig: 540, 645
+  offset: 0, 0
+  index: -1
+nihilum_m5
+  rotate: 180
+  xy: 761, 377
+  size: 507, 604
+  orig: 507, 604
+  offset: 0, 0
+  index: -1
+nihilum_m_f1
+  rotate: false
+  xy: 2, 243
+  size: 772, 740
+  orig: 773, 863
+  offset: 0, 10
+  index: -1

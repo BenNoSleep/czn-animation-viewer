@@ -1,0 +1,20 @@
+
+3000145.webp
+size: 192,200
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_rock
+  rotate: false
+  xy: 2, 33
+  size: 186, 163
+  orig: 186, 163
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 168, 29
+  orig: 168, 29
+  offset: 0, 0
+  index: -1

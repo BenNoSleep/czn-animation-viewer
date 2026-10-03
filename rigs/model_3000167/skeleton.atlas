@@ -1,0 +1,13 @@
+
+3000167.webp
+size: 588,300
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+warehouse_on
+  rotate: false
+  xy: 2, 2
+  size: 584, 296
+  orig: 584, 296
+  offset: 0, 0
+  index: -1

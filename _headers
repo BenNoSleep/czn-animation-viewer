@@ -1,0 +1,1412 @@
+/*
+  X-Robots-Tag: noindex
+
+/rigs/model_1001002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001013/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001014/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001015/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001020/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1001021/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002013/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002014/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002017/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002019/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1002020/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003013/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003015/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003016/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003017/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003018/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1003_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004015/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004016/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004017/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004019/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004020/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1004_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005015/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005016/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005019/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005020/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005021/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005022/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1005_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006013/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006014/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006015/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006017/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1006026/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1007004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1007008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1007021/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1008_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1009_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1010_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1012_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1017/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1018/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1018_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1021/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1021_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1024/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1024_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1025/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1027/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1028/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1028_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1033/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1033_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1039/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1039_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1040/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1040_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1041/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1041_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1043/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1043_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1049/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1049_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1050/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1052/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1052_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1055/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1055_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1056/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1056_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1057/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1057_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1058/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1060/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1060_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1061/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1061_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1062/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1062_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1064/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1064_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1069/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1069_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_1070/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20011/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20013/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20014/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20016/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20019/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20021/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20023/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20024/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20025/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20026/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20027/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20030/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20032/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20033/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20034/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20037/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_20038/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2100101/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2100106/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2100108/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2100110/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104102/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104103/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104104/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104105/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104106/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104107/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104108/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104109/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104110/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104112/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104114/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104115/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104119/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104120/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2104121/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300006/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2300007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302005/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302101/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302102/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302103/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302104/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302105/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302106/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2302107/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2900001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2900002/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2900004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_2905001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000001/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000014/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000023/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000024/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000052/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000066/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000078/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000079/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000080/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000110/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000111/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000115/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000130/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000137/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000164/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000183/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000185/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000189/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000190/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000224/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000231/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000235/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000241/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000247/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000248/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000251/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000252/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000255/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000256/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000257/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000258/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000267/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000268/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000269/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000274/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000278/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000280/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000281/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000282/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000284/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000286/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000287/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000291/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000292/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000298/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000299/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000305/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000306/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000309/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000310/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000311/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000316/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000318/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000319/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000320/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000321/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000322/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000332/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000337/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000339/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000340/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000350/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000353/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000354/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000361/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000369/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000370/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000372/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000376/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000377/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000380/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000381/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000383/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000384/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000385/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000388/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000389/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000390/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000391/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000393/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000394/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000395/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000401/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000402/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000406/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000407/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000408/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000409/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000411/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000416/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000417/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000418/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000419/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000421/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000424/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000430/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000433/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000435/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000436/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000437/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000438/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000439/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000440/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000441/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000443/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000444/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000447/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000457/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000461/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000462/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000463/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000464/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000469/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000470/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000475/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000476/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000477/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000478/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000479/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000481/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000482/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000483/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000484/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000485/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000486/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000487/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000488/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000489/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000490/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000491/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000493/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000497/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000499/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000503/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000504/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000507/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000509/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000510/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000511/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000512/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000513/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000514/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000515/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000520/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000530/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000531/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000533/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000548/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30036/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30039/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30044/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30045/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30046/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30047/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30047_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30048/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30048_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30051/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30052/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30053/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30054/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30063/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30065/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30066/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30070/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30072/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30075/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30075_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30076/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30084/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30084_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30085/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30091/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30092/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30093/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30093_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30094/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30095/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30097/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30097_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30113/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30113_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30114/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30115/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30115_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30116/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30117/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30117_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30118/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1001010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1003/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1004/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1007/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1008_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1009/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1010/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1012/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1015/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1017/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1018/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1024/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1027/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1028/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1033/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1040/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1041/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1041_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1043/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1049/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1049_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1050/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1052/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1055/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1056/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1056_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1057/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1058/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1060/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1061/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1062/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1064/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1069/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_1071/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_20008/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_20020/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_20023/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_20034/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30000/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30037/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30045/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30047/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30048/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30075/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30075_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30084/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30092/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30093/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30093_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30097/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30097_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30113/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30113_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30114/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30115/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30115_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30117/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30117_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30131/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30134/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30136/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30138/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30154/skeleton.json
+  Content-Encoding: gzip

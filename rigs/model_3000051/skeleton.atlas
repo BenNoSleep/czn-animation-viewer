@@ -1,0 +1,20 @@
+
+3000051.webp
+size: 324,164
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nuclear_fuelcell
+  rotate: false
+  xy: 2, 57
+  size: 292, 104
+  orig: 292, 104
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: 180
+  xy: 2, 3
+  size: 318, 62
+  orig: 328, 62
+  offset: 10, 0
+  index: -1

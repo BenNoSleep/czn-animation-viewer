@@ -1,0 +1,349 @@
+
+3000068.webp
+size: 1536,2032
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Campfire_vari1_body_01
+  rotate: true
+  xy: 2, 904
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_02
+  rotate: true
+  xy: 2, 687
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_03
+  rotate: true
+  xy: 2, 470
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_04
+  rotate: true
+  xy: 2, 253
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_05
+  rotate: true
+  xy: 2, 36
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_06
+  rotate: false
+  xy: 304, 839
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_07
+  rotate: false
+  xy: 304, 537
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_08
+  rotate: false
+  xy: 304, 235
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_09
+  rotate: true
+  xy: 304, 18
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_10
+  rotate: false
+  xy: 412, 1155
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_11
+  rotate: false
+  xy: 427, 1729
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_12
+  rotate: true
+  xy: 427, 1512
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_13
+  rotate: false
+  xy: 521, 853
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_14
+  rotate: false
+  xy: 521, 551
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_15
+  rotate: false
+  xy: 521, 249
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_16
+  rotate: false
+  xy: 629, 1210
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_17
+  rotate: false
+  xy: 644, 1729
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_body_18
+  rotate: true
+  xy: 606, 32
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_01
+  rotate: false
+  xy: 738, 908
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_02
+  rotate: false
+  xy: 738, 606
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_03
+  rotate: false
+  xy: 738, 304
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_04
+  rotate: true
+  xy: 729, 1512
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_05
+  rotate: false
+  xy: 861, 1729
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_06
+  rotate: false
+  xy: 908, 2
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_07
+  rotate: true
+  xy: 846, 1295
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_08
+  rotate: false
+  xy: 955, 993
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_09
+  rotate: false
+  xy: 955, 691
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_10
+  rotate: false
+  xy: 955, 389
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_11
+  rotate: false
+  xy: 1078, 1729
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_12
+  rotate: true
+  xy: 1031, 1512
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_13
+  rotate: false
+  xy: 1125, 87
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_14
+  rotate: false
+  xy: 1172, 1210
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_15
+  rotate: false
+  xy: 1172, 908
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_16
+  rotate: false
+  xy: 1172, 606
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_17
+  rotate: true
+  xy: 1191, 389
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+Campfire_vari1_hl_18
+  rotate: false
+  xy: 1295, 1729
+  size: 215, 300
+  orig: 215, 300
+  offset: 0, 0
+  index: -1
+chaos_altar_1
+  rotate: false
+  xy: 2, 1693
+  size: 423, 336
+  orig: 423, 336
+  offset: 0, 0
+  index: -1
+chaos_altar_2
+  rotate: false
+  xy: 2, 1355
+  size: 423, 336
+  orig: 423, 336
+  offset: 0, 0
+  index: -1
+chaos_altar_3
+  rotate: false
+  xy: 2, 1121
+  size: 408, 232
+  orig: 408, 232
+  offset: 0, 0
+  index: -1
+chaose_bloodstone
+  rotate: false
+  xy: 1342, 258
+  size: 177, 129
+  orig: 177, 129
+  offset: 0, 0
+  index: -1
+chaose_bloodstone_nor
+  rotate: false
+  xy: 1342, 6
+  size: 146, 90
+  orig: 146, 90
+  offset: 0, 0
+  index: -1
+chaose_candle_2
+  rotate: false
+  xy: 2, 1727
+  size: 27, 54
+  orig: 27, 54
+  offset: 0, 0
+  index: -1
+chaose_candle_2_ex
+  rotate: false
+  xy: 31, 1703
+  size: 27, 54
+  orig: 27, 54
+  offset: 0, 0
+  index: -1
+chaose_candle_3
+  rotate: false
+  xy: 2, 1402
+  size: 30, 40
+  orig: 30, 40
+  offset: 0, 0
+  index: -1
+chaose_candle_3_ex
+  rotate: false
+  xy: 2, 1360
+  size: 30, 40
+  orig: 30, 40
+  offset: 0, 0
+  index: -1
+chaose_candlelight_1
+  rotate: false
+  xy: 60, 1730
+  size: 9, 18
+  orig: 9, 18
+  offset: 0, 0
+  index: -1
+chaose_candlelight_2
+  rotate: false
+  xy: 370, 1693
+  size: 54, 67
+  orig: 54, 67
+  offset: 0, 0
+  index: -1
+glow1
+  rotate: false
+  xy: 1333, 1527
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 1389, 1096
+  size: 429, 26
+  orig: 429, 26
+  offset: 0, 0
+  index: -1

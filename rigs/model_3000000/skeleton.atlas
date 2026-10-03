@@ -1,0 +1,419 @@
+
+3000000.webp
+size: 2048,712
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+altar_b
+  rotate: true
+  xy: 147, 44
+  size: 70, 157
+  orig: 70, 157
+  offset: 0, 0
+  index: -1
+altar_b_lighting
+  rotate: true
+  xy: 1429, 36
+  size: 70, 157
+  orig: 70, 157
+  offset: 0, 0
+  index: -1
+altar_base
+  rotate: false
+  xy: 2, 172
+  size: 796, 535
+  orig: 796, 535
+  offset: 0, 0
+  index: -1
+altar_f_eff
+  rotate: true
+  xy: 800, 210
+  size: 497, 269
+  orig: 497, 269
+  offset: 0, 0
+  index: -1
+aura_01
+  rotate: false
+  xy: 1071, 386
+  size: 228, 321
+  orig: 228, 321
+  offset: 0, 0
+  index: -1
+aura_02
+  rotate: false
+  xy: 1301, 386
+  size: 228, 321
+  orig: 228, 321
+  offset: 0, 0
+  index: -1
+aura_03
+  rotate: false
+  xy: 1531, 386
+  size: 228, 321
+  orig: 228, 321
+  offset: 0, 0
+  index: -1
+aura_04
+  rotate: true
+  xy: 1071, 156
+  size: 228, 321
+  orig: 228, 321
+  offset: 0, 0
+  index: -1
+aura_05
+  rotate: true
+  xy: 1394, 156
+  size: 228, 321
+  orig: 228, 321
+  offset: 0, 0
+  index: -1
+ball
+  rotate: true
+  xy: 1906, 342
+  size: 123, 117
+  orig: 123, 117
+  offset: 0, 0
+  index: -1
+ball_02
+  rotate: false
+  xy: 800, 91
+  size: 123, 117
+  orig: 123, 117
+  offset: 0, 0
+  index: -1
+ball_02_crack
+  rotate: 180
+  xy: 1719, 4
+  size: 112, 112
+  orig: 123, 117
+  offset: 8, 5
+  index: -1
+ball_piece_01
+  rotate: false
+  xy: 2003, 131
+  size: 43, 50
+  orig: 123, 117
+  offset: 19, 8
+  index: -1
+ball_piece_02
+  rotate: false
+  xy: 65, 124
+  size: 62, 47
+  orig: 123, 117
+  offset: 1, 57
+  index: -1
+ball_piece_03
+  rotate: true
+  xy: 1586, 112
+  size: 43, 61
+  orig: 123, 117
+  offset: 26, 55
+  index: -1
+ball_piece_04
+  rotate: false
+  xy: 2, 83
+  size: 58, 40
+  orig: 123, 117
+  offset: 7, 20
+  index: -1
+ball_piece_05
+  rotate: 270
+  xy: 1063, 116
+  size: 41, 56
+  orig: 123, 117
+  offset: 36, 5
+  index: -1
+ball_piece_06
+  rotate: false
+  xy: 1535, 99
+  size: 55, 56
+  orig: 123, 117
+  offset: 53, 6
+  index: -1
+ball_piece_07
+  rotate: true
+  xy: 1965, 116
+  size: 54, 57
+  orig: 123, 117
+  offset: 61, 15
+  index: -1
+ball_piece_08
+  rotate: false
+  xy: 1279, 49
+  size: 58, 34
+  orig: 123, 117
+  offset: 11, 32
+  index: -1
+ball_piece_09
+  rotate: false
+  xy: 373, 110
+  size: 63, 62
+  orig: 123, 117
+  offset: 57, 55
+  index: -1
+ball_piece_10
+  rotate: false
+  xy: 2003, 583
+  size: 39, 48
+  orig: 123, 117
+  offset: 25, 13
+  index: -1
+ball_piece_11
+  rotate: 180
+  xy: 1965, 64
+  size: 56, 50
+  orig: 123, 117
+  offset: 10, 11
+  index: -1
+ball_piece_12
+  rotate: false
+  xy: 2003, 513
+  size: 39, 39
+  orig: 123, 117
+  offset: 28, 24
+  index: -1
+ball_piece_13
+  rotate: true
+  xy: 2003, 658
+  size: 50, 34
+  orig: 123, 117
+  offset: 61, 25
+  index: -1
+ball_piece_14
+  rotate: false
+  xy: 1331, 28
+  size: 99, 70
+  orig: 123, 117
+  offset: 10, 32
+  index: -1
+base_lighting
+  rotate: false
+  xy: 1056, 38
+  size: 157, 40
+  orig: 157, 40
+  offset: 0, 0
+  index: -1
+circle_01
+  rotate: false
+  xy: 1761, 318
+  size: 143, 147
+  orig: 143, 147
+  offset: 0, 0
+  index: -1
+circle_02
+  rotate: false
+  xy: 1866, 171
+  size: 143, 145
+  orig: 143, 145
+  offset: 0, 0
+  index: -1
+circle_03
+  rotate: false
+  xy: 1717, 173
+  size: 147, 143
+  orig: 147, 143
+  offset: 0, 0
+  index: -1
+circle_in_01
+  rotate: false
+  xy: 455, 23
+  size: 86, 69
+  orig: 86, 69
+  offset: 0, 0
+  index: -1
+circle_in_02
+  rotate: false
+  xy: 925, 103
+  size: 136, 105
+  orig: 136, 105
+  offset: 0, 0
+  index: -1
+circle_in_03
+  rotate: false
+  xy: 1864, 59
+  size: 99, 110
+  orig: 99, 110
+  offset: 0, 0
+  index: -1
+flash
+  rotate: false
+  xy: 1761, 467
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+horn_f_c
+  rotate: true
+  xy: 1297, 74
+  size: 80, 239
+  orig: 80, 239
+  offset: 0, 0
+  index: -1
+horn_f_c_lighting
+  rotate: true
+  xy: 1056, 74
+  size: 80, 239
+  orig: 80, 239
+  offset: 0, 0
+  index: -1
+horn_f_l
+  rotate: true
+  xy: 188, 47
+  size: 123, 230
+  orig: 123, 241
+  offset: 0, 0
+  index: -1
+horn_f_l_lighting
+  rotate: true
+  xy: 420, 47
+  size: 123, 230
+  orig: 123, 241
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_01
+  rotate: false
+  xy: 2011, 306
+  size: 24, 34
+  orig: 24, 34
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_02
+  rotate: false
+  xy: 2003, 552
+  size: 23, 41
+  orig: 23, 41
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_03
+  rotate: false
+  xy: 2028, 557
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_04
+  rotate: false
+  xy: 2025, 443
+  size: 17, 35
+  orig: 17, 35
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_05
+  rotate: false
+  xy: 2025, 375
+  size: 15, 33
+  orig: 15, 33
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_06
+  rotate: false
+  xy: 1717, 321
+  size: 26, 31
+  orig: 26, 31
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_07
+  rotate: false
+  xy: 2003, 480
+  size: 26, 35
+  orig: 26, 35
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_08
+  rotate: false
+  xy: 2019, 632
+  size: 27, 37
+  orig: 27, 37
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_09
+  rotate: false
+  xy: 1717, 354
+  size: 29, 30
+  orig: 29, 30
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_10
+  rotate: false
+  xy: 2011, 282
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1
+horn_f_l_piece_total
+  rotate: true
+  xy: 630, 101
+  size: 69, 121
+  orig: 69, 121
+  offset: 0, 0
+  index: -1
+horn_f_r
+  rotate: 270
+  xy: 1625, 70
+  size: 101, 237
+  orig: 101, 242
+  offset: 0, 0
+  index: -1
+horn_f_r_lighting
+  rotate: true
+  xy: 2, 69
+  size: 101, 237
+  orig: 101, 242
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_01
+  rotate: true
+  xy: 572, 146
+  size: 24, 49
+  orig: 24, 49
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_02
+  rotate: false
+  xy: 2031, 488
+  size: 14, 22
+  orig: 14, 22
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_03
+  rotate: false
+  xy: 2025, 410
+  size: 17, 31
+  orig: 17, 31
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_04
+  rotate: false
+  xy: 2011, 246
+  size: 14, 34
+  orig: 14, 34
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_05
+  rotate: false
+  xy: 1745, 319
+  size: 14, 33
+  orig: 14, 33
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_06
+  rotate: false
+  xy: 2027, 340
+  size: 13, 33
+  orig: 91, 151
+  offset: 0, 0
+  index: -1
+horn_f_r_piece_total
+  rotate: true
+  xy: 1588, 35
+  size: 33, 123
+  orig: 33, 123
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 653, 62
+  size: 401, 27
+  orig: 401, 27
+  offset: 0, 0
+  index: -1

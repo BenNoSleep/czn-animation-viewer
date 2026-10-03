@@ -1,0 +1,20 @@
+
+3000451.webp
+size: 148,228
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+childeren1
+  rotate: false
+  xy: 2, 47
+  size: 140, 179
+  orig: 140, 179
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 144, 43
+  orig: 144, 43
+  offset: 0, 0
+  index: -1

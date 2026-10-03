@@ -1,0 +1,34 @@
+
+3000106.webp
+size: 1092,536
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_shelter_sand
+  rotate: false
+  xy: 2, 2
+  size: 918, 530
+  orig: 918, 530
+  offset: 0, 0
+  index: -1
+p_earth_shelter_strongbox
+  rotate: true
+  xy: 922, 384
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1
+p_earth_shelter_weapon
+  rotate: false
+  xy: 922, 213
+  size: 106, 169
+  orig: 106, 169
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: 270
+  xy: 1056, 59
+  size: 474, 33
+  orig: 484, 61
+  offset: 0, 13
+  index: -1

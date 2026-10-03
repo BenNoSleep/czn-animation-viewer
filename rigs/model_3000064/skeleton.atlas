@@ -1,0 +1,20 @@
+
+3000064.webp
+size: 140,352
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+prayer_back_stand_1
+  rotate: false
+  xy: 2, 14
+  size: 135, 335
+  orig: 135, 335
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 34, 10
+  orig: 34, 10
+  offset: 0, 0
+  index: -1

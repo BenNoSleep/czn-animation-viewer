@@ -1,0 +1,202 @@
+
+3000048.webp
+size: 584,1208
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+broken_1
+  rotate: false
+  xy: 2, 204
+  size: 485, 58
+  orig: 485, 100
+  offset: 0, 42
+  index: -1
+broken_2
+  rotate: false
+  xy: 203, 147
+  size: 238, 55
+  orig: 238, 55
+  offset: 0, 0
+  index: -1
+broken_3
+  rotate: true
+  xy: 363, 40
+  size: 47, 163
+  orig: 47, 194
+  offset: 0, 31
+  index: -1
+broken_body
+  rotate: false
+  xy: 2, 263
+  size: 578, 295
+  orig: 578, 295
+  offset: 0, 0
+  index: -1
+destroyed
+  rotate: false
+  xy: 2, 876
+  size: 578, 327
+  orig: 578, 327
+  offset: 0, 0
+  index: -1
+fall1_1
+  rotate: false
+  xy: 422, 21
+  size: 53, 17
+  orig: 53, 17
+  offset: 0, 0
+  index: -1
+fall1_2
+  rotate: false
+  xy: 235, 26
+  size: 60, 55
+  orig: 60, 55
+  offset: 0, 0
+  index: -1
+fall1_3
+  rotate: true
+  xy: 2, 39
+  size: 59, 158
+  orig: 59, 158
+  offset: 0, 0
+  index: -1
+fall1_4
+  rotate: true
+  xy: 2, 100
+  size: 108, 199
+  orig: 108, 199
+  offset: 0, 0
+  index: -1
+fall1_5
+  rotate: false
+  xy: 203, 83
+  size: 158, 62
+  orig: 158, 62
+  offset: 0, 0
+  index: -1
+fall1_6
+  rotate: true
+  xy: 489, 89
+  size: 172, 60
+  orig: 172, 60
+  offset: 0, 0
+  index: -1
+fall1_7
+  rotate: false
+  xy: 162, 23
+  size: 71, 58
+  orig: 71, 58
+  offset: 0, 0
+  index: -1
+fall2_1
+  rotate: true
+  xy: 525, 3
+  size: 20, 21
+  orig: 20, 21
+  offset: 0, 0
+  index: -1
+fall2_2
+  rotate: true
+  xy: 36, 8
+  size: 14, 40
+  orig: 14, 40
+  offset: 0, 0
+  index: -1
+fall2_3
+  rotate: true
+  xy: 297, 20
+  size: 18, 123
+  orig: 18, 123
+  offset: 0, 0
+  index: -1
+fall2_4
+  rotate: false
+  xy: 551, 102
+  size: 21, 159
+  orig: 21, 159
+  offset: 0, 0
+  index: -1
+fall2_5
+  rotate: false
+  xy: 552, 61
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+fall3_1
+  rotate: false
+  xy: 78, 7
+  size: 25, 15
+  orig: 25, 15
+  offset: 0, 0
+  index: -1
+fall3_2
+  rotate: false
+  xy: 527, 25
+  size: 23, 62
+  orig: 23, 62
+  offset: 0, 0
+  index: -1
+fall3_3
+  rotate: true
+  xy: 2, 3
+  size: 19, 32
+  orig: 19, 32
+  offset: 0, 0
+  index: -1
+fall3_4
+  rotate: true
+  xy: 235, 7
+  size: 17, 37
+  orig: 17, 37
+  offset: 0, 0
+  index: -1
+fall3_5
+  rotate: true
+  xy: 477, 20
+  size: 18, 46
+  orig: 18, 46
+  offset: 0, 0
+  index: -1
+fall3_6
+  rotate: true
+  xy: 105, 10
+  size: 12, 23
+  orig: 12, 23
+  offset: 0, 0
+  index: -1
+fall4_1
+  rotate: true
+  xy: 89, 24
+  size: 13, 66
+  orig: 13, 66
+  offset: 0, 0
+  index: -1
+fall4_2
+  rotate: true
+  xy: 2, 24
+  size: 13, 85
+  orig: 13, 85
+  offset: 0, 0
+  index: -1
+fall4_3
+  rotate: false
+  xy: 552, 8
+  size: 16, 51
+  orig: 16, 51
+  offset: 0, 0
+  index: -1
+fall4_4
+  rotate: false
+  xy: 130, 6
+  size: 9, 16
+  orig: 9, 16
+  offset: 0, 0
+  index: -1
+non_broken_body
+  rotate: false
+  xy: 2, 560
+  size: 578, 314
+  orig: 578, 314
+  offset: 0, 0
+  index: -1

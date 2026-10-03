@@ -1,0 +1,20 @@
+
+3000008.webp
+size: 1768,144
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+engine_part
+  rotate: false
+  xy: 2, 2
+  size: 1174, 138
+  orig: 1174, 138
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 1178, 71
+  size: 587, 69
+  orig: 587, 69
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+3000223.webp
+size: 736,356
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: false
+  xy: 2, 49
+  size: 661, 305
+  orig: 661, 305
+  offset: 0, 0
+  index: -1
+fo_b_13
+  rotate: false
+  xy: 567, 6
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+fo_b_15
+  rotate: true
+  xy: 665, 248
+  size: 106, 67
+  orig: 106, 67
+  offset: 0, 0
+  index: -1
+fo_b_15_up
+  rotate: true
+  xy: 665, 140
+  size: 106, 67
+  orig: 106, 67
+  offset: 0, 0
+  index: -1
+fo_b_16
+  rotate: false
+  xy: 2, 4
+  size: 500, 7
+  orig: 500, 7
+  offset: 0, 0
+  index: -1
+fo_b_17
+  rotate: false
+  xy: 2, 13
+  size: 500, 16
+  orig: 500, 16
+  offset: 0, 0
+  index: -1
+fo_b_17_light
+  rotate: false
+  xy: 504, 4
+  size: 63, 16
+  orig: 500, 16
+  offset: 207, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 30
+  size: 648, 18
+  orig: 648, 28
+  offset: 0, 5
+  index: -1

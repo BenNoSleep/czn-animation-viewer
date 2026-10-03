@@ -1,0 +1,69 @@
+
+3000330.webp
+size: 188,592
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ax
+  rotate: false
+  xy: 2, 421
+  size: 14, 56
+  orig: 30, 67
+  offset: 8, 2
+  index: -1
+flag1_shadow
+  rotate: 180
+  xy: 137, 486
+  size: 48, 102
+  orig: 63, 118
+  offset: 7, 7
+  index: -1
+flag_1
+  rotate: true
+  xy: 2, 51
+  size: 73, 140
+  orig: 88, 154
+  offset: 7, 6
+  index: -1
+flag_1_color_under
+  rotate: true
+  xy: 2, 196
+  size: 73, 140
+  orig: 88, 154
+  offset: 7, 6
+  index: -1
+flag_1_color_upper
+  rotate: 270
+  xy: 16, 123
+  size: 73, 140
+  orig: 88, 154
+  offset: 7, 6
+  index: -1
+flag_2
+  rotate: true
+  xy: 2, 3
+  size: 47, 165
+  orig: 63, 182
+  offset: 8, 9
+  index: -1
+pole
+  rotate: false
+  xy: 2, 269
+  size: 169, 318
+  orig: 169, 318
+  offset: 0, 0
+  index: -1
+pole_shadow
+  rotate: false
+  xy: 2, 477
+  size: 11, 111
+  orig: 27, 129
+  offset: 8, 9
+  index: -1
+shadow
+  rotate: true
+  xy: 157, 25
+  size: 175, 23
+  orig: 175, 40
+  offset: 0, 9
+  index: -1

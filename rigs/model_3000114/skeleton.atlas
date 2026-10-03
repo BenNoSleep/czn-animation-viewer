@@ -1,0 +1,41 @@
+
+3000114.webp
+size: 1416,572
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 922, 567
+  orig: 922, 567
+  offset: 0, 0
+  index: -1
+deco_01
+  rotate: true
+  xy: 926, 2
+  size: 534, 390
+  orig: 534, 390
+  offset: 0, 0
+  index: -1
+obj_01
+  rotate: true
+  xy: 1364, 76
+  size: 56, 47
+  orig: 56, 47
+  offset: 0, 0
+  index: -1
+obj_02
+  rotate: true
+  xy: 1318, 8
+  size: 66, 77
+  orig: 66, 77
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 1318, 76
+  size: 460, 44
+  orig: 460, 44
+  offset: 0, 0
+  index: -1

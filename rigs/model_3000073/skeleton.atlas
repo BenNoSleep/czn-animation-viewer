@@ -1,0 +1,146 @@
+
+3000073.webp
+size: 660,1960
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/fire__00
+  rotate: false
+  xy: 2, 1647
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__02
+  rotate: false
+  xy: 2, 1337
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__04
+  rotate: false
+  xy: 2, 1027
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__06
+  rotate: false
+  xy: 2, 717
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__08
+  rotate: false
+  xy: 2, 407
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__10
+  rotate: false
+  xy: 2, 97
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__12
+  rotate: false
+  xy: 221, 1647
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__14
+  rotate: false
+  xy: 221, 1337
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__16
+  rotate: false
+  xy: 221, 1027
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__18
+  rotate: false
+  xy: 221, 717
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__20
+  rotate: false
+  xy: 221, 407
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__22
+  rotate: false
+  xy: 221, 97
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__24
+  rotate: false
+  xy: 440, 1647
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__26
+  rotate: false
+  xy: 440, 1337
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__28
+  rotate: false
+  xy: 440, 1027
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__30
+  rotate: false
+  xy: 440, 717
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__32
+  rotate: false
+  xy: 440, 407
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/fire__34
+  rotate: false
+  xy: 440, 97
+  size: 217, 308
+  orig: 217, 308
+  offset: 0, 0
+  index: -1
+images/p_diallos_corridor_fire_1
+  rotate: true
+  xy: 110, 37
+  size: 58, 95
+  orig: 58, 95
+  offset: 0, 0
+  index: -1
+images/p_diallos_corridor_fire_2
+  rotate: false
+  xy: 2, 2
+  size: 106, 93
+  orig: 106, 93
+  offset: 0, 0
+  index: -1

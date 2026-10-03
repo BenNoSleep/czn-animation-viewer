@@ -1,0 +1,20 @@
+
+3000191.webp
+size: 1240,632
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3000191_p_delta_factory_wreck
+  rotate: false
+  xy: 2, 29
+  size: 1233, 601
+  orig: 1233, 601
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 3
+  size: 628, 26
+  orig: 628, 53
+  offset: 0, 11
+  index: -1

@@ -1,0 +1,125 @@
+
+3000282.webp
+size: 284,320
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+antenna_b
+  rotate: 270
+  xy: 149, 14
+  size: 82, 114
+  orig: 82, 114
+  offset: 0, 0
+  index: -1
+antenna_f
+  rotate: true
+  xy: 160, 34
+  size: 118, 118
+  orig: 118, 118
+  offset: 0, 0
+  index: -1
+body wing
+  rotate: false
+  xy: 2, 230
+  size: 159, 85
+  orig: 159, 85
+  offset: 0, 0
+  index: -1
+l_close_eye
+  rotate: false
+  xy: 2, 215
+  size: 9, 13
+  orig: 9, 13
+  offset: 0, 0
+  index: -1
+l_eye
+  rotate: false
+  xy: 89, 217
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+l_wing
+  rotate: 180
+  xy: 103, 136
+  size: 108, 138
+  orig: 108, 138
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 49, 8
+  size: 79, 23
+  orig: 79, 23
+  offset: 0, 0
+  index: -1
+r_close_eye
+  rotate: false
+  xy: 2, 230
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+r_eye
+  rotate: false
+  xy: 72, 213
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+r_wing
+  rotate: 270
+  xy: 184, 73
+  size: 168, 77
+  orig: 168, 77
+  offset: 0, 0
+  index: -1
+r_wing_1
+  rotate: true
+  xy: 2, 120
+  size: 70, 64
+  orig: 70, 64
+  offset: 0, 0
+  index: -1
+saddle_b
+  rotate: false
+  xy: 2, 184
+  size: 69, 45
+  orig: 69, 45
+  offset: 0, 0
+  index: -1
+saddle_f
+  rotate: 180
+  xy: 2, 4
+  size: 79, 52
+  orig: 79, 52
+  offset: 0, 0
+  index: -1
+saddle_l_belt
+  rotate: false
+  xy: 170, 277
+  size: 47, 38
+  orig: 47, 38
+  offset: 0, 0
+  index: -1
+saddle_r_belt
+  rotate: false
+  xy: 204, 241
+  size: 74, 74
+  orig: 74, 74
+  offset: 0, 0
+  index: -1
+saddle_sha
+  rotate: false
+  xy: 55, 41
+  size: 127, 79
+  orig: 143, 79
+  offset: 16, 0
+  index: -1
+tail
+  rotate: 270
+  xy: 33, 61
+  size: 247, 149
+  orig: 247, 149
+  offset: 0, 0
+  index: -1

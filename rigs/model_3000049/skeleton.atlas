@@ -1,0 +1,20 @@
+
+3000049.webp
+size: 248,356
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mysterious_tablet
+  rotate: false
+  xy: 2, 2
+  size: 242, 352
+  orig: 242, 352
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 181
+  size: 126, 14
+  orig: 126, 14
+  offset: 0, 0
+  index: -1

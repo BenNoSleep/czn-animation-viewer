@@ -1,0 +1,251 @@
+
+2900004.webp
+size: 548,1908
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+acc_01
+  rotate: false
+  xy: 191, 167
+  size: 201, 233
+  orig: 201, 233
+  offset: 0, 0
+  index: -1
+acc_01_light_01
+  rotate: false
+  xy: 394, 95
+  size: 148, 163
+  orig: 151, 163
+  offset: 0, 0
+  index: -1
+acc_02
+  rotate: false
+  xy: 372, 1525
+  size: 164, 98
+  orig: 164, 98
+  offset: 0, 0
+  index: -1
+acc_03
+  rotate: false
+  xy: 403, 260
+  size: 129, 137
+  orig: 129, 137
+  offset: 0, 0
+  index: -1
+acc_06_1
+  rotate: false
+  xy: 2, 970
+  size: 350, 474
+  orig: 350, 480
+  offset: 0, 0
+  index: -1
+acc_06_2
+  rotate: 270
+  xy: 28, 687
+  size: 309, 365
+  orig: 310, 365
+  offset: 0, 0
+  index: -1
+acc_06_3
+  rotate: false
+  xy: 2, 8
+  size: 46, 127
+  orig: 48, 128
+  offset: 2, 0
+  index: -1
+acc_06_light_01
+  rotate: false
+  xy: 41, 1859
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+acc_06_light_02
+  rotate: false
+  xy: 2, 1862
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+acc_06_light_03
+  rotate: false
+  xy: 68, 1860
+  size: 18, 29
+  orig: 18, 29
+  offset: 0, 0
+  index: -1
+acc_06_light_04
+  rotate: false
+  xy: 155, 1883
+  size: 17, 24
+  orig: 17, 24
+  offset: 0, 0
+  index: -1
+acc_07_1
+  rotate: false
+  xy: 431, 398
+  size: 102, 115
+  orig: 102, 115
+  offset: 0, 0
+  index: -1
+acc_07_2
+  rotate: false
+  xy: 472, 515
+  size: 46, 142
+  orig: 46, 142
+  offset: 0, 0
+  index: -1
+acc_8_1
+  rotate: false
+  xy: 396, 1624
+  size: 145, 99
+  orig: 145, 99
+  offset: 0, 0
+  index: -1
+acc_8_2
+  rotate: false
+  xy: 129, 6
+  size: 41, 78
+  orig: 41, 78
+  offset: 0, 0
+  index: -1
+acc_8_3
+  rotate: true
+  xy: 345, 379
+  size: 537, 172
+  orig: 537, 172
+  offset: 0, 0
+  index: -1
+acc_8_3_light
+  rotate: true
+  xy: 388, 695
+  size: 370, 113
+  orig: 370, 113
+  offset: 0, 0
+  index: -1
+acc_8_4
+  rotate: 270
+  xy: 320, 720
+  size: 528, 223
+  orig: 528, 223
+  offset: 0, 0
+  index: -1
+chest_01_1
+  rotate: false
+  xy: 2, 1375
+  size: 392, 531
+  orig: 392, 531
+  offset: 0, 0
+  index: -1
+chest_01_2
+  rotate: 180
+  xy: 136, 531
+  size: 262, 198
+  orig: 262, 198
+  offset: 0, 0
+  index: -1
+chest_01_3
+  rotate: false
+  xy: 2, 353
+  size: 262, 198
+  orig: 262, 198
+  offset: 0, 0
+  index: -1
+chest_light_01
+  rotate: false
+  xy: 49, 5
+  size: 27, 39
+  orig: 27, 39
+  offset: 0, 0
+  index: -1
+chest_light_02
+  rotate: false
+  xy: 78, 11
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+chest_light_03
+  rotate: false
+  xy: 31, 1850
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+chest_light_04
+  rotate: false
+  xy: 10, 1843
+  size: 21, 14
+  orig: 21, 14
+  offset: 0, 0
+  index: -1
+face_01
+  rotate: false
+  xy: 249, 1332
+  size: 165, 213
+  orig: 165, 213
+  offset: 0, 0
+  index: -1
+face_light_01
+  rotate: false
+  xy: 68, 1878
+  size: 38, 30
+  orig: 38, 30
+  offset: 0, 0
+  index: -1
+helmet_01_1
+  rotate: false
+  xy: 2, 75
+  size: 185, 276
+  orig: 185, 276
+  offset: 0, 0
+  index: -1
+helmet_01_2
+  rotate: 270
+  xy: 172, 3
+  size: 164, 223
+  orig: 164, 223
+  offset: 0, 0
+  index: -1
+helmet_light_01
+  rotate: false
+  xy: 30, 1876
+  size: 37, 30
+  orig: 37, 30
+  offset: 0, 0
+  index: -1
+helmet_light_02
+  rotate: false
+  xy: 105, 1874
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+helmet_light_03
+  rotate: false
+  xy: 87, 1865
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+helmet_light_04
+  rotate: false
+  xy: 129, 1892
+  size: 27, 15
+  orig: 27, 15
+  offset: 0, 0
+  index: -1
+helmet_light_05
+  rotate: false
+  xy: 2, 1824
+  size: 8, 49
+  orig: 8, 49
+  offset: 0, 0
+  index: -1
+light_07
+  rotate: false
+  xy: 347, 1176
+  size: 154, 154
+  orig: 154, 154
+  offset: 0, 0
+  index: -1

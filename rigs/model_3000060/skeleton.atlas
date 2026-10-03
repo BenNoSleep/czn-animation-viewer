@@ -1,0 +1,13 @@
+
+3000060.webp
+size: 280,120
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+plasma_boom
+  rotate: false
+  xy: 2, 2
+  size: 276, 116
+  orig: 276, 116
+  offset: 0, 0
+  index: -1

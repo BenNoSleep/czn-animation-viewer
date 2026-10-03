@@ -1,0 +1,216 @@
+
+3000505.webp
+size: 2032,556
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body_back
+  rotate: true
+  xy: 1164, 136
+  size: 132, 224
+  orig: 211, 320
+  offset: 48, 51
+  index: -1
+body_back_d
+  rotate: 270
+  xy: 594, 50
+  size: 132, 224
+  orig: 211, 320
+  offset: 48, 51
+  index: -1
+body_light
+  rotate: false
+  xy: 308, 38
+  size: 101, 77
+  orig: 101, 77
+  offset: 0, 0
+  index: -1
+body_light_ani1
+  rotate: false
+  xy: 354, 3
+  size: 41, 33
+  orig: 41, 33
+  offset: 0, 0
+  index: -1
+body_light_ani2
+  rotate: false
+  xy: 308, 3
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+body_light_ani3
+  rotate: false
+  xy: 411, 38
+  size: 101, 77
+  orig: 101, 77
+  offset: 0, 0
+  index: -1
+body_stand
+  rotate: false
+  xy: 213, 23
+  size: 93, 92
+  orig: 93, 92
+  offset: 0, 0
+  index: -1
+body_stand_d
+  rotate: false
+  xy: 213, 23
+  size: 93, 92
+  orig: 93, 92
+  offset: 0, 0
+  index: -1
+bot
+  rotate: false
+  xy: 2, 370
+  size: 592, 184
+  orig: 592, 184
+  offset: 0, 0
+  index: -1
+bot_d
+  rotate: false
+  xy: 2, 184
+  size: 592, 184
+  orig: 592, 184
+  offset: 0, 0
+  index: -1
+capsule_body
+  rotate: true
+  xy: 596, 182
+  size: 372, 282
+  orig: 372, 282
+  offset: 0, 0
+  index: -1
+capsule_body_d
+  rotate: true
+  xy: 880, 182
+  size: 372, 282
+  orig: 372, 282
+  offset: 0, 0
+  index: -1
+capsule_top
+  rotate: true
+  xy: 1520, 269
+  size: 232, 171
+  orig: 232, 171
+  offset: 0, 0
+  index: -1
+capsule_top_back
+  rotate: 270
+  xy: 1864, 239
+  size: 316, 138
+  orig: 333, 156
+  offset: 9, 9
+  index: -1
+capsule_top_back_d
+  rotate: false
+  xy: 1562, 131
+  size: 316, 138
+  orig: 333, 156
+  offset: 9, 9
+  index: -1
+capsule_top_d
+  rotate: true
+  xy: 1693, 269
+  size: 232, 171
+  orig: 232, 171
+  offset: 0, 0
+  index: -1
+door
+  rotate: false
+  xy: 1389, 69
+  size: 112, 200
+  orig: 130, 218
+  offset: 9, 9
+  index: -1
+door_d
+  rotate: true
+  xy: 820, 70
+  size: 112, 200
+  orig: 130, 218
+  offset: 9, 9
+  index: -1
+door_frame
+  rotate: false
+  xy: 1164, 269
+  size: 176, 285
+  orig: 176, 285
+  offset: 0, 0
+  index: -1
+door_frame_d
+  rotate: false
+  xy: 1342, 269
+  size: 176, 285
+  orig: 176, 285
+  offset: 0, 0
+  index: -1
+door_stair
+  rotate: true
+  xy: 1878, 56
+  size: 198, 151
+  orig: 216, 387
+  offset: 8, 9
+  index: -1
+door_stair2
+  rotate: 180
+  xy: 1501, 27
+  size: 157, 133
+  orig: 174, 151
+  offset: 9, 9
+  index: -1
+door_stair2_d
+  rotate: 180
+  xy: 1171, 3
+  size: 157, 133
+  orig: 174, 151
+  offset: 9, 9
+  index: -1
+door_stair_d
+  rotate: 180
+  xy: 1021, 30
+  size: 198, 151
+  orig: 216, 387
+  offset: 8, 9
+  index: -1
+door_top
+  rotate: false
+  xy: 2, 16
+  size: 125, 15
+  orig: 139, 33
+  offset: 7, 9
+  index: -1
+door_top_d
+  rotate: false
+  xy: 2, 16
+  size: 125, 15
+  orig: 139, 33
+  offset: 7, 9
+  index: -1
+door_top3_d
+  rotate: false
+  xy: 115, 9
+  size: 124, 15
+  orig: 139, 33
+  offset: 8, 9
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 117
+  size: 591, 65
+  orig: 591, 65
+  offset: 0, 0
+  index: -1
+top_stand
+  rotate: false
+  xy: 2, 74
+  size: 209, 41
+  orig: 209, 41
+  offset: 0, 0
+  index: -1
+top_stand_d
+  rotate: false
+  xy: 2, 31
+  size: 209, 41
+  orig: 209, 41
+  offset: 0, 0
+  index: -1

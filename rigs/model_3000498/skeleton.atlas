@@ -1,0 +1,27 @@
+
+3000498.webp
+size: 192,172
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+alice_doll
+  rotate: false
+  xy: 2, 86
+  size: 135, 82
+  orig: 135, 82
+  offset: 0, 0
+  index: -1
+bloody_alice_doll
+  rotate: false
+  xy: 2, 2
+  size: 135, 82
+  orig: 135, 82
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 139, 23
+  size: 145, 50
+  orig: 145, 50
+  offset: 0, 0
+  index: -1

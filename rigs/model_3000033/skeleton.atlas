@@ -1,0 +1,13 @@
+
+3000033.webp
+size: 180,188
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gramophone
+  rotate: false
+  xy: 2, 2
+  size: 176, 182
+  orig: 176, 182
+  offset: 0, 0
+  index: -1

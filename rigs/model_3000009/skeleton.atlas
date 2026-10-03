@@ -1,0 +1,20 @@
+
+3000009.webp
+size: 992,404
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+broken_solar_gen
+  rotate: false
+  xy: 2, 2
+  size: 973, 400
+  orig: 973, 400
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 977, 368
+  size: 34, 10
+  orig: 34, 10
+  offset: 0, 0
+  index: -1

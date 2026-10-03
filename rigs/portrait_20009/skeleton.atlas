@@ -1,0 +1,272 @@
+
+20009.webp
+size: 1584,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_cloak
+  rotate: false
+  xy: 2, 1107
+  size: 1156, 940
+  orig: 1156, 940
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 79, 927
+  size: 294, 579
+  orig: 353, 580
+  offset: 49, 0
+  index: -1
+breast
+  rotate: false
+  xy: 17, 1958
+  size: 138, 89
+  orig: 138, 89
+  offset: 0, 0
+  index: -1
+cloak_side
+  rotate: true
+  xy: 1331, 481
+  size: 396, 92
+  orig: 396, 92
+  offset: 0, 0
+  index: -1
+f_cloak
+  rotate: false
+  xy: 1267, 342
+  size: 295, 279
+  orig: 295, 280
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 848, 1803
+  size: 142, 179
+  orig: 146, 184
+  offset: 4, 5
+  index: -1
+javelin1
+  rotate: true
+  xy: 2, 60
+  size: 583, 634
+  orig: 591, 644
+  offset: 5, 5
+  index: -1
+javelin2
+  rotate: true
+  xy: 359, 3
+  size: 1139, 1224
+  orig: 1147, 1230
+  offset: 3, 2
+  index: -1
+l_arm
+  rotate: false
+  xy: 267, 3
+  size: 194, 347
+  orig: 253, 407
+  offset: 0, 60
+  index: -1
+l_foot
+  rotate: false
+  xy: 649, 1168
+  size: 157, 187
+  orig: 174, 187
+  offset: 0, 0
+  index: -1
+l_hand
+  rotate: false
+  xy: 599, 1932
+  size: 61, 115
+  orig: 90, 126
+  offset: 0, 0
+  index: -1
+l_horn
+  rotate: false
+  xy: 2, 1001
+  size: 81, 293
+  orig: 81, 295
+  offset: 0, 2
+  index: -1
+l_leg1
+  rotate: false
+  xy: 1172, 3
+  size: 150, 798
+  orig: 164, 800
+  offset: 0, 1
+  index: -1
+l_leg2
+  rotate: false
+  xy: 769, 3
+  size: 203, 443
+  orig: 217, 453
+  offset: 14, 10
+  index: -1
+l_leg2_b
+  rotate: false
+  xy: 267, 1872
+  size: 45, 63
+  orig: 45, 63
+  offset: 0, 0
+  index: -1
+l_neck_guard
+  rotate: false
+  xy: 804, 1944
+  size: 48, 89
+  orig: 48, 90
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 120, 1920
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+neck_guard_back
+  rotate: false
+  xy: 202, 1935
+  size: 139, 109
+  orig: 139, 109
+  offset: 0, 0
+  index: -1
+r_arm
+  rotate: false
+  xy: 1257, 1351
+  size: 186, 363
+  orig: 186, 364
+  offset: 0, 0
+  index: -1
+r_body_leg
+  rotate: false
+  xy: 1151, 953
+  size: 155, 334
+  orig: 157, 334
+  offset: 0, 0
+  index: -1
+r_finger1
+  rotate: false
+  xy: 98, 1915
+  size: 23, 45
+  orig: 23, 45
+  offset: 0, 0
+  index: -1
+r_finger2
+  rotate: false
+  xy: 2, 2010
+  size: 24, 37
+  orig: 24, 37
+  offset: 0, 0
+  index: -1
+r_foot
+  rotate: false
+  xy: 523, 1878
+  size: 78, 168
+  orig: 78, 168
+  offset: 0, 0
+  index: -1
+r_hand
+  rotate: false
+  xy: 736, 1951
+  size: 70, 97
+  orig: 70, 98
+  offset: 0, 1
+  index: -1
+r_horn
+  rotate: false
+  xy: 2, 1695
+  size: 59, 288
+  orig: 59, 290
+  offset: 0, 2
+  index: -1
+r_knee
+  rotate: false
+  xy: 1254, 1321
+  size: 222, 646
+  orig: 222, 646
+  offset: 0, 0
+  index: -1
+r_knee_b
+  rotate: false
+  xy: 692, 1921
+  size: 47, 55
+  orig: 47, 56
+  offset: 0, 0
+  index: -1
+r_leg1
+  rotate: false
+  xy: 1239, 1174
+  size: 181, 383
+  orig: 243, 386
+  offset: 0, 3
+  index: -1
+r_leg2
+  rotate: false
+  xy: 935, 142
+  size: 224, 414
+  orig: 224, 422
+  offset: 0, 0
+  index: -1
+r_neck_guard
+  rotate: false
+  xy: 434, 1939
+  size: 58, 95
+  orig: 58, 96
+  offset: 0, 1
+  index: -1
+rifle1_1
+  rotate: false
+  xy: 456, 1823
+  size: 91, 96
+  orig: 91, 96
+  offset: 0, 0
+  index: -1
+rifle1_2
+  rotate: false
+  xy: 342, 1933
+  size: 92, 113
+  orig: 92, 113
+  offset: 0, 0
+  index: -1
+rifle_body1
+  rotate: 180
+  xy: 2, 436
+  size: 1245, 821
+  orig: 1287, 821
+  offset: 42, 0
+  index: -1
+rifle_body2
+  rotate: 270
+  xy: 951, 1510
+  size: 536, 316
+  orig: 536, 316
+  offset: 0, 0
+  index: -1
+rifle_light
+  rotate: false
+  xy: 630, 1776
+  size: 216, 165
+  orig: 216, 165
+  offset: 0, 0
+  index: -1
+weapon_belt
+  rotate: true
+  xy: 321, 3
+  size: 418, 214
+  orig: 418, 214
+  offset: 0, 0
+  index: -1
+weapon_belt1_1
+  rotate: false
+  xy: 2, 109
+  size: 346, 415
+  orig: 346, 415
+  offset: 0, 0
+  index: -1
+weapon_belt1_2
+  rotate: false
+  xy: 561, 1838
+  size: 174, 186
+  orig: 174, 186
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>CZN Animation Viewer</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background:#111; color:#D6D6D6; font:13px/1.4 system-ui, sans-serif; }
+  header { position:sticky; top:0; background:#111; border-bottom:1px solid rgba(255,255,255,.08);
+           padding:14px 18px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; z-index:5; }
+  h1 { font-size:15px; margin:0 8px 0 0; font-weight:600; }
+  input#q { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:6px;
+            color:#D6D6D6; padding:7px 10px; width:220px; font:13px system-ui; }
+  input#q:focus { outline:none; border-color:#3D6AFF; }
+  .chip { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:999px;
+          padding:5px 12px; cursor:pointer; color:#9A9A9A; user-select:none; }
+  .chip.on { color:#fff; border-color:#3D6AFF; background:#1a2340; }
+  #count { margin-left:auto; color:#8C8C8C; }
+  main { display:grid; grid-template-columns:repeat(auto-fill,minmax(128px,1fr)); gap:10px; padding:16px; }
+  a.card { display:block; background:#181818; border:1px solid rgba(255,255,255,.07);
+           border-radius:8px; overflow:hidden; text-decoration:none; color:inherit; }
+  a.card:hover { border-color:#3D6AFF; background:#1d1d1d; }
+  .thumb { height:128px; display:flex; align-items:center; justify-content:center; background:#0d0d0d; }
+  .thumb img { max-width:100%; max-height:100%; display:block; }
+  .letter { font-size:30px; color:#4A4A4A; font-weight:600; }
+  .meta { padding:7px 9px; }
+  .nm { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:500; }
+  .sub { color:#8C8C8C; font-size:11px; margin-top:2px; display:flex; justify-content:space-between; }
+</style>
+</head>
+<body>
+<header>
+  <h1>CZN Animation Viewer</h1>
+  <input id="q" placeholder="Search id / name...">
+  <span class="chip on" data-k="all">All</span>
+  <span class="chip" data-k="portrait">Portrait</span>
+  <span class="chip" data-k="model">Model</span>
+  <span class="chip" data-k="battle">Battle</span>
+  <span id="count"></span>
+</header>
+<main id="grid"></main>
+<script>
+"use strict";
+var DATA = [], kind = "all";
+var grid = document.getElementById("grid"), countEl = document.getElementById("count"), q = document.getElementById("q");
+function render() {
+  var s = q.value.trim().toLowerCase();
+  var rows = DATA.filter(function (r) {
+    return (kind === "all" || r.kind === kind) &&
+      (!s || String(r.id).indexOf(s) !== -1 || (r.name || "").toLowerCase().indexOf(s) !== -1);
+  });
+  countEl.textContent = rows.length + " / " + DATA.length;
+  grid.innerHTML = rows.map(function (r) {
+    var face = r.thumb ? '<img loading="lazy" src="' + r.thumb + '" alt="">'
+                       : '<span class="letter">' + (r.id.replace(/\D/g, "").slice(-2) || "?") + "</span>";
+    return '<a class="card" href="viewer.html?m=rigs/' + r.slug + '">' +
+      '<div class="thumb">' + face + "</div>" +
+      '<div class="meta"><div class="nm">' + (r.name || "ID " + r.id) + "</div>" +
+      '<div class="sub"><span>#' + r.id + "</span><span>" + r.kind + "</span></div></div></a>";
+  }).join("");
+}
+q.addEventListener("input", render);
+document.querySelectorAll(".chip").forEach(function (c) {
+  c.addEventListener("click", function () {
+    document.querySelectorAll(".chip").forEach(function (x) { x.classList.remove("on"); });
+    c.classList.add("on"); kind = c.dataset.k; render();
+  });
+});
+fetch("index.json").then(function (r) { return r.json(); }).then(function (j) {
+  DATA = j.rigs; render();
+});
+</script>
+</body>
+</html>

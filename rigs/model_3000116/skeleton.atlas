@@ -1,0 +1,181 @@
+
+3000116.webp
+size: 684,328
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+23_2
+  rotate: true
+  xy: 305, 18
+  size: 39, 72
+  orig: 126, 143
+  offset: 17, 40
+  index: -1
+40
+  rotate: true
+  xy: 251, 226
+  size: 97, 79
+  orig: 97, 79
+  offset: 0, 0
+  index: -1
+mucus_1
+  rotate: false
+  xy: 311, 125
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_10
+  rotate: true
+  xy: 332, 226
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_11
+  rotate: false
+  xy: 378, 125
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_12
+  rotate: true
+  xy: 311, 58
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_13
+  rotate: true
+  xy: 2, 22
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_14
+  rotate: true
+  xy: 103, 22
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_15
+  rotate: true
+  xy: 204, 22
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_2
+  rotate: false
+  xy: 412, 24
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_3
+  rotate: false
+  xy: 445, 125
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_4
+  rotate: true
+  xy: 433, 226
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_5
+  rotate: false
+  xy: 479, 24
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_6
+  rotate: false
+  xy: 534, 125
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_7
+  rotate: false
+  xy: 546, 24
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_8
+  rotate: true
+  xy: 534, 226
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+mucus_9
+  rotate: false
+  xy: 613, 125
+  size: 65, 99
+  orig: 65, 99
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine
+  rotate: false
+  xy: 2, 207
+  size: 247, 116
+  orig: 247, 116
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_01
+  rotate: true
+  xy: 613, 44
+  size: 79, 69
+  orig: 79, 69
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_02
+  rotate: false
+  xy: 377, 3
+  size: 33, 37
+  orig: 33, 37
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_03
+  rotate: true
+  xy: 635, 227
+  size: 83, 42
+  orig: 83, 42
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_04
+  rotate: false
+  xy: 2, 89
+  size: 247, 116
+  orig: 247, 116
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_06
+  rotate: 180
+  xy: 297, 5
+  size: 42, 21
+  orig: 42, 21
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_07
+  rotate: true
+  xy: 251, 100
+  size: 124, 58
+  orig: 124, 58
+  offset: 0, 0
+  index: -1
+p_Invader_researcher_machine_08
+  rotate: false
+  xy: 613, 7
+  size: 40, 35
+  orig: 40, 35
+  offset: 0, 0
+  index: -1

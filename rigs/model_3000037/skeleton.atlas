@@ -1,0 +1,20 @@
+
+3000037.webp
+size: 140,360
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+holy_warcross_evangelists_1
+  rotate: false
+  xy: 2, 14
+  size: 133, 342
+  orig: 133, 342
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 34, 10
+  orig: 34, 10
+  offset: 0, 0
+  index: -1

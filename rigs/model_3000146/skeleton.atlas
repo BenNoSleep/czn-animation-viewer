@@ -1,0 +1,27 @@
+
+3000146.webp
+size: 804,176
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_sand_heap
+  rotate: false
+  xy: 2, 26
+  size: 450, 145
+  orig: 450, 145
+  offset: 0, 0
+  index: -1
+p_spaitz_sand_heap_action1_idle
+  rotate: 180
+  xy: 348, 26
+  size: 450, 145
+  orig: 450, 145
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 235, 22
+  orig: 235, 22
+  offset: 0, 0
+  index: -1

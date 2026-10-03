@@ -1,0 +1,146 @@
+
+3000081.webp
+size: 288,652
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+action0
+  rotate: true
+  xy: 2, 29
+  size: 76, 174
+  orig: 76, 174
+  offset: 0, 0
+  index: -1
+action1
+  rotate: false
+  xy: 186, 273
+  size: 80, 178
+  orig: 80, 178
+  offset: 0, 0
+  index: -1
+action2_rune_1
+  rotate: false
+  xy: 198, 185
+  size: 49, 47
+  orig: 49, 47
+  offset: 0, 0
+  index: -1
+action2_rune_1_add
+  rotate: false
+  xy: 2, 447
+  size: 61, 57
+  orig: 61, 57
+  offset: 0, 0
+  index: -1
+action2_rune_2
+  rotate: false
+  xy: 242, 453
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+action2_rune_2_add
+  rotate: false
+  xy: 2, 393
+  size: 51, 52
+  orig: 51, 52
+  offset: 0, 0
+  index: -1
+action2_rune_3
+  rotate: false
+  xy: 246, 142
+  size: 36, 41
+  orig: 36, 41
+  offset: 0, 0
+  index: -1
+action2_rune_3_add
+  rotate: false
+  xy: 195, 453
+  size: 45, 49
+  orig: 45, 49
+  offset: 0, 0
+  index: -1
+action2_rune_4
+  rotate: true
+  xy: 192, 234
+  size: 34, 42
+  orig: 34, 42
+  offset: 0, 0
+  index: -1
+action2_rune_4_add
+  rotate: false
+  xy: 209, 504
+  size: 42, 50
+  orig: 42, 50
+  offset: 0, 0
+  index: -1
+action2_rune_5
+  rotate: false
+  xy: 234, 556
+  size: 43, 44
+  orig: 43, 44
+  offset: 0, 0
+  index: -1
+action2_rune_5_add
+  rotate: false
+  xy: 178, 52
+  size: 50, 51
+  orig: 50, 51
+  offset: 0, 0
+  index: -1
+action2_rune_6
+  rotate: false
+  xy: 249, 228
+  size: 33, 38
+  orig: 33, 38
+  offset: 0, 0
+  index: -1
+action2_rune_6_add
+  rotate: false
+  xy: 230, 3
+  size: 41, 47
+  orig: 41, 47
+  offset: 0, 0
+  index: -1
+action2_rune_7
+  rotate: false
+  xy: 249, 185
+  size: 32, 41
+  orig: 32, 41
+  offset: 0, 0
+  index: -1
+action2_rune_7_add
+  rotate: true
+  xy: 178, 10
+  size: 40, 50
+  orig: 40, 50
+  offset: 0, 0
+  index: -1
+action2_rune_8
+  rotate: false
+  xy: 230, 52
+  size: 40, 51
+  orig: 40, 51
+  offset: 0, 0
+  index: -1
+action2_rune_8_add
+  rotate: false
+  xy: 2, 519
+  size: 49, 58
+  orig: 49, 58
+  offset: 0, 0
+  index: -1
+action3
+  rotate: 180
+  xy: 2, 105
+  size: 252, 199
+  orig: 258, 207
+  offset: 1, 5
+  index: -1
+p_diallos_tablet
+  rotate: false
+  xy: 2, 293
+  size: 250, 358
+  orig: 254, 364
+  offset: 2, 3
+  index: -1

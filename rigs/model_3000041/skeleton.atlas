@@ -1,0 +1,76 @@
+
+3000041.webp
+size: 124,544
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect_01
+  rotate: true
+  xy: 87, 173
+  size: 35, 32
+  orig: 35, 32
+  offset: 0, 0
+  index: -1
+effect_02
+  rotate: false
+  xy: 84, 129
+  size: 34, 42
+  orig: 34, 42
+  offset: 0, 0
+  index: -1
+invader_spear_0
+  rotate: false
+  xy: 2, 130
+  size: 113, 411
+  orig: 113, 411
+  offset: 0, 0
+  index: -1
+invader_spear_1
+  rotate: 180
+  xy: 2, 4
+  size: 107, 267
+  orig: 113, 411
+  offset: 6, 0
+  index: -1
+invader_spear_2
+  rotate: 180
+  xy: 79, 269
+  size: 40, 167
+  orig: 40, 167
+  offset: 0, 0
+  index: -1
+land_1
+  rotate: true
+  xy: 101, 4
+  size: 99, 17
+  orig: 99, 17
+  offset: 0, 0
+  index: -1
+land_2
+  rotate: false
+  xy: 2, 524
+  size: 49, 17
+  orig: 49, 17
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 354
+  size: 83, 23
+  orig: 83, 23
+  offset: 0, 0
+  index: -1
+stone_01
+  rotate: false
+  xy: 2, 512
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+stone_02
+  rotate: false
+  xy: 2, 500
+  size: 14, 10
+  orig: 15, 10
+  offset: 1, 0
+  index: -1

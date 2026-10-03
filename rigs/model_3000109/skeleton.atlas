@@ -1,0 +1,20 @@
+
+3000109.webp
+size: 204,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_survior_bag
+  rotate: false
+  xy: 2, 18
+  size: 198, 87
+  orig: 198, 87
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 103, 14
+  orig: 103, 14
+  offset: 0, 0
+  index: -1

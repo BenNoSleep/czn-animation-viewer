@@ -1,0 +1,34 @@
+
+3000203.webp
+size: 248,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+05_base
+  rotate: true
+  xy: 2, 78
+  size: 73, 175
+  orig: 73, 175
+  offset: 0, 0
+  index: -1
+05_on
+  rotate: true
+  xy: 2, 2
+  size: 74, 167
+  orig: 74, 167
+  offset: 0, 0
+  index: -1
+p_diallos_tablet
+  rotate: false
+  xy: 2, 153
+  size: 244, 354
+  orig: 244, 354
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 179, 24
+  size: 127, 25
+  orig: 127, 25
+  offset: 0, 0
+  index: -1

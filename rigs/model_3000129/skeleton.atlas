@@ -1,0 +1,27 @@
+
+3000129.webp
+size: 1016,1356
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_critias_safty_house
+  rotate: false
+  xy: 2, 657
+  size: 1010, 697
+  orig: 1010, 697
+  offset: 0, 0
+  index: -1
+p_spaitz_critias_safty_house_broken_02
+  rotate: false
+  xy: 2, 88
+  size: 1010, 567
+  orig: 1010, 567
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 1012, 84
+  orig: 1012, 84
+  offset: 0, 0
+  index: -1

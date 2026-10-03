@@ -1,0 +1,13 @@
+
+3000028.webp
+size: 920,300
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+earth_crater
+  rotate: false
+  xy: 2, 2
+  size: 915, 295
+  orig: 915, 295
+  offset: 0, 0
+  index: -1

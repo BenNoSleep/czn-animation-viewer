@@ -1,0 +1,48 @@
+
+3000408.webp
+size: 236,60
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lumen_yellow_base_color
+  rotate: false
+  xy: 2, 4
+  size: 54, 54
+  orig: 70, 70
+  offset: 8, 8
+  index: -1
+lumen_yellow_bubble_1
+  rotate: 270
+  xy: 57, 3
+  size: 54, 47
+  orig: 67, 60
+  offset: 6, 7
+  index: -1
+lumen_yellow_bubble_2
+  rotate: 180
+  xy: 100, 3
+  size: 37, 55
+  orig: 54, 70
+  offset: 8, 8
+  index: -1
+lumen_yellow_bubble_3
+  rotate: 270
+  xy: 137, 6
+  size: 53, 43
+  orig: 66, 59
+  offset: 6, 8
+  index: -1
+lumen_yellow_deco1_color
+  rotate: 270
+  xy: 174, 4
+  size: 34, 31
+  orig: 49, 45
+  offset: 8, 6
+  index: -1
+lumen_yellow_deco2_color
+  rotate: 270
+  xy: 196, 25
+  size: 33, 36
+  orig: 45, 46
+  offset: 5, 4
+  index: -1

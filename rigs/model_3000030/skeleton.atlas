@@ -1,0 +1,13 @@
+
+3000030.webp
+size: 480,288
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fallen_airplane_02
+  rotate: false
+  xy: 2, 2
+  size: 474, 284
+  orig: 474, 284
+  offset: 0, 0
+  index: -1

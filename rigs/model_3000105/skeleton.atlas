@@ -1,0 +1,20 @@
+
+3000105.webp
+size: 104,116
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_shelter_potion
+  rotate: false
+  xy: 2, 45
+  size: 84, 66
+  orig: 84, 66
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 99, 41
+  orig: 99, 41
+  offset: 0, 0
+  index: -1

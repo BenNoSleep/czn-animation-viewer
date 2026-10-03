@@ -1,0 +1,76 @@
+
+3000349.webp
+size: 432,328
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 143
+  size: 122, 183
+  orig: 122, 183
+  offset: 0, 0
+  index: -1
+cloth
+  rotate: false
+  xy: 323, 8
+  size: 93, 84
+  orig: 93, 84
+  offset: 0, 0
+  index: -1
+front_arm
+  rotate: false
+  xy: 348, 171
+  size: 74, 155
+  orig: 74, 155
+  offset: 0, 0
+  index: -1
+front_leg1
+  rotate: false
+  xy: 262, 98
+  size: 83, 108
+  orig: 83, 108
+  offset: 0, 0
+  index: -1
+front_leg2
+  rotate: true
+  xy: 126, 181
+  size: 145, 112
+  orig: 145, 112
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 10
+  size: 131, 144
+  orig: 131, 144
+  offset: 0, 0
+  index: -1
+rear_arm 1
+  rotate: false
+  xy: 262, 2
+  size: 59, 94
+  orig: 59, 94
+  offset: 0, 0
+  index: -1
+rear_arm 2
+  rotate: true
+  xy: 347, 94
+  size: 75, 83
+  orig: 75, 83
+  offset: 0, 0
+  index: -1
+rear_leg1
+  rotate: false
+  xy: 240, 208
+  size: 106, 118
+  orig: 106, 118
+  offset: 0, 0
+  index: -1
+rear_leg2
+  rotate: false
+  xy: 148, 54
+  size: 112, 125
+  orig: 112, 125
+  offset: 0, 0
+  index: -1

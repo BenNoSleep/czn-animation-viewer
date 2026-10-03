@@ -1,0 +1,76 @@
+
+3000193.webp
+size: 636,1912
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+f01_a
+  rotate: true
+  xy: 526, 244
+  size: 198, 105
+  orig: 198, 105
+  offset: 0, 0
+  index: -1
+f01_battery
+  rotate: false
+  xy: 282, 34
+  size: 90, 29
+  orig: 90, 29
+  offset: 0, 0
+  index: -1
+f01_battery copy
+  rotate: false
+  xy: 282, 135
+  size: 81, 61
+  orig: 81, 61
+  offset: 0, 0
+  index: -1
+f01_c
+  rotate: false
+  xy: 2, 1231
+  size: 607, 677
+  orig: 607, 677
+  offset: 0, 0
+  index: -1
+f01_l
+  rotate: true
+  xy: 506, 801
+  size: 301, 119
+  orig: 301, 119
+  offset: 0, 0
+  index: -1
+f02_a
+  rotate: true
+  xy: 369, 65
+  size: 377, 155
+  orig: 377, 155
+  offset: 0, 0
+  index: -1
+f02_b
+  rotate: false
+  xy: 2, 2
+  size: 278, 194
+  orig: 278, 194
+  offset: 0, 0
+  index: -1
+f02_c
+  rotate: true
+  xy: 2, 801
+  size: 428, 502
+  orig: 428, 502
+  offset: 0, 0
+  index: -1
+f02_l
+  rotate: true
+  xy: 2, 198
+  size: 244, 365
+  orig: 244, 365
+  offset: 0, 0
+  index: -1
+f03_a
+  rotate: true
+  xy: 2, 444
+  size: 355, 535
+  orig: 355, 535
+  offset: 0, 0
+  index: -1

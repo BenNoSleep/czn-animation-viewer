@@ -1,0 +1,20 @@
+
+3000120.webp
+size: 128,96
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_account_book
+  rotate: false
+  xy: 2, 45
+  size: 117, 47
+  orig: 117, 47
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 122, 41
+  orig: 122, 41
+  offset: 0, 0
+  index: -1

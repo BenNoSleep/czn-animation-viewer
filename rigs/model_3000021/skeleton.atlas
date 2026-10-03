@@ -1,0 +1,97 @@
+
+3000021.webp
+size: 1500,832
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back
+  rotate: false
+  xy: 2, 44
+  size: 1063, 784
+  orig: 1063, 784
+  offset: 0, 0
+  index: -1
+cloth_f_b
+  rotate: true
+  xy: 1378, 727
+  size: 102, 119
+  orig: 102, 119
+  offset: 0, 0
+  index: -1
+cloth_f_f
+  rotate: false
+  xy: 147, 3
+  size: 229, 179
+  orig: 229, 179
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 886, 141
+  size: 289, 315
+  orig: 289, 315
+  offset: 0, 0
+  index: -1
+hair_b
+  rotate: 180
+  xy: 1366, 553
+  size: 111, 184
+  orig: 111, 184
+  offset: 0, 0
+  index: -1
+hair_f_01
+  rotate: 180
+  xy: 1365, 373
+  size: 119, 177
+  orig: 141, 177
+  offset: 0, 0
+  index: -1
+hair_f_02
+  rotate: true
+  xy: 1209, 653
+  size: 171, 211
+  orig: 244, 219
+  offset: 0, 8
+  index: -1
+hair_f_03
+  rotate: false
+  xy: 1361, 4
+  size: 102, 223
+  orig: 103, 223
+  offset: 0, 0
+  index: -1
+hair_f_04
+  rotate: true
+  xy: 378, 6
+  size: 140, 242
+  orig: 140, 242
+  offset: 0, 0
+  index: -1
+hood_b
+  rotate: 180
+  xy: 1177, 11
+  size: 251, 363
+  orig: 427, 366
+  offset: 176, 1
+  index: -1
+hood_f
+  rotate: 180
+  xy: 960, 308
+  size: 427, 366
+  orig: 427, 366
+  offset: 0, 0
+  index: -1
+hood_f_b
+  rotate: false
+  xy: 622, 32
+  size: 242, 98
+  orig: 242, 98
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 866, 16
+  size: 328, 58
+  orig: 328, 58
+  offset: 0, 0
+  index: -1

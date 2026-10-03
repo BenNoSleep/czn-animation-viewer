@@ -1,0 +1,90 @@
+
+3000188.webp
+size: 1876,488
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 181
+  size: 1158, 303
+  orig: 1158, 337
+  offset: 0, 34
+  index: -1
+body_back
+  rotate: true
+  xy: 1634, 2
+  size: 392, 76
+  orig: 392, 76
+  offset: 0, 0
+  index: -1
+light_1
+  rotate: false
+  xy: 2, 415
+  size: 44, 68
+  orig: 44, 68
+  offset: 0, 0
+  index: -1
+light_2
+  rotate: false
+  xy: 48, 439
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+light_3
+  rotate: false
+  xy: 2, 20
+  size: 222, 33
+  orig: 222, 33
+  offset: 0, 0
+  index: -1
+light_4
+  rotate: false
+  xy: 2, 201
+  size: 42, 30
+  orig: 42, 30
+  offset: 0, 0
+  index: -1
+part_back
+  rotate: true
+  xy: 1696, 282
+  size: 201, 154
+  orig: 201, 154
+  offset: 0, 0
+  index: -1
+part_front
+  rotate: true
+  xy: 1291, 63
+  size: 420, 237
+  orig: 420, 241
+  offset: 0, 3
+  index: -1
+part_rear
+  rotate: 270
+  xy: 1471, 2
+  size: 481, 162
+  orig: 481, 162
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 55
+  size: 1300, 124
+  orig: 1300, 124
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 1712, 81
+  size: 231, 154
+  orig: 231, 154
+  offset: 0, 0
+  index: -1
+wing_back
+  rotate: false
+  xy: 1712, 37
+  size: 157, 93
+  orig: 157, 93
+  offset: 0, 0
+  index: -1

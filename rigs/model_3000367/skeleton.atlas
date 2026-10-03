@@ -1,0 +1,146 @@
+
+3000367.webp
+size: 180,524
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l_1
+  rotate: 270
+  xy: 2, 38
+  size: 48, 93
+  orig: 61, 107
+  offset: 6, 7
+  index: -1
+arm_r_1
+  rotate: 180
+  xy: 85, 358
+  size: 48, 94
+  orig: 64, 108
+  offset: 7, 7
+  index: -1
+body_1
+  rotate: 180
+  xy: 96, 187
+  size: 66, 95
+  orig: 79, 114
+  offset: 6, 8
+  index: -1
+ear
+  rotate: false
+  xy: 37, 6
+  size: 29, 29
+  orig: 37, 39
+  offset: 3, 5
+  index: -1
+face_1
+  rotate: true
+  xy: 2, 210
+  size: 77, 86
+  orig: 89, 96
+  offset: 5, 4
+  index: -1
+glasses
+  rotate: true
+  xy: 2, 384
+  size: 69, 20
+  orig: 78, 35
+  offset: 6, 8
+  index: -1
+gown_1
+  rotate: false
+  xy: 2, 383
+  size: 109, 137
+  orig: 120, 145
+  offset: 6, 8
+  index: -1
+gown_l_1
+  rotate: 270
+  xy: 17, 282
+  size: 58, 152
+  orig: 70, 165
+  offset: 7, 6
+  index: -1
+gown_r_1
+  rotate: 270
+  xy: 10, 138
+  size: 53, 151
+  orig: 67, 170
+  offset: 6, 6
+  index: -1
+hair_0
+  rotate: false
+  xy: 26, 74
+  size: 75, 81
+  orig: 80, 87
+  offset: 0, 2
+  index: -1
+hair_1
+  rotate: 270
+  xy: 101, 97
+  size: 69, 69
+  orig: 85, 78
+  offset: 6, 4
+  index: -1
+hair_2
+  rotate: true
+  xy: 96, 41
+  size: 44, 65
+  orig: 53, 78
+  offset: 5, 7
+  index: -1
+hand_l_1
+  rotate: false
+  xy: 2, 13
+  size: 38, 37
+  orig: 47, 47
+  offset: 5, 5
+  index: -1
+hand_r_1
+  rotate: false
+  xy: 139, 7
+  size: 35, 36
+  orig: 46, 46
+  offset: 4, 5
+  index: -1
+hip
+  rotate: false
+  xy: 67, 3
+  size: 61, 45
+  orig: 75, 60
+  offset: 7, 8
+  index: -1
+kara_l_1
+  rotate: 180
+  xy: 146, 291
+  size: 27, 84
+  orig: 41, 95
+  offset: 8, 4
+  index: -1
+kara_r_1
+  rotate: 180
+  xy: 152, 205
+  size: 24, 80
+  orig: 38, 95
+  offset: 7, 7
+  index: -1
+leg_l_1
+  rotate: true
+  xy: 2, 316
+  size: 70, 145
+  orig: 82, 159
+  offset: 5, 8
+  index: -1
+leg_r_1
+  rotate: 180
+  xy: 112, 372
+  size: 58, 148
+  orig: 71, 162
+  offset: 6, 8
+  index: -1
+mouth
+  rotate: false
+  xy: 2, 474
+  size: 12, 8
+  orig: 26, 22
+  offset: 7, 7
+  index: -1

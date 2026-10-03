@@ -1,0 +1,20 @@
+
+3000127.webp
+size: 892,360
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_campsite
+  rotate: false
+  xy: 2, 60
+  size: 888, 295
+  orig: 888, 295
+  offset: 0, 0
+  index: -1
+p_spaitz_campsite_shadow
+  rotate: false
+  xy: 2, 2
+  size: 887, 56
+  orig: 887, 56
+  offset: 0, 0
+  index: -1

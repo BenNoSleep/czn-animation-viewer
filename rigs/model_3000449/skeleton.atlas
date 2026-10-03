@@ -1,0 +1,20 @@
+
+3000449.webp
+size: 1216,244
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3000449_broken_junk
+  rotate: false
+  xy: 2, 69
+  size: 1211, 171
+  orig: 1211, 171
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 1206, 65
+  orig: 1206, 65
+  offset: 0, 0
+  index: -1

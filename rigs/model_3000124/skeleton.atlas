@@ -1,0 +1,34 @@
+
+3000124.webp
+size: 812,1356
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flash
+  rotate: false
+  xy: 2, 2
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_depot_normal
+  rotate: false
+  xy: 2, 984
+  size: 805, 368
+  orig: 805, 368
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_depot_stance1
+  rotate: false
+  xy: 2, 614
+  size: 805, 368
+  orig: 805, 368
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_depot_stance2
+  rotate: false
+  xy: 2, 244
+  size: 805, 368
+  orig: 805, 368
+  offset: 0, 0
+  index: -1

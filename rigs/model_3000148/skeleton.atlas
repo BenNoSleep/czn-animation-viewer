@@ -1,0 +1,13 @@
+
+3000148.webp
+size: 100,36
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_stone_slab
+  rotate: false
+  xy: 2, 2
+  size: 93, 30
+  orig: 93, 30
+  offset: 0, 0
+  index: -1

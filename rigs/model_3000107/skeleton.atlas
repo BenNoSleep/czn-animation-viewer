@@ -1,0 +1,13 @@
+
+3000107.webp
+size: 152,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_shelter_strongbox
+  rotate: false
+  xy: 2, 2
+  size: 148, 134
+  orig: 148, 134
+  offset: 0, 0
+  index: -1

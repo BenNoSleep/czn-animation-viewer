@@ -1,0 +1,41 @@
+
+3000125.webp
+size: 1108,1828
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flash
+  rotate: false
+  xy: 2, 2
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_prison_normal
+  rotate: false
+  xy: 2, 1322
+  size: 1104, 501
+  orig: 1104, 501
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_prison_stance1
+  rotate: false
+  xy: 2, 819
+  size: 1104, 501
+  orig: 1104, 501
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_prison_stance2
+  rotate: false
+  xy: 2, 316
+  size: 1104, 501
+  orig: 1104, 501
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 244
+  size: 1066, 70
+  orig: 1066, 70
+  offset: 0, 0
+  index: -1

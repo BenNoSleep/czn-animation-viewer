@@ -1,0 +1,20 @@
+
+3000396.webp
+size: 672,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_spaitz_pillar_action0
+  rotate: true
+  xy: 2, 12
+  size: 241, 623
+  orig: 241, 623
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 627, 2
+  size: 251, 43
+  orig: 251, 43
+  offset: 0, 0
+  index: -1

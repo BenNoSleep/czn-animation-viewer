@@ -1,0 +1,195 @@
+
+30153.webp
+size: 2048,1864
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+acc1
+  rotate: false
+  xy: 118, 1824
+  size: 117, 37
+  orig: 121, 43
+  offset: 2, 3
+  index: -1
+acc2
+  rotate: false
+  xy: 1267, 1598
+  size: 82, 70
+  orig: 88, 76
+  offset: 3, 3
+  index: -1
+b_coat
+  rotate: false
+  xy: 2, 731
+  size: 820, 1130
+  orig: 820, 1130
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 410
+  size: 344, 943
+  orig: 350, 947
+  offset: 3, 2
+  index: -1
+body_guard
+  rotate: false
+  xy: 594, 720
+  size: 308, 107
+  orig: 308, 107
+  offset: 0, 0
+  index: -1
+evb
+  rotate: false
+  xy: 1768, 1755
+  size: 58, 53
+  orig: 64, 58
+  offset: 3, 3
+  index: -1
+f_coat1
+  rotate: 180
+  xy: 788, 414
+  size: 672, 1447
+  orig: 676, 1450
+  offset: 2, 3
+  index: -1
+f_coat2
+  rotate: 180
+  xy: 1608, 614
+  size: 347, 1247
+  orig: 348, 1249
+  offset: 0, 2
+  index: -1
+f_l_cable
+  rotate: false
+  xy: 1655, 1577
+  size: 119, 63
+  orig: 124, 67
+  offset: 1, 1
+  index: -1
+f_r_cable
+  rotate: false
+  xy: 1125, 1749
+  size: 140, 53
+  orig: 145, 61
+  offset: 3, 3
+  index: -1
+glass_light1
+  rotate: false
+  xy: 1766, 1808
+  size: 39, 53
+  orig: 39, 53
+  offset: 0, 0
+  index: -1
+glass_light2
+  rotate: false
+  xy: 287, 1820
+  size: 20, 41
+  orig: 20, 41
+  offset: 0, 0
+  index: -1
+head_led
+  rotate: false
+  xy: 844, 811
+  size: 197, 289
+  orig: 203, 295
+  offset: 3, 3
+  index: -1
+head_light
+  rotate: false
+  xy: 1956, 1780
+  size: 77, 81
+  orig: 77, 81
+  offset: 0, 0
+  index: -1
+l_arm
+  rotate: false
+  xy: 781, 933
+  size: 168, 590
+  orig: 168, 590
+  offset: 0, 0
+  index: -1
+l_b_cable
+  rotate: false
+  xy: 880, 1732
+  size: 67, 96
+  orig: 72, 98
+  offset: 2, 0
+  index: -1
+l_hand
+  rotate: false
+  xy: 1650, 1627
+  size: 114, 234
+  orig: 114, 234
+  offset: 0, 0
+  index: -1
+l_leg
+  rotate: true
+  xy: 799, 173
+  size: 307, 1247
+  orig: 307, 1250
+  offset: 0, 3
+  index: -1
+mask_glass
+  rotate: false
+  xy: 1085, 1800
+  size: 165, 61
+  orig: 172, 67
+  offset: 4, 3
+  index: -1
+r_arm
+  rotate: false
+  xy: 951, 1041
+  size: 139, 629
+  orig: 145, 632
+  offset: 2, 0
+  index: -1
+r_b_cable
+  rotate: false
+  xy: 1937, 1565
+  size: 84, 100
+  orig: 87, 103
+  offset: 3, 0
+  index: -1
+r_hand
+  rotate: false
+  xy: 1266, 1668
+  size: 107, 193
+  orig: 107, 193
+  offset: 0, 0
+  index: -1
+r_leg
+  rotate: true
+  xy: 54, 4
+  size: 263, 1313
+  orig: 263, 1313
+  offset: 0, 0
+  index: -1
+ring
+  rotate: false
+  xy: 237, 1813
+  size: 49, 48
+  orig: 49, 48
+  offset: 0, 0
+  index: -1
+string1
+  rotate: false
+  xy: 799, 1685
+  size: 137, 176
+  orig: 146, 201
+  offset: 3, 1
+  index: -1
+trunk
+  rotate: false
+  xy: 1373, 686
+  size: 275, 1175
+  orig: 279, 1175
+  offset: 0, 0
+  index: -1
+zipper
+  rotate: false
+  xy: 1949, 1651
+  size: 52, 129
+  orig: 58, 135
+  offset: 3, 3
+  index: -1

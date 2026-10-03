@@ -1,0 +1,13 @@
+
+3000108.webp
+size: 112,176
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_earth_shelter_weapon
+  rotate: false
+  xy: 2, 2
+  size: 106, 169
+  orig: 106, 169
+  offset: 0, 0
+  index: -1

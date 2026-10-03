@@ -1,0 +1,55 @@
+
+3000074.webp
+size: 132,248
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+deco_bb
+  rotate: false
+  xy: 93, 48
+  size: 18, 34
+  orig: 18, 34
+  offset: 0, 0
+  index: -1
+deco_ff
+  rotate: false
+  xy: 78, 84
+  size: 48, 84
+  orig: 50, 84
+  offset: 0, 0
+  index: -1
+harmmer
+  rotate: false
+  xy: 2, 59
+  size: 97, 110
+  orig: 158, 111
+  offset: 0, 1
+  index: -1
+harmmer_deco
+  rotate: 270
+  xy: 2, 4
+  size: 98, 70
+  orig: 158, 111
+  offset: 60, 0
+  index: -1
+harmmer_j
+  rotate: false
+  xy: 2, 13
+  size: 30, 38
+  orig: 158, 111
+  offset: 38, 53
+  index: -1
+harmmer_j_l
+  rotate: false
+  xy: 2, 170
+  size: 95, 76
+  orig: 158, 111
+  offset: 0, 35
+  index: -1
+harmmer_r
+  rotate: 270
+  xy: 57, 4
+  size: 66, 61
+  orig: 158, 111
+  offset: 0, 1
+  index: -1

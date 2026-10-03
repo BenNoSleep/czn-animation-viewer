@@ -1,0 +1,20 @@
+
+3000431.webp
+size: 212,216
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_verne_plant_doll
+  rotate: false
+  xy: 2, 56
+  size: 197, 155
+  orig: 197, 155
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 207, 52
+  orig: 207, 52
+  offset: 0, 0
+  index: -1

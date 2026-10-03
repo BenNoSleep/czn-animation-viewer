@@ -1,0 +1,167 @@
+
+1003005.webp
+size: 140,2024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 1654
+  size: 128, 365
+  orig: 128, 365
+  offset: 0, 0
+  index: -1
+body_1
+  rotate: false
+  xy: 2, 1287
+  size: 128, 365
+  orig: 128, 365
+  offset: 0, 0
+  index: -1
+body_2
+  rotate: false
+  xy: 2, 920
+  size: 128, 365
+  orig: 128, 365
+  offset: 0, 0
+  index: -1
+body_cover_1
+  rotate: true
+  xy: 2, 2
+  size: 23, 120
+  orig: 23, 120
+  offset: 0, 0
+  index: -1
+body_cover_2
+  rotate: false
+  xy: 80, 149
+  size: 36, 118
+  orig: 36, 118
+  offset: 0, 0
+  index: -1
+body_eye_1
+  rotate: true
+  xy: 81, 38
+  size: 30, 49
+  orig: 30, 49
+  offset: 0, 0
+  index: -1
+body_eye_2
+  rotate: false
+  xy: 108, 395
+  size: 30, 49
+  orig: 30, 49
+  offset: 0, 0
+  index: -1
+body_tail_1
+  rotate: false
+  xy: 111, 530
+  size: 24, 39
+  orig: 24, 39
+  offset: 0, 0
+  index: -1
+body_tail_2
+  rotate: false
+  xy: 111, 571
+  size: 24, 39
+  orig: 24, 39
+  offset: 0, 0
+  index: -1
+fx_death_light
+  rotate: false
+  xy: 2, 717
+  size: 60, 201
+  orig: 60, 201
+  offset: 0, 0
+  index: -1
+fx_eye_light
+  rotate: true
+  xy: 2, 530
+  size: 93, 107
+  orig: 93, 107
+  offset: 0, 0
+  index: -1
+stick_1
+  rotate: false
+  xy: 2, 216
+  size: 76, 75
+  orig: 76, 75
+  offset: 0, 0
+  index: -1
+stick_2
+  rotate: true
+  xy: 2, 91
+  size: 53, 66
+  orig: 53, 66
+  offset: 0, 0
+  index: -1
+stick_3
+  rotate: false
+  xy: 2, 370
+  size: 104, 74
+  orig: 104, 74
+  offset: 0, 0
+  index: -1
+stick_4
+  rotate: false
+  xy: 2, 146
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+wing_1_1
+  rotate: false
+  xy: 84, 269
+  size: 49, 99
+  orig: 49, 99
+  offset: 0, 0
+  index: -1
+wing_1_2
+  rotate: true
+  xy: 2, 446
+  size: 82, 115
+  orig: 82, 115
+  offset: 0, 0
+  index: -1
+wing_2_1
+  rotate: true
+  xy: 2, 27
+  size: 41, 77
+  orig: 41, 77
+  offset: 0, 0
+  index: -1
+wing_2_2
+  rotate: false
+  xy: 64, 717
+  size: 69, 82
+  orig: 69, 82
+  offset: 0, 0
+  index: -1
+wing_3_1
+  rotate: false
+  xy: 64, 801
+  size: 51, 99
+  orig: 51, 99
+  offset: 0, 0
+  index: -1
+wing_3_2
+  rotate: true
+  xy: 2, 625
+  size: 90, 112
+  orig: 90, 112
+  offset: 0, 0
+  index: -1
+wing_4_1
+  rotate: false
+  xy: 73, 70
+  size: 42, 77
+  orig: 42, 77
+  offset: 0, 0
+  index: -1
+wing_4_2
+  rotate: true
+  xy: 2, 293
+  size: 75, 80
+  orig: 75, 80
+  offset: 0, 0
+  index: -1

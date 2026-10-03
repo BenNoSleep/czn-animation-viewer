@@ -1,0 +1,328 @@
+
+2302004.webp
+size: 76,1336
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+larva_body_01
+  rotate: 270
+  xy: 37, 18
+  size: 48, 32
+  orig: 52, 32
+  offset: 4, 0
+  index: -1
+larva_body_02
+  rotate: true
+  xy: 18, 866
+  size: 106, 51
+  orig: 106, 54
+  offset: 0, 2
+  index: -1
+larva_body_02a
+  rotate: 270
+  xy: 2, 765
+  size: 106, 51
+  orig: 106, 54
+  offset: 0, 2
+  index: -1
+larva_body_03
+  rotate: false
+  xy: 2, 969
+  size: 70, 114
+  orig: 198, 114
+  offset: 0, 0
+  index: -1
+larva_body_03a
+  rotate: false
+  xy: 2, 1201
+  size: 58, 132
+  orig: 85, 144
+  offset: 11, 5
+  index: -1
+larva_body_03b
+  rotate: 180
+  xy: 2, 1083
+  size: 58, 119
+  orig: 86, 132
+  offset: 11, 8
+  index: -1
+larva_enter_body_01
+  rotate: true
+  xy: 9, 224
+  size: 39, 51
+  orig: 48, 60
+  offset: 5, 4
+  index: -1
+larva_enter_body_02
+  rotate: true
+  xy: 26, 69
+  size: 42, 43
+  orig: 50, 50
+  offset: 5, 3
+  index: -1
+larva_enter_body_03
+  rotate: 270
+  xy: 2, 103
+  size: 47, 42
+  orig: 55, 66
+  offset: 4, 4
+  index: -1
+larva_enter_body_04
+  rotate: 270
+  xy: 2, 345
+  size: 46, 47
+  orig: 54, 55
+  offset: 4, 5
+  index: -1
+larva_enter_body_05
+  rotate: 270
+  xy: 2, 430
+  size: 49, 49
+  orig: 57, 58
+  offset: 4, 5
+  index: -1
+larva_enter_body_06
+  rotate: 180
+  xy: 21, 303
+  size: 45, 42
+  orig: 54, 51
+  offset: 4, 5
+  index: -1
+larva_enter_body_07
+  rotate: false
+  xy: 19, 388
+  size: 51, 45
+  orig: 60, 54
+  offset: 4, 4
+  index: -1
+larva_enter_body_08
+  rotate: 270
+  xy: 22, 469
+  size: 52, 49
+  orig: 61, 58
+  offset: 4, 5
+  index: -1
+larva_enter_body_09
+  rotate: false
+  xy: 13, 610
+  size: 56, 56
+  orig: 63, 63
+  offset: 3, 4
+  index: -1
+larva_enter_head_01
+  rotate: 180
+  xy: 20, 141
+  size: 48, 43
+  orig: 55, 56
+  offset: 3, 10
+  index: -1
+larva_enter_head_02
+  rotate: false
+  xy: 46, 551
+  size: 24, 20
+  orig: 24, 20
+  offset: 0, 0
+  index: -1
+larva_enter_head_mouse_01
+  rotate: false
+  xy: 62, 139
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+larva_enter_head_mouse_02
+  rotate: false
+  xy: 43, 4
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+larva_enter_leg_01
+  rotate: true
+  xy: 56, 1127
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+larva_enter_leg_02
+  rotate: false
+  xy: 54, 781
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+larva_enter_leg_03
+  rotate: false
+  xy: 55, 518
+  size: 17, 21
+  orig: 17, 21
+  offset: 0, 0
+  index: -1
+larva_enter_leg_04
+  rotate: false
+  xy: 44, 112
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1
+larva_enter_leg_05
+  rotate: false
+  xy: 49, 759
+  size: 21, 20
+  orig: 21, 20
+  offset: 0, 0
+  index: -1
+larva_enter_tail_01
+  rotate: 180
+  xy: 2, 14
+  size: 38, 74
+  orig: 38, 74
+  offset: 0, 0
+  index: -1
+larva_head_01
+  rotate: false
+  xy: 2, 562
+  size: 60, 48
+  orig: 64, 62
+  offset: 4, 12
+  index: -1
+larva_head_01a
+  rotate: false
+  xy: 2, 664
+  size: 57, 52
+  orig: 64, 62
+  offset: 6, 8
+  index: -1
+larva_head_01b
+  rotate: false
+  xy: 2, 714
+  size: 57, 50
+  orig: 64, 62
+  offset: 5, 5
+  index: -1
+larva_head_02
+  rotate: 270
+  xy: 2, 182
+  size: 45, 46
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+larva_head_02a
+  rotate: false
+  xy: 2, 263
+  size: 48, 50
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+larva_head_02b
+  rotate: false
+  xy: 2, 510
+  size: 54, 53
+  orig: 64, 62
+  offset: 5, 7
+  index: -1
+larva_leg_01
+  rotate: false
+  xy: 53, 260
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+larva_leg_02
+  rotate: false
+  xy: 49, 826
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+larva_leg_03
+  rotate: false
+  xy: 50, 281
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+larva_leg_04
+  rotate: false
+  xy: 50, 346
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+larva_leg_05
+  rotate: false
+  xy: 45, 847
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+larva_leg_06
+  rotate: true
+  xy: 56, 1192
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+larva_leg_07
+  rotate: true
+  xy: 23, 3
+  size: 15, 18
+  orig: 15, 18
+  offset: 0, 0
+  index: -1
+larva_leg_08
+  rotate: true
+  xy: 48, 369
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+larva_leg_09
+  rotate: false
+  xy: 53, 803
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: -1
+larva_leg_10
+  rotate: false
+  xy: 50, 1085
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+larva_leg_11
+  rotate: false
+  xy: 53, 1106
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+larva_leg_12
+  rotate: true
+  xy: 52, 431
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+larva_mouse_01
+  rotate: false
+  xy: 63, 58
+  size: 9, 11
+  orig: 9, 11
+  offset: 0, 0
+  index: -1
+larva_mouse_02
+  rotate: false
+  xy: 55, 4
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: -1
+larva_tail_01
+  rotate: true
+  xy: 49, 182
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1

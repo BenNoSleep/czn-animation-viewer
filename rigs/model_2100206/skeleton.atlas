@@ -1,0 +1,20 @@
+
+2100206.webp
+size: 804,404
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+odyssey_dropship
+  rotate: false
+  xy: 2, 2
+  size: 797, 400
+  orig: 797, 400
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 38
+  size: 402, 23
+  orig: 402, 23
+  offset: 0, 0
+  index: -1

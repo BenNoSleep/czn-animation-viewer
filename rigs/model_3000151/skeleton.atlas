@@ -1,0 +1,20 @@
+
+3000151.webp
+size: 588,656
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_vegetable_meats_warehouse
+  rotate: false
+  xy: 2, 40
+  size: 581, 614
+  orig: 581, 614
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 2
+  size: 300, 36
+  orig: 300, 36
+  offset: 0, 0
+  index: -1
