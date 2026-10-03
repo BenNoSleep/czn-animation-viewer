@@ -57,6 +57,10 @@ const bar = document.getElementById("bar");
 const params = new URLSearchParams(location.search);
 const model = params.get("m") || "";
 const imgSrc = params.get("img") || "";
+if (params.get("embed")) {        // embedded in the index side panel: hide the back link
+  const _b = document.getElementById("back");
+  if (_b) _b.style.display = "none";
+}
 function fail(t) { msg.style.display = "block"; msg.style.color = "#E06C6C"; msg.textContent = String(t); }
 window.addEventListener("error", function (e) { fail(e.message); });
 

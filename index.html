@@ -8,27 +8,54 @@
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
-  html, body { margin:0; background:#111; color:#D6D6D6; font:13px/1.4 system-ui, sans-serif; }
-  header { position:sticky; top:0; background:#111; border-bottom:1px solid rgba(255,255,255,.08);
-           padding:14px 18px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; z-index:5; }
+  html, body { margin:0; height:100%; background:#111; color:#D6D6D6; font:13px/1.4 system-ui, sans-serif; }
+  body { display:flex; flex-direction:column; }
+  header { background:#111; border-bottom:1px solid rgba(255,255,255,.08);
+           padding:12px 18px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; z-index:5; }
   h1 { font-size:15px; margin:0 8px 0 0; font-weight:600; }
   input#q { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:6px;
-            color:#D6D6D6; padding:7px 10px; width:220px; font:13px system-ui; }
+            color:#D6D6D6; padding:7px 10px; width:200px; font:13px system-ui; }
   input#q:focus { outline:none; border-color:#3D6AFF; }
   .chip { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:999px;
           padding:5px 12px; cursor:pointer; color:#9A9A9A; user-select:none; }
   .chip.on { color:#fff; border-color:#3D6AFF; background:#1a2340; }
   #count { margin-left:auto; color:#8C8C8C; }
-  main { display:grid; grid-template-columns:repeat(auto-fill,minmax(128px,1fr)); gap:10px; padding:16px; }
+  #cols { flex:1; min-height:0; display:flex; }
+  main { flex:1; min-width:0; overflow-y:auto; display:grid; align-content:start;
+         grid-auto-rows:max-content;   /* auto rows + overflow:hidden items collapse to 2px in Chrome */
+         grid-template-columns:repeat(auto-fill,minmax(128px,1fr)); gap:10px; padding:16px; }
   a.card { display:block; background:#181818; border:1px solid rgba(255,255,255,.07);
            border-radius:8px; overflow:hidden; text-decoration:none; color:inherit; }
   a.card:hover { border-color:#3D6AFF; background:#1d1d1d; }
+  a.card.sel { border-color:#3D6AFF; background:#1a2340; }
   .thumb { height:128px; display:flex; align-items:center; justify-content:center; background:#0d0d0d; }
   .thumb img { max-width:100%; max-height:100%; display:block; }
   .letter { font-size:30px; color:#4A4A4A; font-weight:600; }
   .meta { padding:7px 9px; }
   .nm { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:500; }
-  .sub { color:#8C8C8C; font-size:11px; margin-top:2px; display:flex; justify-content:space-between; }
+  .sub { color:#8C8C8C; font-size:11px; margin-top:2px; display:flex; gap:6px; align-items:center; }
+  .sub .id { margin-right:auto; }
+  .badge { border:1px solid rgba(255,255,255,.14); border-radius:4px; padding:0 5px; font-size:10px;
+           line-height:15px; color:#9A9A9A; text-transform:uppercase; letter-spacing:.3px; }
+  .badge.k-cutin { color:#C9A7FF; border-color:#5b3d8f; }
+  .badge.k-gacha { color:#FFC96B; border-color:#8f6b2f; }
+  #subrow { display:none; gap:6px; }
+  #subrow.show { display:flex; }
+  #subrow .chip { padding:3px 10px; font-size:12px; }
+  aside { width:46%; min-width:420px; max-width:58%; border-left:1px solid rgba(255,255,255,.08);
+          display:flex; flex-direction:column; background:#141414; }
+  @media (max-width: 900px) { aside { display:none; } }
+  #sideHead { height:42px; display:flex; align-items:center; gap:8px; padding:0 12px;
+              border-bottom:1px solid rgba(255,255,255,.08); }
+  #sideTitle { font-weight:600; color:#D6D6D6; flex:1; white-space:nowrap; overflow:hidden;
+               text-overflow:ellipsis; }
+  #sideClose { background:none; border:none; color:#8C8C8C; font-size:15px; cursor:pointer; padding:4px 6px; }
+  #sideClose:hover { color:#fff; }
+  #sideBody { flex:1; min-height:0; position:relative; background:#0d0d0d; }
+  #sideBody iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  #sideBody img { position:absolute; inset:0; margin:auto; max-width:100%; max-height:100%; }
+  #sideHint { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+              color:#5A5A5A; text-align:center; padding:20px; }
 </style>
 </head>
 <body>
@@ -39,38 +66,128 @@
   <span class="chip" data-k="portrait">Portrait</span>
   <span class="chip" data-k="model">Model</span>
   <span class="chip" data-k="battle">Battle</span>
+  <span class="chip" data-k="cutin">Cutin</span>
+  <span class="chip" data-k="gacha">Gacha</span>
+  <span id="subrow">
+    <span class="chip on" data-s="all">All</span>
+    <span class="chip" data-s="fhd">FHD</span>
+    <span class="chip" data-s="collapse">Collapse</span>
+    <span class="chip" data-s="ux">UX</span>
+    <span class="chip" data-s="special">Special</span>
+  </span>
   <span id="count"></span>
 </header>
-<main id="grid"></main>
+<div id="cols">
+  <main id="grid"></main>
+  <aside>
+    <div id="sideHead">
+      <span id="sideTitle">Preview</span>
+      <button id="sideClose" title="Close">&#10005;</button>
+    </div>
+    <div id="sideBody"><div id="sideHint">Select an item to preview</div></div>
+  </aside>
+</div>
 <script>
 "use strict";
-var DATA = [], kind = "all";
-var grid = document.getElementById("grid"), countEl = document.getElementById("count"), q = document.getElementById("q");
+var DATA = [], kind = "all", sub = "all";
+var grid = document.getElementById("grid");
+var countEl = document.getElementById("count");
+var q = document.getElementById("q");
+var sideBody = document.getElementById("sideBody");
+var sideTitle = document.getElementById("sideTitle");
+var subrow = document.getElementById("subrow");
+var current = null;
+
+function label(r) {
+  return r.name || (r.id ? "ID " + r.id : r.slug.replace(/_/g, " "));
+}
+function href(r) {
+  return r.kind === "portrait" || r.kind === "model" || r.kind === "battle"
+    ? "viewer.html?m=rigs/" + r.slug
+    : "cutins/" + r.slug + ".webp";
+}
 function render() {
   var s = q.value.trim().toLowerCase();
   var rows = DATA.filter(function (r) {
-    return (kind === "all" || r.kind === kind) &&
-      (!s || String(r.id).indexOf(s) !== -1 || (r.name || "").toLowerCase().indexOf(s) !== -1);
+    if (kind !== "all" && r.kind !== kind) return false;
+    if (kind === "cutin" && sub !== "all" && r.subtype !== sub) return false;
+    return !s ||
+      String(r.id).indexOf(s) !== -1 ||
+      (r.name || "").toLowerCase().indexOf(s) !== -1 ||
+      (r.subtype || "").indexOf(s) !== -1 ||
+      r.slug.indexOf(s) !== -1;
   });
   countEl.textContent = rows.length + " / " + DATA.length;
-  grid.innerHTML = rows.map(function (r) {
+  grid.innerHTML = "";
+  rows.forEach(function (r) {
+    var a = document.createElement("a");
+    a.className = "card";
+    a.href = href(r);
     var face = r.thumb ? '<img loading="lazy" src="' + r.thumb + '" alt="">'
-                       : '<span class="letter">' + (r.id.replace(/\D/g, "").slice(-2) || "?") + "</span>";
-    return '<a class="card" href="viewer.html?m=rigs/' + r.slug + '">' +
-      '<div class="thumb">' + face + "</div>" +
-      '<div class="meta"><div class="nm">' + (r.name || "ID " + r.id) + "</div>" +
-      '<div class="sub"><span>#' + r.id + "</span><span>" + r.kind + "</span></div></div></a>";
-  }).join("");
+                       : '<span class="letter">' + (String(r.id).replace(/\D/g, "").slice(-2) || "?") + "</span>";
+    var badgeSub = (r.subtype && r.subtype !== r.kind)
+      ? '<span class="badge">' + r.subtype + "</span>" : "";
+    a.innerHTML = '<div class="thumb">' + face + '</div>' +
+      '<div class="meta"><div class="nm">' + label(r) + '</div>' +
+      '<div class="sub"><span class="id">#' + (r.id || "-") + '</span>' +
+      '<span class="badge k-' + r.kind + '">' + r.kind + "</span>" + badgeSub + "</div></div>";
+    if (current && current.slug === r.slug && current.kind === r.kind) a.classList.add("sel");
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      e.preventDefault();
+      open(r);
+    });
+    grid.appendChild(a);
+  });
 }
-q.addEventListener("input", render);
-document.querySelectorAll(".chip").forEach(function (c) {
+function open(r) {
+  current = r;
+  sideTitle.textContent = label(r) + (r.id ? "  #" + r.id : "");
+  if (r.kind === "cutin" || r.kind === "gacha") {
+    sideBody.innerHTML = '<img src="cutins/' + r.slug + '.webp" alt="">';
+  } else {
+    sideBody.innerHTML = '<iframe src="viewer.html?m=rigs/' + r.slug + '&embed=1" allowfullscreen></iframe>';
+  }
+  render();
+}
+function clearSide() {
+  current = null;
+  sideTitle.textContent = "Preview";
+  sideBody.innerHTML = '<div id="sideHint">Select an item to preview</div>';
+  render();
+}
+document.getElementById("sideClose").addEventListener("click", clearSide);
+document.addEventListener("keydown", function (e) { if (e.key === "Escape") clearSide(); });
+document.querySelectorAll(".chip[data-k]").forEach(function (c) {
   c.addEventListener("click", function () {
-    document.querySelectorAll(".chip").forEach(function (x) { x.classList.remove("on"); });
-    c.classList.add("on"); kind = c.dataset.k; render();
+    document.querySelectorAll(".chip[data-k]").forEach(function (x) { x.classList.remove("on"); });
+    c.classList.add("on");
+    kind = c.dataset.k;
+    subrow.classList.toggle("show", kind === "cutin");
+    render();
   });
 });
+document.querySelectorAll(".chip[data-s]").forEach(function (c) {
+  c.addEventListener("click", function () {
+    document.querySelectorAll(".chip[data-s]").forEach(function (x) { x.classList.remove("on"); });
+    c.classList.add("on");
+    sub = c.dataset.s;
+    render();
+  });
+});
+q.addEventListener("input", render);
 fetch("index.json").then(function (r) { return r.json(); }).then(function (j) {
-  DATA = j.rigs; render();
+  DATA = (j.rigs || []).concat(j.cutins || []);
+  render();
+  var p = new URLSearchParams(location.search);
+  var m = p.get("m"), c = p.get("c");
+  if (m) {
+    var rig = DATA.find(function (r) { return "rigs/" + r.slug === m; });
+    if (rig) open(rig);
+  } else if (c) {
+    var cut = DATA.find(function (r) { return r.slug === c && (r.kind === "cutin" || r.kind === "gacha"); });
+    if (cut) open(cut);
+  }
 });
 </script>
 </body>
