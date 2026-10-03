@@ -69,6 +69,10 @@
             border-radius:5px; color:#D6D6D6; font-size:11px; cursor:pointer; }
   #wpSeek { flex:1; min-width:60px; accent-color:#3D6AFF; cursor:pointer; }
   #wpTime { flex:none; color:#8C8C8C; font-size:12px; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  #wpDl { flex:none; background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:5px;
+          color:#D6D6D6; padding:3px 8px; font-size:12px; text-decoration:none; }
+  #wpRec { flex:none; width:28px; height:24px; background:#1d1d1d; border:1px solid rgba(255,255,255,.12);
+           border-radius:5px; color:#D6D6D6; font-size:11px; cursor:pointer; }
   #sideHint { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
               color:#5A5A5A; text-align:center; padding:20px; }
 </style>
@@ -262,6 +266,31 @@ function wpTick(now) {
   wpDraw(wpIdxAt(wp.t));
   wp.raf = requestAnimationFrame(wpTick);
 }
+function recWp(slug) {
+  /* one clean loop -> .webm (live wallpapers / video edits); the raw animated
+     webp keeps transparency and stays available via the webp link. */
+  var c = document.getElementById("wpc"), btn = document.getElementById("wpRec");
+  if (!c || !wp.starts || !wp.dur || !window.MediaRecorder) return;
+  if (wp.rec) { wp.rec.stop(); return; }                 /* second click stops early */
+  var mime = MediaRecorder.isTypeSupported("video/webm;codecs=vp9")
+    ? "video/webm;codecs=vp9" : "video/webm";
+  wp.rec = new MediaRecorder(c.captureStream(30), { mimeType: mime, videoBitsPerSecond: 12e6 });
+  wp.recChunks = [];
+  wp.rec.ondataavailable = function (ev) { if (ev.data && ev.data.size) wp.recChunks.push(ev.data); };
+  wp.rec.onstop = function () {
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob(wp.recChunks, { type: "video/webm" }));
+    a.download = slug + ".webm";
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+    wp.rec = null;
+    if (btn) { btn.style.color = ""; btn.textContent = "\u25cf"; }
+  };
+  wp.t = 0; wp.idx = -1; wpDraw(0); wpPlay(true);        /* restart for a seamless loop */
+  wp.rec.start();
+  if (btn) { btn.style.color = "#E06C6C"; btn.textContent = "\u25a0"; }
+  setTimeout(function () { if (wp.rec) wp.rec.stop(); }, wp.dur + 150);   /* wp.dur is ms */
+}
 function openWp(slug) {
   var url = "cutins/" + slug + ".webp";
   if (!window.ImageDecoder || !slug) { sideBody.innerHTML = '<img src="' + url + '" alt="">'; return; }
@@ -270,7 +299,9 @@ function openWp(slug) {
     '<div id="wp"><canvas id="wpc"></canvas>' +
     '<div id="wpb"><button id="wpPlay" title="Play/Pause">\u275a\u275a</button>' +
     '<input type="range" id="wpSeek" min="0" max="1000" value="0">' +
-    '<span id="wpTime">decoding\u2026</span></div></div>';
+    '<span id="wpTime">decoding\u2026</span>' +
+    '<a id="wpDl" download title="Download the original animated WebP (keeps transparency)">webp</a>' +
+    '<button id="wpRec" title="Record one loop as .webm - live wallpaper / video edits">\u25cf</button></div></div>';
   document.getElementById("wpPlay").addEventListener("click", function () { wpPlay(!wp.playing); });
   document.getElementById("wpc").addEventListener("click", function () { wpPlay(!wp.playing); });
   document.getElementById("wpSeek").addEventListener("input", function (e) {
@@ -278,6 +309,8 @@ function openWp(slug) {
     wp.t = Number(e.target.value) / 1000 * wp.dur;
     wpDraw(wpIdxAt(wp.t));
   });
+  document.getElementById("wpDl").href = url;
+  document.getElementById("wpRec").addEventListener("click", function () { recWp(slug); });
   fetch(url).then(function (r) { return r.arrayBuffer(); }).then(function (buf) {
     if (g !== wp.gen) return;
     var dec = new ImageDecoder({ data: buf, type: "image/webp" });

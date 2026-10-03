@@ -48,6 +48,7 @@
   </select>
   <label title="Loop the animation"><input id="loop" type="checkbox" checked>loop</label>
   <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
+  <button id="rec" title="Record one animation loop as .webm (live wallpaper / video edits)">&#9679;</button>
   <select id="anim" title="Animation" style="visibility:hidden"></select>
 </div>
 <script src="spine-webgl.js"></script>
@@ -155,6 +156,33 @@ if (imgSrc) {
     gl.clear(gl.COLOR_BUFFER_BIT);
   }
   bgcol.oninput = function () { localStorage.setItem("czn_bg", bgcol.value); };
+  /* record the current animation as one clean loop -> .webm (live wallpapers,
+     video edits). Second click stops early; the file downloads on stop. */
+  const recBtn = document.getElementById("rec");
+  let rec = null, recChunks = [];
+  recBtn.onclick = function () {
+    if (rec) { rec.stop(); return; }
+    if (!animationState || !skeleton || !window.MediaRecorder) return;
+    const e = animationState.getCurrent(0);
+    const dur = e && e.animation.duration ? e.animation.duration : 5;
+    const mime = MediaRecorder.isTypeSupported("video/webm;codecs=vp9")
+      ? "video/webm;codecs=vp9" : "video/webm";
+    rec = new MediaRecorder(canvas.captureStream(30), { mimeType: mime, videoBitsPerSecond: 12e6 });
+    recChunks = [];
+    rec.ondataavailable = function (ev) { if (ev.data && ev.data.size) recChunks.push(ev.data); };
+    rec.onstop = function () {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob(recChunks, { type: "video/webm" }));
+      a.download = (model.split("/").pop() || "rig") + "-" + (e ? e.animation.name : "anim") + ".webm";
+      a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+      rec = null; recBtn.style.color = ""; recBtn.innerHTML = "&#9679;";
+    };
+    if (e) { e.trackTime = 0; animationState.update(0); animationState.apply(skeleton); }
+    rec.start();
+    recBtn.style.color = "#E06C6C"; recBtn.innerHTML = "&#9632;";
+    setTimeout(function () { if (rec) rec.stop(); }, dur * 1000 + 150);
+  };
 
   function fitCamera() {
     if (!skeleton) return;
