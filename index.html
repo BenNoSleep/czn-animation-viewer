@@ -44,6 +44,7 @@
   .badge.k-gacha { color:#FFC96B; border-color:#8f6b2f; }
   #subrow { display:none; gap:6px; }
   #subrow.show { display:flex; }
+  #rolerow { display:flex; gap:6px; }
   #subrow .chip { padding:3px 10px; font-size:12px; }
   aside { width:46%; min-width:420px; max-width:58%; border-left:1px solid rgba(255,255,255,.08);
           display:flex; flex-direction:column; background:#141414; }
@@ -80,6 +81,12 @@
   <span class="chip" data-k="battle">Battle</span>
   <span class="chip" data-k="cutin">Cutin</span>
   <span class="chip" data-k="gacha">Gacha</span>
+  <span id="rolerow">
+    <span class="chip on" data-r="all">Role: All</span>
+    <span class="chip" data-r="Playable">Playable</span>
+    <span class="chip" data-r="Support">Support</span>
+    <span class="chip" data-r="Other">Other</span>
+  </span>
   <span id="subrow">
     <span class="chip on" data-s="all">All</span>
     <span class="chip" data-s="fhd">FHD</span>
@@ -105,7 +112,26 @@
 </div>
 <script>
 "use strict";
-var DATA = [], kind = "all", sub = "all";
+var DATA = [], kind = "all", sub = "all", role = "all";
+/* Character role by name - derived from pack data: Playable = card+cutin kit,
+   Support = supporter_skill kit, Other = story NPC / misc. */
+var ROLE = {
+  "Adelheid":"Playable", "Alcea":"Support", "Amir":"Playable", "Anika":"Playable", "Arabella":"Playable",
+  "Aria":"Support", "Asteria":"Support", "Beryl":"Playable", "Blackrabbit":"Support", "Briah":"Support",
+  "Carl":"Other", "Cassius":"Playable", "Chizuru":"Playable", "Clara":"Support", "Diana":"Playable",
+  "Eloise":"Support", "Emily":"Support", "Encounter":"Other", "Erica":"Support", "Eunie":"Support",
+  "Fei":"Playable", "Haru":"Playable", "Heidemarie":"Playable", "Hilde":"Playable", "Hugo":"Playable",
+  "Itsuku":"Support", "Ivy":"Support", "Kayron":"Playable", "Khalipe":"Playable", "Kiara":"Support",
+  "Licinia":"Support", "Lilian":"Support", "Louis":"Other", "Lucas":"Playable", "Luke":"Playable",
+  "Magna":"Playable", "Maria":"Other", "Marianne":"Support", "Mei Lin":"Playable", "Mika":"Playable",
+  "Millia":"Other", "Mob":"Other", "Monster":"Other", "Narzya":"Playable", "Nia":"Playable",
+  "Nine":"Playable", "Noel":"Support", "Olga":"Playable", "Orlea":"Playable", "Owen":"Playable",
+  "Peco":"Support", "Rei":"Playable", "Renoa":"Playable", "Rita":"Playable", "Ritochika":"Support",
+  "Ruchet":"Other", "Ruixiang":"Support", "Rynn":"Playable", "Sarah":"Other", "Selena":"Playable",
+  "Sereniel":"Playable", "Solia":"Other", "Sophia":"Support", "Sylvia":"Support", "Tenebria":"Playable",
+  "Tiana":"Support", "Tipera":"Playable", "Trisa":"Playable", "Veronica":"Playable", "Westmacot":"Support",
+  "Yuki":"Playable"
+};
 var grid = document.getElementById("grid");
 var countEl = document.getElementById("count");
 var q = document.getElementById("q");
@@ -149,6 +175,7 @@ function render() {
   var rows = orderRows(DATA.filter(function (r) {
     if (kind !== "all" && r.kind !== kind) return false;
     if (kind === "cutin" && sub !== "all" && r.subtype !== sub) return false;
+    if (role !== "all" && ROLE[r.name] !== role) return false;
     return !s ||
       String(r.id).indexOf(s) !== -1 ||
       (r.name || "").toLowerCase().indexOf(s) !== -1 ||
@@ -313,6 +340,14 @@ document.querySelectorAll(".chip[data-s]").forEach(function (c) {
     document.querySelectorAll(".chip[data-s]").forEach(function (x) { x.classList.remove("on"); });
     c.classList.add("on");
     sub = c.dataset.s;
+    render();
+  });
+});
+document.querySelectorAll(".chip[data-r]").forEach(function (c) {
+  c.addEventListener("click", function () {
+    document.querySelectorAll(".chip[data-r]").forEach(function (x) { x.classList.remove("on"); });
+    c.classList.add("on");
+    role = c.dataset.r;
     render();
   });
 });
