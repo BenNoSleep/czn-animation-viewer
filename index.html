@@ -57,6 +57,15 @@
   #sideBody { flex:1; min-height:0; position:relative; background:#0d0d0d; }
   #sideBody iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
   #sideBody img { position:absolute; inset:0; margin:auto; max-width:100%; max-height:100%; }
+  /* animated-webp player: canvas + seekable timeline (native <img> cannot seek) */
+  #wp { position:absolute; inset:0; display:flex; flex-direction:column; }
+  #wpc { flex:1; min-height:0; width:100%; object-fit:contain; cursor:pointer; background:#0d0d0d; }
+  #wpb { flex:none; height:38px; display:flex; align-items:center; gap:10px; padding:0 10px;
+         background:#141414; border-top:1px solid rgba(255,255,255,.08); }
+  #wpPlay { flex:none; width:28px; height:24px; background:#1d1d1d; border:1px solid rgba(255,255,255,.12);
+            border-radius:5px; color:#D6D6D6; font-size:11px; cursor:pointer; }
+  #wpSeek { flex:1; min-width:60px; accent-color:#3D6AFF; cursor:pointer; }
+  #wpTime { flex:none; color:#8C8C8C; font-size:12px; font-variant-numeric:tabular-nums; white-space:nowrap; }
   #sideHint { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
               color:#5A5A5A; text-align:center; padding:20px; }
 </style>
@@ -169,11 +178,113 @@ function render() {
     grid.appendChild(a);
   });
 }
+/* ---- animated-webp player (ImageDecoder + canvas): play/pause + seekable timeline ---- */
+var wp = { dec:null, starts:null, dur:0, idx:-1, t:0, playing:false, raf:0, last:0, gen:0 };
+
+function stopWp() {
+  wp.gen++;
+  if (wp.raf) { cancelAnimationFrame(wp.raf); wp.raf = 0; }
+  if (wp.dec) { try { wp.dec.close(); } catch (e) {} }
+  wp.dec = null; wp.starts = null; wp.dur = 0; wp.idx = -1; wp.playing = false;
+}
+function wpIdxAt(t) {
+  var s = wp.starts, lo = 0, hi = s.length - 2;
+  while (lo < hi) { var mid = (lo + hi + 1) >> 1; if (s[mid] <= t) lo = mid; else hi = mid - 1; }
+  return Math.max(0, lo);
+}
+function wpDraw(i) {
+  if (!wp.dec || i === wp.idx) return;
+  wp.idx = i;
+  var g = wp.gen;
+  wp.dec.decode({ frameIndex: i }).then(function (res) {
+    if (g !== wp.gen) { res.image.close(); return; }
+    var im = res.image, c = document.getElementById("wpc");
+    if (!c) { im.close(); return; }
+    if (c.width !== im.displayWidth || c.height !== im.displayHeight) {
+      c.width = im.displayWidth; c.height = im.displayHeight;
+    }
+    c.getContext("2d").drawImage(im, 0, 0);
+    im.close();
+  }).catch(function () {});
+  wpUi();
+}
+function wpUi() {
+  var seek = document.getElementById("wpSeek"), lbl = document.getElementById("wpTime");
+  if (!seek || !wp.starts || !wp.dur) return;
+  seek.value = String(Math.round(wp.t / wp.dur * 1000) || 0);
+  lbl.textContent = (wp.t / 1000).toFixed(2) + " / " + (wp.dur / 1000).toFixed(2) + "s \u00b7 f" +
+                    (wp.idx + 1) + "/" + (wp.starts.length - 1);
+}
+function wpPlay(on) {
+  var b = document.getElementById("wpPlay");
+  wp.playing = on;
+  if (b) b.textContent = on ? "\u275a\u275a" : "\u25b6";
+  if (on) { wp.last = performance.now(); if (!wp.raf) wp.raf = requestAnimationFrame(wpTick); }
+  else if (wp.raf) { cancelAnimationFrame(wp.raf); wp.raf = 0; }
+}
+function wpTick(now) {
+  if (!wp.playing) return;
+  wp.t += Math.min(now - wp.last, 250);   /* clamp: rAF pause (hidden tab) must not jump-play */
+  wp.last = now;
+  if (wp.t >= wp.dur) wp.t -= wp.dur;                 /* loop */
+  wpDraw(wpIdxAt(wp.t));
+  wp.raf = requestAnimationFrame(wpTick);
+}
+function openWp(slug) {
+  var url = "cutins/" + slug + ".webp";
+  if (!window.ImageDecoder || !slug) { sideBody.innerHTML = '<img src="' + url + '" alt="">'; return; }
+  var g = ++wp.gen;                                   /* invalidates any in-flight load */
+  sideBody.innerHTML =
+    '<div id="wp"><canvas id="wpc"></canvas>' +
+    '<div id="wpb"><button id="wpPlay" title="Play/Pause">\u275a\u275a</button>' +
+    '<input type="range" id="wpSeek" min="0" max="1000" value="0">' +
+    '<span id="wpTime">decoding\u2026</span></div></div>';
+  document.getElementById("wpPlay").addEventListener("click", function () { wpPlay(!wp.playing); });
+  document.getElementById("wpc").addEventListener("click", function () { wpPlay(!wp.playing); });
+  document.getElementById("wpSeek").addEventListener("input", function (e) {
+    if (!wp.dur || !wp.starts) return;
+    wp.t = Number(e.target.value) / 1000 * wp.dur;
+    wpDraw(wpIdxAt(wp.t));
+  });
+  fetch(url).then(function (r) { return r.arrayBuffer(); }).then(function (buf) {
+    if (g !== wp.gen) return;
+    var dec = new ImageDecoder({ data: buf, type: "image/webp" });
+    wp.dec = dec;
+    return dec.tracks.ready.then(function () {
+      if (g !== wp.gen) return;
+      var track = dec.tracks.selectedTrack, starts = [0], total = 0, i = 0;
+      /* one pre-pass decode to read each frame's duration (PIL/ANMF timings) */
+      function step() {
+        var lbl = document.getElementById("wpTime");
+        if (lbl && track.frameCount > 60 && (i % 20 === 0)) {
+          lbl.textContent = "preparing\u2026 " + Math.round(i / track.frameCount * 100) + "%";
+        }
+        if (g !== wp.gen || i >= track.frameCount) return Promise.resolve();
+        return dec.decode({ frameIndex: i }).then(function (res) {
+          total += (res.image.duration || 33000) / 1000;
+          starts.push(total);
+          res.image.close();
+          i++;
+          return step();
+        });
+      }
+      return step().then(function () {
+        if (g !== wp.gen) return;
+        wp.starts = starts; wp.dur = total || 1; wp.t = 0; wp.idx = -1;
+        wpDraw(0);
+        wpPlay(true);
+      });
+    });
+  }).catch(function () {
+    if (g === wp.gen) sideBody.innerHTML = '<img src="' + url + '" alt="">';
+  });
+}
 function open(r) {
   current = r;
   sideTitle.textContent = label(r) + (r.id ? "  #" + r.id : "");
+  stopWp();
   if (r.kind === "cutin" || r.kind === "gacha") {
-    sideBody.innerHTML = '<img src="cutins/' + r.slug + '.webp" alt="">';
+    openWp(r.slug);
   } else {
     sideBody.innerHTML = '<iframe src="viewer.html?m=rigs/' + r.slug + '&embed=1" allowfullscreen></iframe>';
   }
@@ -181,6 +292,7 @@ function open(r) {
 }
 function clearSide() {
   current = null;
+  stopWp();
   sideTitle.textContent = "Preview";
   sideBody.innerHTML = '<div id="sideHint">Select an item to preview</div>';
   render();
