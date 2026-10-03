@@ -269,8 +269,8 @@ function wpTick(now) {
   wp.raf = requestAnimationFrame(wpTick);
 }
 function recWp(slug) {
-  /* one clean loop -> .webm (live wallpapers / video edits); the raw animated
-     webp keeps transparency and stays available via the webp link. */
+  /* one clean loop -> .webm; the raw animated webp keeps transparency and
+     stays available via the webp link. */
   var c = document.getElementById("wpc"), btn = document.getElementById("wpRec");
   if (!c || !wp.starts || !wp.dur || !window.MediaRecorder) return;
   if (wp.rec) { wp.rec.stop(); return; }                 /* second click stops early */

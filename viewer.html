@@ -168,10 +168,10 @@ if (imgSrc) {
     gl.clear(gl.COLOR_BUFFER_BIT);
   }
   bgcol.oninput = function () { localStorage.setItem("czn_bg", bgcol.value); };
-  /* record the current animation as one clean loop -> .webm (live wallpapers,
-     video edits). Resolution preset: the canvas is temporarily resized and the
-     camera refit, so the file is a true vector render at that size (not an
-     upscale). Second click stops early; the file downloads on stop. */
+  /* record the current animation as one clean loop -> .webm. Resolution preset:
+     the canvas is temporarily resized and the camera refit, so the file is a
+     true vector render at that size (not an upscale). Second click stops early;
+     the file downloads on stop. */
   const recRes = document.getElementById("recres");
   const recMbps = document.getElementById("recmbps");
   recRes.value = localStorage.getItem("czn_recres") || "1080";
