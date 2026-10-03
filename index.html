@@ -42,7 +42,6 @@
            line-height:15px; color:#9A9A9A; text-transform:uppercase; letter-spacing:.3px; }
   .badge.k-cutin { color:#C9A7FF; border-color:#5b3d8f; }
   .badge.k-gacha { color:#FFC96B; border-color:#8f6b2f; }
-  .badge.k-scene { color:#7FD4A8; border-color:#2f8f5b; }
   #subrow { display:none; gap:6px; }
   #subrow.show { display:flex; }
   #subrow .chip { padding:3px 10px; font-size:12px; }
@@ -81,7 +80,6 @@
   <span class="chip" data-k="battle">Battle</span>
   <span class="chip" data-k="cutin">Cutin</span>
   <span class="chip" data-k="gacha">Gacha</span>
-  <span class="chip" data-k="scene">Scene</span>
   <span id="subrow">
     <span class="chip on" data-s="all">All</span>
     <span class="chip" data-s="fhd">FHD</span>
@@ -285,9 +283,7 @@ function open(r) {
   current = r;
   sideTitle.textContent = label(r) + (r.id ? "  #" + r.id : "");
   stopWp();
-  if (r.kind === "scene") {
-    sideBody.innerHTML = '<iframe src="skill.html?v=3" allowfullscreen></iframe>';
-  } else if (r.kind === "cutin" || r.kind === "gacha") {
+  if (r.kind === "cutin" || r.kind === "gacha") {
     openWp(r.slug);
   } else {
     sideBody.innerHTML = '<iframe src="viewer.html?m=rigs/' + r.slug + '&embed=1" allowfullscreen></iframe>';
@@ -328,9 +324,6 @@ sortEl.addEventListener("change", function () {
 q.addEventListener("input", render);
 fetch("index.json").then(function (r) { return r.json(); }).then(function (j) {
   DATA = (j.rigs || []).concat(j.cutins || []);
-  /* full skill scene players (game-authored layer sets, see scene/<slug>/) */
-  DATA.push({ slug: "yuki_1057_skill", id: "1057", kind: "scene", subtype: "skill",
-              name: "Yuki - Full Skill", thumb: "cutins/thumbs/1057_fhd.png" });
   render();
   var p = new URLSearchParams(location.search);
   var m = p.get("m"), c = p.get("c");
