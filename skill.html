@@ -19,6 +19,7 @@
   #seek { flex:1; min-width:60px; accent-color:#3D6AFF; cursor:pointer; }
   #time { flex:none; color:#8C8C8C; font-size:12px; font-variant-numeric:tabular-nums; white-space:nowrap; }
   #msg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#5A5A5A; }
+  #msg[hidden] { display:none; }
 </style>
 </head>
 <body>
@@ -176,6 +177,8 @@ function draw() {
   gl.clearColor(0, 0, 0, 0);
   gl.clear(gl.COLOR_BUFFER_BIT);
   var cam = renderer.camera;
+  /* zoom = world units per screen px (OrthoCamera: visible world = viewport * zoom).
+     Contain-fit the 1580x720 design frame: world-per-px = max of both axes. */
   cam.zoom = Math.max(DESIGN_W / w, DESIGN_H / h);
   cam.position.set(0, 0, 0);
   if (cam.update) cam.update();
@@ -193,6 +196,9 @@ function syncSize() {
   if (w > 3 && h > 3 && (bw !== canvas.width || bh !== canvas.height)) {
     canvas.width = bw; canvas.height = bh;
     gl.viewport(0, 0, bw, bh);
+    /* keep the camera projection in sync (renderer.resize does this normally) */
+    if (renderer.camera.setViewport) renderer.camera.setViewport(bw, bh);
+    else { renderer.camera.viewportWidth = bw; renderer.camera.viewportHeight = bh; }
   }
 }
 function ui() {

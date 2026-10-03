@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#111}canvas{display:block}</style></head>
+<body>
+<canvas id="c" width="520" height="820"></canvas>
+<script src="spine-webgl.js"></script>
+<script>
+var gl = document.getElementById('c').getContext('webgl', {alpha:true, premultipliedAlpha:true});
+var renderer = new spine.webgl.SceneRenderer(document.getElementById('c'), gl);
+var m = new spine.webgl.AssetManager(gl, "scene/yuki_1057/ux_bg1_1/");
+m.loadText("skeleton.json"); m.loadTextureAtlas("skeleton.atlas");
+function tick() {
+  if (!m.isLoadingComplete()) { setTimeout(tick, 30); return; }
+  var raw = JSON.parse(m.get("skeleton.json"));
+  var data = new spine.SkeletonJson(new spine.AtlasAttachmentLoader(m.get("skeleton.atlas"))).readSkeletonData(raw);
+  var sk = new spine.Skeleton(data);
+  var skin = data.findSkin ? (data.findSkin("normal") || data.defaultSkin) : null;
+  if (skin) sk.setSkin(skin);
+  var skinsRaw = raw.skins;
+  if (skinsRaw) {
+    var skMap = null;
+    if (skinsRaw.length) skMap = skinsRaw[0].attachments || null;
+    else { for (var sn in skinsRaw) { skMap = skinsRaw[sn].attachments || skinsRaw[sn]; break; } }
+    if (skMap) for (var si = 0; si < sk.slots.length; si++) {
+      var sd = sk.slots[si].data;
+      if (!sd.attachmentName && skMap[sd.name]) for (var an in skMap[sd.name]) { sd.attachmentName = an; break; }
+    }
+  }
+  sk.setSlotsToSetupPose();
+  var st = new spine.AnimationState(data.defaultAnimation ? null : new spine.AnimationStateData(data));
+  var anim = data.animations[0];
+  st.setAnimation(0, anim.name, false);
+  st.update(0); st.apply(sk); sk.updateWorldTransform();
+  window.__rig = { sk: sk, st: st, anim: anim };
+  document.title = "ready:" + anim.name + ":" + (anim.duration || 0).toFixed(2);
+  requestAnimationFrame(loop);
+}
+function loop() {
+  var c = document.getElementById('c');
+  var cam = renderer.camera;
+  cam.zoom = 0.33; cam.position.set(0, 0, 0); if (cam.update) cam.update();
+  gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
+  renderer.begin();
+  renderer.drawSkeleton(window.__rig.sk, true);
+  renderer.end();
+  requestAnimationFrame(loop);
+}
+tick();
+</script>
+</body></html>
