@@ -12,8 +12,8 @@
   #img { position:absolute; left:0; top:0; transform-origin:0 0; cursor:grab;
          user-select:none; -webkit-user-drag:none; }
   #msg { position:absolute; left:16px; top:14px; white-space:pre-wrap; max-width:80%; z-index:3; }
-  #bar { position:absolute; left:10px; right:10px; bottom:8px; height:30px;
-         display:flex; gap:6px; align-items:center; }
+  #bar { position:absolute; left:10px; right:10px; bottom:8px; min-height:30px;
+         display:flex; flex-wrap:wrap; row-gap:4px; gap:6px; align-items:center; }
   #bar[hidden] { display:none; }        /* id selector would beat the hidden attribute */
   #bar button { background:#232323; color:#D6D6D6; border:1px solid rgba(255,255,255,0.12);
                 border-radius:6px; min-width:30px; height:26px; font:13px Inter, sans-serif; cursor:pointer; }
@@ -48,7 +48,19 @@
   </select>
   <label title="Loop the animation"><input id="loop" type="checkbox" checked>loop</label>
   <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
-  <button id="rec" title="Record one animation loop as .webm (live wallpaper / video edits)">&#9679;</button>
+  <select id="recres" title="Recording resolution (the render is redone at this size - vector, not upscaled)">
+    <option value="0">Win</option>
+    <option value="1080" selected>1080p</option>
+    <option value="1440">1440p</option>
+    <option value="2160">4K</option>
+  </select>
+  <select id="recmbps" title="Recording bitrate (Mbps)">
+    <option value="8">8M</option>
+    <option value="20" selected>20M</option>
+    <option value="35">35M</option>
+    <option value="60">60M</option>
+  </select>
+  <button id="rec" title="Record one animation loop as .webm (live wallpaper / video edits)">&#127909;</button>
   <select id="anim" title="Animation" style="visibility:hidden"></select>
 </div>
 <script src="spine-webgl.js"></script>
@@ -157,7 +169,15 @@ if (imgSrc) {
   }
   bgcol.oninput = function () { localStorage.setItem("czn_bg", bgcol.value); };
   /* record the current animation as one clean loop -> .webm (live wallpapers,
-     video edits). Second click stops early; the file downloads on stop. */
+     video edits). Resolution preset: the canvas is temporarily resized and the
+     camera refit, so the file is a true vector render at that size (not an
+     upscale). Second click stops early; the file downloads on stop. */
+  const recRes = document.getElementById("recres");
+  const recMbps = document.getElementById("recmbps");
+  recRes.value = localStorage.getItem("czn_recres") || "1080";
+  recMbps.value = localStorage.getItem("czn_recmbps") || "20";
+  recRes.onchange = function () { localStorage.setItem("czn_recres", recRes.value); };
+  recMbps.onchange = function () { localStorage.setItem("czn_recmbps", recMbps.value); };
   const recBtn = document.getElementById("rec");
   let rec = null, recChunks = [];
   recBtn.onclick = function () {
@@ -165,9 +185,25 @@ if (imgSrc) {
     if (!animationState || !skeleton || !window.MediaRecorder) return;
     const e = animationState.getCurrent(0);
     const dur = e && e.animation.duration ? e.animation.duration : 5;
+    const W0 = canvas.width, H0 = canvas.height;
+    const rh = parseInt(recRes.value, 10) || 0;
+    if (rh) {                                  /* 16:9 preset render */
+      const rw = Math.round(rh * 16 / 9);
+      canvas.width = rw; canvas.height = rh;
+      renderer.camera.setViewport(rw, rh);
+      gl.viewport(0, 0, rw, rh);
+      fitCamera();
+    }
+    const restore = function () {
+      canvas.width = W0; canvas.height = H0;
+      renderer.camera.setViewport(W0, H0);
+      gl.viewport(0, 0, W0, H0);
+      fitCamera();
+    };
     const mime = MediaRecorder.isTypeSupported("video/webm;codecs=vp9")
       ? "video/webm;codecs=vp9" : "video/webm";
-    rec = new MediaRecorder(canvas.captureStream(30), { mimeType: mime, videoBitsPerSecond: 12e6 });
+    rec = new MediaRecorder(canvas.captureStream(60), {
+      mimeType: mime, videoBitsPerSecond: (parseInt(recMbps.value, 10) || 20) * 1e6 });
     recChunks = [];
     rec.ondataavailable = function (ev) { if (ev.data && ev.data.size) recChunks.push(ev.data); };
     rec.onstop = function () {
@@ -176,7 +212,8 @@ if (imgSrc) {
       a.download = (model.split("/").pop() || "rig") + "-" + (e ? e.animation.name : "anim") + ".webm";
       a.click();
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
-      rec = null; recBtn.style.color = ""; recBtn.innerHTML = "&#9679;";
+      rec = null; recBtn.style.color = ""; recBtn.innerHTML = "&#127909;";
+      restore();
     };
     if (e) { e.trackTime = 0; animationState.update(0); animationState.apply(skeleton); }
     rec.start();
@@ -186,7 +223,9 @@ if (imgSrc) {
 
   function fitCamera() {
     if (!skeleton) return;
-    renderer.resize(spine.webgl.ResizeMode.Expand);
+    /* NOTE: no renderer.resize() here - it would force the backing store back to
+       the window size and break the recording resolution presets. The backing
+       store is managed by setup() + the window resize listener. */
     if (animationState) {           // portrait rigs draw wildly differently from their setup pose
       animationState.update(0);
       animationState.apply(skeleton);
@@ -376,6 +415,7 @@ if (imgSrc) {
     wireView();
     document.getElementById("zoomhint").hidden = false;
     msg.style.display = "none";
+    renderer.resize(spine.webgl.ResizeMode.Expand);   // backing store -> window size
     fitCamera();
   }
 
