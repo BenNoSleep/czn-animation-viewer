@@ -265,7 +265,8 @@ if (imgSrc) {
         o.value = n; o.textContent = n;
         animSel.appendChild(o);
       });
-      setAnim(0);
+      const li = names.indexOf("lobby");   /* excursion/liveevent rigs: 'lobby' is the idle loop */
+      setAnim(li >= 0 ? li : 0);           /* their scene anims (1_intro_play...) start on an empty stage */
     }
     playBtn.onclick = function () {
       paused = !paused;

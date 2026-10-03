@@ -1,0 +1,545 @@
+
+liveevent_1039.webp
+size: 2048,764
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blush1
+  rotate: true
+  xy: 1865, 588
+  size: 171, 123
+  orig: 171, 123
+  offset: 0, 0
+  index: -1
+ligh1
+  rotate: false
+  xy: 1990, 579
+  size: 48, 33
+  orig: 48, 33
+  offset: 0, 0
+  index: -1
+light2
+  rotate: false
+  xy: 1990, 593
+  size: 43, 91
+  orig: 43, 91
+  offset: 0, 0
+  index: -1
+mika_arm_l1
+  rotate: true
+  xy: 695, 11
+  size: 211, 259
+  orig: 211, 266
+  offset: 0, 0
+  index: -1
+mika_arm_l2
+  rotate: true
+  xy: 1499, 232
+  size: 86, 193
+  orig: 86, 193
+  offset: 0, 0
+  index: -1
+mika_arm_r1
+  rotate: false
+  xy: 1263, 100
+  size: 248, 271
+  orig: 263, 286
+  offset: 0, 15
+  index: -1
+mika_arm_r2
+  rotate: false
+  xy: 2, 232
+  size: 100, 233
+  orig: 100, 244
+  offset: 0, 0
+  index: -1
+mika_body
+  rotate: true
+  xy: 1258, 456
+  size: 303, 375
+  orig: 303, 421
+  offset: 0, 0
+  index: -1
+mika_body_deco_b
+  rotate: 180
+  xy: 1438, 291
+  size: 422, 225
+  orig: 422, 225
+  offset: 0, 0
+  index: -1
+mika_body_deco_r _w
+  rotate: 270
+  xy: 434, 116
+  size: 210, 279
+  orig: 210, 279
+  offset: 0, 0
+  index: -1
+mika_body_under
+  rotate: true
+  xy: 739, 416
+  size: 345, 519
+  orig: 355, 568
+  offset: 2, 0
+  index: -1
+mika_deco_arm1
+  rotate: true
+  xy: 728, 99
+  size: 198, 280
+  orig: 198, 280
+  offset: 0, 0
+  index: -1
+mika_deco_arm2
+  rotate: false
+  xy: 1703, 63
+  size: 208, 152
+  orig: 208, 152
+  offset: 0, 0
+  index: -1
+mika_deco_gift
+  rotate: false
+  xy: 1920, 84
+  size: 126, 109
+  orig: 126, 109
+  offset: 0, 0
+  index: -1
+mika_deco_hand
+  rotate: false
+  xy: 679, 608
+  size: 84, 89
+  orig: 84, 90
+  offset: 0, 0
+  index: -1
+mika_eye_brow_left
+  rotate: false
+  xy: 394, 744
+  size: 44, 15
+  orig: 44, 15
+  offset: 0, 0
+  index: -1
+mika_eye_brow_right
+  rotate: false
+  xy: 1990, 686
+  size: 52, 26
+  orig: 52, 26
+  offset: 0, 0
+  index: -1
+mika_eye_l bg
+  rotate: false
+  xy: 503, 717
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+mika_eye_l01
+  rotate: false
+  xy: 1122, 719
+  size: 27, 41
+  orig: 27, 41
+  offset: 0, 0
+  index: -1
+mika_eye_l02
+  rotate: false
+  xy: 1071, 746
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+mika_eye_l03
+  rotate: false
+  xy: 104, 751
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+mika_eye_l04
+  rotate: false
+  xy: 314, 749
+  size: 25, 10
+  orig: 28, 11
+  offset: 3, 1
+  index: -1
+mika_eye_l05
+  rotate: false
+  xy: 738, 476
+  size: 50, 40
+  orig: 52, 42
+  offset: 0, 0
+  index: -1
+mika_eye_l05_c
+  rotate: false
+  xy: 1865, 552
+  size: 46, 34
+  orig: 46, 34
+  offset: 0, 0
+  index: -1
+mika_eye_l05_s
+  rotate: false
+  xy: 57, 742
+  size: 45, 18
+  orig: 45, 18
+  offset: 0, 0
+  index: -1
+mika_eye_r 02
+  rotate: false
+  xy: 1272, 747
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+mika_eye_r 03
+  rotate: false
+  xy: 114, 751
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+mika_eye_r bg
+  rotate: false
+  xy: 440, 717
+  size: 63, 43
+  orig: 63, 45
+  offset: 0, 0
+  index: -1
+mika_eye_r01
+  rotate: false
+  xy: 1217, 675
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+mika_eye_r04
+  rotate: false
+  xy: 288, 751
+  size: 24, 8
+  orig: 24, 8
+  offset: 0, 0
+  index: -1
+mika_eye_r05
+  rotate: false
+  xy: 605, 650
+  size: 74, 45
+  orig: 74, 45
+  offset: 0, 0
+  index: -1
+mika_eye_r05_c
+  rotate: false
+  xy: 745, 717
+  size: 65, 43
+  orig: 66, 44
+  offset: 1, 1
+  index: -1
+mika_eye_r05_s
+  rotate: false
+  xy: 1487, 688
+  size: 66, 30
+  orig: 66, 30
+  offset: 0, 0
+  index: -1
+mika_face
+  rotate: false
+  xy: 1802, 337
+  size: 219, 218
+  orig: 228, 218
+  offset: 3, 0
+  index: -1
+mika_face_deco
+  rotate: false
+  xy: 547, 697
+  size: 196, 62
+  orig: 196, 62
+  offset: 0, 0
+  index: -1
+mika_face_shy01
+  rotate: false
+  xy: 1499, 76
+  size: 140, 44
+  orig: 140, 44
+  offset: 0, 0
+  index: -1
+mika_face_shy_02
+  rotate: false
+  xy: 1828, 49
+  size: 145, 85
+  orig: 160, 95
+  offset: 10, 6
+  index: -1
+mika_gift
+  rotate: false
+  xy: 2, 103
+  size: 108, 127
+  orig: 108, 127
+  offset: 0, 0
+  index: -1
+mika_hair
+  rotate: true
+  xy: 1635, 516
+  size: 243, 228
+  orig: 243, 228
+  offset: 0, 0
+  index: -1
+mika_hair01
+  rotate: false
+  xy: 1444, 122
+  size: 208, 106
+  orig: 208, 106
+  offset: 0, 0
+  index: -1
+mika_hair_00
+  rotate: false
+  xy: 527, 78
+  size: 132, 139
+  orig: 141, 150
+  offset: 0, 11
+  index: -1
+mika_hair_01
+  rotate: false
+  xy: 608, 27
+  size: 142, 161
+  orig: 184, 177
+  offset: 37, 13
+  index: -1
+mika_hair_back
+  rotate: true
+  xy: 899, 208
+  size: 182, 259
+  orig: 193, 279
+  offset: 5, 8
+  index: -1
+mika_hair_l_01
+  rotate: false
+  xy: 1123, 18
+  size: 139, 166
+  orig: 151, 182
+  offset: 5, 8
+  index: -1
+mika_hair_l_02
+  rotate: 270
+  xy: 1344, 4
+  size: 162, 234
+  orig: 170, 253
+  offset: 0, 13
+  index: -1
+mika_hair_l_03
+  rotate: 270
+  xy: 711, 281
+  size: 179, 283
+  orig: 182, 283
+  offset: 0, 0
+  index: -1
+mika_hair_r_01
+  rotate: 180
+  xy: 1000, 4
+  size: 120, 213
+  orig: 124, 221
+  offset: 4, 8
+  index: -1
+mika_hair_r_02
+  rotate: true
+  xy: 1654, 151
+  size: 206, 310
+  orig: 206, 310
+  offset: 0, 0
+  index: -1
+mika_hair_r_03
+  rotate: true
+  xy: 1067, 107
+  size: 231, 260
+  orig: 234, 267
+  offset: 0, 7
+  index: -1
+mika_hand_l
+  rotate: false
+  xy: 1638, 28
+  size: 70, 95
+  orig: 70, 95
+  offset: 0, 0
+  index: -1
+mika_hand_l_deco01_2
+  rotate: false
+  xy: 1596, 666
+  size: 37, 38
+  orig: 37, 38
+  offset: 0, 0
+  index: -1
+mika_hand_l_deco02
+  rotate: false
+  xy: 1226, 713
+  size: 49, 46
+  orig: 49, 46
+  offset: 0, 0
+  index: -1
+mika_hand_l_deco03
+  rotate: false
+  xy: 745, 704
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+mika_hand_l_deco03_2
+  rotate: false
+  xy: 2, 703
+  size: 22, 15
+  orig: 22, 15
+  offset: 0, 0
+  index: -1
+mika_hand_r
+  rotate: false
+  xy: 1974, 232
+  size: 72, 106
+  orig: 72, 106
+  offset: 0, 0
+  index: -1
+mika_hand_r_deco
+  rotate: false
+  xy: 1976, 533
+  size: 69, 55
+  orig: 69, 56
+  offset: 0, 0
+  index: -1
+mika_mouth00_normal
+  rotate: false
+  xy: 1598, 739
+  size: 32, 20
+  orig: 32, 20
+  offset: 0, 0
+  index: -1
+mika_mouth01_e
+  rotate: false
+  xy: 846, 745
+  size: 36, 14
+  orig: 36, 14
+  offset: 0, 0
+  index: -1
+mika_mouth02_o
+  rotate: false
+  xy: 1613, 698
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+mika_mouth03_a
+  rotate: false
+  xy: 812, 731
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+mika_neck
+  rotate: false
+  xy: 110, 59
+  size: 88, 94
+  orig: 88, 94
+  offset: 0, 0
+  index: -1
+mika_neck_deco
+  rotate: false
+  xy: 182, 140
+  size: 129, 81
+  orig: 130, 82
+  offset: 1, 0
+  index: -1
+mika_nose
+  rotate: false
+  xy: 1612, 718
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+mika_skirt_01_01
+  rotate: false
+  xy: 1408, 704
+  size: 202, 55
+  orig: 202, 55
+  offset: 0, 0
+  index: -1
+mika_skirt_01_02
+  rotate: true
+  xy: 436, 327
+  size: 209, 306
+  orig: 209, 306
+  offset: 0, 0
+  index: -1
+mika_skirt_01_03
+  rotate: 180
+  xy: 2, 267
+  size: 316, 334
+  orig: 316, 334
+  offset: 0, 0
+  index: -1
+mika_skirt_01_04
+  rotate: 270
+  xy: 1147, 337
+  size: 204, 296
+  orig: 206, 296
+  offset: 2, 0
+  index: -1
+mika_skirt_01_05
+  rotate: false
+  xy: 409, 10
+  size: 116, 159
+  orig: 116, 159
+  offset: 0, 0
+  index: -1
+mika_skirt_01_06
+  rotate: 180
+  xy: 194, 54
+  size: 269, 208
+  orig: 269, 208
+  offset: 0, 0
+  index: -1
+mika_skirt_01_07
+  rotate: false
+  xy: 127, 154
+  size: 347, 218
+  orig: 347, 218
+  offset: 0, 0
+  index: -1
+mika_skirt_02
+  rotate: false
+  xy: 2, 428
+  size: 735, 331
+  orig: 735, 331
+  offset: 0, 0
+  index: -1
+shy_eye01l
+  rotate: false
+  xy: 2, 720
+  size: 53, 39
+  orig: 53, 39
+  offset: 0, 0
+  index: -1
+shy_eye01r
+  rotate: false
+  xy: 1152, 713
+  size: 72, 46
+  orig: 72, 46
+  offset: 0, 0
+  index: -1
+shy_mouth01
+  rotate: false
+  xy: 1084, 742
+  size: 28, 17
+  orig: 28, 17
+  offset: 0, 0
+  index: -1
+shy_mouth02
+  rotate: false
+  xy: 341, 751
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: -1
+shy_mouth03
+  rotate: false
+  xy: 365, 748
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+skirt_hand
+  rotate: false
+  xy: 1990, 714
+  size: 53, 45
+  orig: 53, 45
+  offset: 0, 0
+  index: -1
