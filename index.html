@@ -16,6 +16,9 @@
   input#q { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:6px;
             color:#D6D6D6; padding:7px 10px; width:200px; font:13px system-ui; }
   input#q:focus { outline:none; border-color:#3D6AFF; }
+  select#sort { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:6px;
+                color:#D6D6D6; padding:6px 8px; font:13px system-ui; cursor:pointer; }
+  select#sort:focus { outline:none; border-color:#3D6AFF; }
   .chip { background:#1d1d1d; border:1px solid rgba(255,255,255,.12); border-radius:999px;
           padding:5px 12px; cursor:pointer; color:#9A9A9A; user-select:none; }
   .chip.on { color:#fff; border-color:#3D6AFF; background:#1a2340; }
@@ -75,6 +78,10 @@
     <span class="chip" data-s="ux">UX</span>
     <span class="chip" data-s="special">Special</span>
   </span>
+  <select id="sort" title="Sort by">
+    <option value="id">Sort: ID</option>
+    <option value="name">Sort: Name</option>
+  </select>
   <span id="count"></span>
 </header>
 <div id="cols">
@@ -96,7 +103,10 @@ var q = document.getElementById("q");
 var sideBody = document.getElementById("sideBody");
 var sideTitle = document.getElementById("sideTitle");
 var subrow = document.getElementById("subrow");
+var sortEl = document.getElementById("sort");
 var current = null;
+var sortMode = localStorage.getItem("czn_sort") || "id";
+sortEl.value = sortMode;
 
 function label(r) {
   return r.name || (r.id ? "ID " + r.id : r.slug.replace(/_/g, " "));
@@ -106,9 +116,28 @@ function href(r) {
     ? "viewer.html?m=rigs/" + r.slug
     : "cutins/" + r.slug + ".webp";
 }
+function idNum(r) {
+  var m = String(r.id).match(/\d+/);
+  return m ? parseInt(m[0], 10) : 1e9;   /* id-less entries (gacha/specials) sort last */
+}
+/* Default order: numeric id, so a character's rigs + cutins land together. */
+function orderRows(rows) {
+  var c = rows.slice();
+  if (sortMode === "name") {
+    c.sort(function (a, b) {
+      var an = (a.name || "").toLowerCase(), bn = (b.name || "").toLowerCase();
+      if (!an && bn) return 1;
+      if (an && !bn) return -1;
+      return an < bn ? -1 : an > bn ? 1 : (idNum(a) - idNum(b) || (a.slug < b.slug ? -1 : 1));
+    });
+  } else {
+    c.sort(function (a, b) { return idNum(a) - idNum(b) || (a.slug < b.slug ? -1 : 1); });
+  }
+  return c;
+}
 function render() {
   var s = q.value.trim().toLowerCase();
-  var rows = DATA.filter(function (r) {
+  var rows = orderRows(DATA.filter(function (r) {
     if (kind !== "all" && r.kind !== kind) return false;
     if (kind === "cutin" && sub !== "all" && r.subtype !== sub) return false;
     return !s ||
@@ -116,7 +145,7 @@ function render() {
       (r.name || "").toLowerCase().indexOf(s) !== -1 ||
       (r.subtype || "").indexOf(s) !== -1 ||
       r.slug.indexOf(s) !== -1;
-  });
+  }));
   countEl.textContent = rows.length + " / " + DATA.length;
   grid.innerHTML = "";
   rows.forEach(function (r) {
@@ -174,6 +203,11 @@ document.querySelectorAll(".chip[data-s]").forEach(function (c) {
     sub = c.dataset.s;
     render();
   });
+});
+sortEl.addEventListener("change", function () {
+  sortMode = sortEl.value;
+  localStorage.setItem("czn_sort", sortMode);
+  render();
 });
 q.addEventListener("input", render);
 fetch("index.json").then(function (r) { return r.json(); }).then(function (j) {
