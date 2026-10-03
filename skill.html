@@ -98,7 +98,8 @@ var renderer = new spine.webgl.SceneRenderer(canvas, gl);
 var rigs = [];
 var t = 0, playing = true, last = 0, ready = false;
 
-function loadRig(cfg) {
+function loadRig(cfg, attempt) {
+  attempt = attempt || 0;
   return new Promise(function (resolve, reject) {
     var m = new spine.webgl.AssetManager(gl, "scene/yuki_1057/" + cfg[0] + "/");
     m.loadText("skeleton.json");
@@ -136,19 +137,31 @@ function loadRig(cfg) {
         for (var i = 0; i < data.animations.length; i++) if (data.animations[i].name === cfg[1]) anim = data.animations[i];
         if (!anim && data.animations.length) anim = data.animations[0];
         st.setAnimation(0, anim.name, false);
-        resolve({ sk: sk, st: st, start: cfg[2] + (D[cfg[0]] || 0), dur: cfg[3], endHide: cfg[4] === "hide", hidden: false });
+        resolve({ sk: sk, st: st, start: cfg[2] + (D[cfg[0]] || 0), dur: cfg[3], endHide: cfg[4] === "hide", hidden: false, slug: cfg[0] });
       } catch (e) { reject(e); }
     }
     tick();
+  }).catch(function (e) {
+    /* one flaky asset must not kill the whole scene: retry once, then skip */
+    if (attempt < 1) { return loadRig(cfg, attempt + 1); }
+    console.warn("scene layer skipped:", cfg[0], e && e.message);
+    return null;
   });
 }
 
-Promise.all(CFG.map(loadRig)).then(function (list) {
-  rigs = list;
+/* load in small batches: fewer simultaneous connections, still parallel enough */
+(function loadBatch(i) {
+  if (i >= CFG.length) return Promise.resolve();
+  return Promise.all(CFG.slice(i, i + 4).map(function (c) { return loadRig(c); }))
+    .then(function (list) {
+      for (var k = 0; k < list.length; k++) if (list[k]) rigs.push(list[k]);
+      if (i === 0) { seek(0); requestAnimationFrame(loop); }
+      return loadBatch(i + 4);
+    });
+})(0).then(function () {
   ready = true;
   document.getElementById("msg").hidden = true;
   seek(0);
-  requestAnimationFrame(loop);
 }).catch(function (e) {
   document.getElementById("msg").textContent = "Load error: " + ((e && e.message) || e);
 });
