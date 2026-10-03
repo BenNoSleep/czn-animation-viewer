@@ -1,0 +1,41 @@
+
+yuki_1057_ux_bg4_4.png
+size: 1944,1328
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuki_bg2_0
+  rotate: true
+  xy: 2, 2
+  size: 1320, 747
+  orig: 1320, 747
+  offset: 0, 0
+  index: -1
+yuki_bg2_6
+  rotate: false
+  xy: 751, 609
+  size: 1191, 713
+  orig: 1191, 713
+  offset: 0, 0
+  index: -1
+yuki_bg2_7_1
+  rotate: true
+  xy: 1201, 7
+  size: 600, 432
+  orig: 600, 432
+  offset: 0, 0
+  index: -1
+yuki_bg2_7_2
+  rotate: true
+  xy: 1635, 210
+  size: 397, 284
+  orig: 397, 284
+  offset: 0, 0
+  index: -1
+yuki_bg2_light
+  rotate: true
+  xy: 751, 5
+  size: 602, 448
+  orig: 602, 448
+  offset: 0, 0
+  index: -1

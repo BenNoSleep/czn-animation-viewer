@@ -1,0 +1,83 @@
+
+yuki_1057_ux_bg4_2.png
+size: 1528,640
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle1_0001
+  rotate: false
+  xy: 2, 2
+  size: 347, 334
+  orig: 347, 334
+  offset: 0, 0
+  index: -1
+circle1_0002
+  rotate: false
+  xy: 351, 2
+  size: 347, 334
+  orig: 347, 334
+  offset: 0, 0
+  index: -1
+circle1_0003
+  rotate: true
+  xy: 1180, 209
+  size: 347, 334
+  orig: 347, 334
+  offset: 0, 0
+  index: -1
+cross1_0001
+  rotate: false
+  xy: 2, 530
+  size: 767, 108
+  orig: 767, 108
+  offset: 0, 0
+  index: -1
+cross1_0002
+  rotate: false
+  xy: 2, 420
+  size: 767, 108
+  orig: 767, 108
+  offset: 0, 0
+  index: -1
+cross2_0001
+  rotate: false
+  xy: 771, 558
+  size: 741, 80
+  orig: 741, 80
+  offset: 0, 0
+  index: -1
+cross2_0002
+  rotate: false
+  xy: 2, 338
+  size: 741, 80
+  orig: 741, 80
+  offset: 0, 0
+  index: -1
+glow1
+  rotate: true
+  xy: 771, 153
+  size: 403, 407
+  orig: 403, 407
+  offset: 0, 0
+  index: -1
+melt1_0001
+  rotate: false
+  xy: 700, 83
+  size: 409, 68
+  orig: 409, 68
+  offset: 0, 0
+  index: -1
+melt1_0002
+  rotate: false
+  xy: 700, 13
+  size: 409, 68
+  orig: 409, 68
+  offset: 0, 0
+  index: -1
+melt1_0003
+  rotate: false
+  xy: 1111, 83
+  size: 409, 68
+  orig: 409, 68
+  offset: 0, 0
+  index: -1

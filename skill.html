@@ -42,20 +42,33 @@ var CFG = [
   ["ug_intro_bg",  "animation",  0.00, 1.53, "hide"],
   ["ug_cutin1_m",  "animation",  0.10, 2.17, "hide"],
   ["ug_cutin1_f",  "animation",  0.20, 2.27, "hide"],
+  ["ux_screen1",   "animation",  1.50, 1.00, "hide"],
   ["ux_bg1_1",     "animation",  1.60, 1.30, "hide"],
   ["ux_bg1_2",     "animation",  2.90, 0.33, "hide"],
   ["ux_bg2",       "animation",  3.23, 0.73, "hide"],
   ["ux_bg3",       "animation",  3.96, 1.13, "hide"],
   ["ux_bg4_b",     "animation3", 5.09, 3.33, ""],
-  ["ux_bg4_1",     "animation",  5.15, 2.33, "hide"],
-  ["ux_bg4_f",     "animation",  5.20, 2.47, "hide"],
-  ["ux_b1_2",      "animation",  5.35, 2.60, ""],
-  ["ux_b1_1",      "animation",  5.45, 2.93, ""],
-  ["ux_cutin_ch",  "animation",  5.55, 2.53, "hide"],
-  ["ux_cutin_f",   "animation",  5.60, 2.53, "hide"],
-  ["ux_f2_1",      "animation",  5.85, 2.63, "hide"],
-  ["ux_f2_2",      "animation",  5.95, 2.63, "hide"],
-  ["ux_impactframe2", "animation", 6.00, 2.80, "hide"]
+  ["ux_bg4_4",     "animation",  5.09, 2.33, "hide"],
+  ["ux_bg4_3",     "animation",  5.12, 2.33, "hide"],
+  ["ux_bg4_2",     "animation",  5.15, 2.33, "hide"],
+  ["ux_bg4_1",     "animation",  5.18, 2.33, "hide"],
+  ["ux_bg4_f",     "animation",  5.22, 2.47, "hide"],
+  ["ux_b1_2",      "animation",  5.40, 2.60, ""],
+  ["ux_b1_1",      "animation",  5.50, 2.93, ""],
+  ["ux_self_1_b",  "animation",  5.50, 0.97, "hide"],
+  ["ux_self_2_b",  "animation",  5.75, 0.53, "hide"],
+  ["ux_cutin_ch",  "animation",  5.60, 2.53, "hide"],
+  ["ux_cutin_f",   "animation",  5.65, 2.53, "hide"],
+  ["ux_impactframe1_1", "animation", 5.62, 0.37, "hide"],
+  ["ux_impactframe1_2", "animation", 5.68, 0.60, "hide"],
+  ["ux_self_1_f",  "animation",  5.70, 0.97, "hide"],
+  ["ux_self_2_f",  "animation",  6.05, 0.33, "hide"],
+  ["ux_f1_1",      "animation",  5.80, 2.63, "hide"],
+  ["ux_f1_2",      "animation",  5.85, 2.93, "hide"],
+  ["ux_f2_1",      "animation",  5.95, 2.63, "hide"],
+  ["ux_f2_2",      "animation",  6.00, 2.63, "hide"],
+  ["ux_screen2",   "animation",  5.45, 3.50, "hide"],
+  ["ux_impactframe2", "animation", 6.10, 2.80, "hide"]
 ];
 /* ?d=slug:delta;slug:delta - dev-only delay overrides */
 var D = {};
@@ -68,7 +81,7 @@ var D = {};
 })();
 var CUTIN_WEBP = "cutins/1057_fhd.webp";
 var CUTIN_UNTIL = 1.50;
-var TOTAL = 8.80;
+var TOTAL = 9.00;
 var DESIGN_W = 1580, DESIGN_H = 720;
 
 var canvas = document.getElementById("c");
@@ -88,11 +101,30 @@ function loadRig(cfg) {
       if (!m.isLoadingComplete()) { setTimeout(tick, 30); return; }
       try {
         if (m.hasErrors && m.hasErrors()) { reject(new Error("load " + cfg[0])); return; }
+        var raw = JSON.parse(m.get("skeleton.json"));
         var data = new spine.SkeletonJson(new spine.AtlasAttachmentLoader(m.get("skeleton.atlas")))
-          .readSkeletonData(JSON.parse(m.get("skeleton.json")));
+          .readSkeletonData(raw);
         var sk = new spine.Skeleton(data);
-        var skin = data.findSkin ? data.findSkin("normal") : null;
-        if (skin) { sk.setSkin(skin); sk.setSlotsToSetupPose(); }
+        var skin = data.findSkin ? (data.findSkin("normal") || data.defaultSkin) : null;
+        if (skin) sk.setSkin(skin);
+        /* game rigs leave slot.attachment empty for many FX rigs; the setup
+           attachment only exists in the skin (keyed by slot name). Assign the
+           first skin attachment per empty slot, or the skeleton draws nothing. */
+        var skinsRaw = raw.skins;
+        if (skinsRaw) {
+          var skMap = null;
+          if (skinsRaw.length) { skMap = skinsRaw[0].attachments || null; }
+          else { for (var sn in skinsRaw) { skMap = skinsRaw[sn].attachments || skinsRaw[sn]; break; } }
+          if (skMap) {
+            for (var si = 0; si < sk.slots.length; si++) {
+              var sd = sk.slots[si].data;
+              if (!sd.attachmentName && skMap[sd.name]) {
+                for (var an in skMap[sd.name]) { sd.attachmentName = an; break; }
+              }
+            }
+          }
+        }
+        sk.setSlotsToSetupPose();
         var st = new spine.AnimationState(new spine.AnimationStateData(data));
         var anim = null;
         for (var i = 0; i < data.animations.length; i++) if (data.animations[i].name === cfg[1]) anim = data.animations[i];
