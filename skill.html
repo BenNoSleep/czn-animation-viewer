@@ -34,29 +34,41 @@
 "use strict";
 /* Yuki (1057) full skill scene - plays the game's own spine layers in sequence.
    Staging is a reconstruction from the pack's .cfx z-order configs + layer anim
-   durations; the cut-in webp plays over phase 1. Fields: slug#anim#start#dur#end */
+   durations; the cut-in webp plays over phase 1. Fields: slug#anim#start#dur#end.
+   The `start` values already include the offset delays (layers staggered so the
+   finale builds up instead of popping at once). Dev knob: ?d=slug:delta;slug:delta
+   shifts any layer's start by delta seconds without editing this file. */
 var CFG = [
   ["ug_intro_bg",  "animation",  0.00, 1.53, "hide"],
-  ["ug_cutin1_m",  "animation",  0.00, 2.17, "hide"],
-  ["ug_cutin1_f",  "animation",  0.00, 2.27, "hide"],
+  ["ug_cutin1_m",  "animation",  0.10, 2.17, "hide"],
+  ["ug_cutin1_f",  "animation",  0.20, 2.27, "hide"],
   ["ux_bg1_1",     "animation",  1.60, 1.30, "hide"],
   ["ux_bg1_2",     "animation",  2.90, 0.33, "hide"],
   ["ux_bg2",       "animation",  3.23, 0.73, "hide"],
   ["ux_bg3",       "animation",  3.96, 1.13, "hide"],
   ["ux_bg4_b",     "animation3", 5.09, 3.33, ""],
-  ["ux_bg4_1",     "animation",  5.09, 2.33, "hide"],
-  ["ux_bg4_f",     "animation",  5.09, 2.47, "hide"],
-  ["ux_b1_2",      "animation",  5.20, 2.60, ""],
-  ["ux_b1_1",      "animation",  5.20, 2.93, ""],
-  ["ux_cutin_ch",  "animation",  5.30, 2.53, "hide"],
-  ["ux_cutin_f",   "animation",  5.30, 2.53, "hide"],
-  ["ux_f2_1",      "animation",  5.30, 2.63, "hide"],
-  ["ux_f2_2",      "animation",  5.30, 2.63, "hide"],
-  ["ux_impactframe2", "animation", 5.50, 3.00, "hide"]
+  ["ux_bg4_1",     "animation",  5.15, 2.33, "hide"],
+  ["ux_bg4_f",     "animation",  5.20, 2.47, "hide"],
+  ["ux_b1_2",      "animation",  5.35, 2.60, ""],
+  ["ux_b1_1",      "animation",  5.45, 2.93, ""],
+  ["ux_cutin_ch",  "animation",  5.55, 2.53, "hide"],
+  ["ux_cutin_f",   "animation",  5.60, 2.53, "hide"],
+  ["ux_f2_1",      "animation",  5.85, 2.63, "hide"],
+  ["ux_f2_2",      "animation",  5.95, 2.63, "hide"],
+  ["ux_impactframe2", "animation", 6.00, 2.80, "hide"]
 ];
+/* ?d=slug:delta;slug:delta - dev-only delay overrides */
+var D = {};
+(function () {
+  var m = location.search.match(/[?&]d=([^&]+)/);
+  if (m) decodeURIComponent(m[1]).split(";").forEach(function (kv) {
+    var p = kv.split(":");
+    if (p[0]) D[p[0]] = parseFloat(p[1]) || 0;
+  });
+})();
 var CUTIN_WEBP = "cutins/1057_fhd.webp";
 var CUTIN_UNTIL = 1.50;
-var TOTAL = 8.50;
+var TOTAL = 8.80;
 var DESIGN_W = 1580, DESIGN_H = 720;
 
 var canvas = document.getElementById("c");
@@ -86,7 +98,7 @@ function loadRig(cfg) {
         for (var i = 0; i < data.animations.length; i++) if (data.animations[i].name === cfg[1]) anim = data.animations[i];
         if (!anim && data.animations.length) anim = data.animations[0];
         st.setAnimation(0, anim.name, true);
-        resolve({ sk: sk, st: st, start: cfg[2], dur: cfg[3], endHide: cfg[4] === "hide", hidden: false });
+        resolve({ sk: sk, st: st, start: cfg[2] + (D[cfg[0]] || 0), dur: cfg[3], endHide: cfg[4] === "hide", hidden: false });
       } catch (e) { reject(e); }
     }
     tick();
