@@ -57,7 +57,7 @@
                text-overflow:ellipsis; }
   #sideClose { background:none; border:none; color:#8C8C8C; font-size:15px; cursor:pointer; padding:4px 6px; }
   #sideClose:hover { color:#fff; }
-  #sideBody { flex:1; min-height:0; position:relative; background:#0d0d0d; }
+  #sideBody { flex:1; min-height:0; position:relative; background: var(--czn-bg, #0d0d0d); }
   #sideBody iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
   #sideBody img { position:absolute; inset:0; margin:auto; max-width:100%; max-height:100%; }
   /* animated-webp player: canvas + seekable timeline (native <img> cannot seek) */
@@ -362,6 +362,14 @@ sortEl.addEventListener("change", function () {
   render();
 });
 q.addEventListener("input", render);
+/* Same background color as the viewer's picker (set inside the iframe, mirrored
+   here through localStorage + the storage event) so cut-ins / art / rigs all
+   sit on the color you picked - e.g. green for keying. */
+function applyBgVar() {
+  document.documentElement.style.setProperty("--czn-bg", localStorage.getItem("czn_bg") || "#0d0d0d");
+}
+applyBgVar();
+window.addEventListener("storage", function (e) { if (e.key === "czn_bg") applyBgVar(); });
 fetch("index.json").then(function (r) { return r.json(); }).then(function (j) {
   DATA = (j.rigs || []).concat(j.cutins || []);
   render();

@@ -24,6 +24,8 @@
   #seek { flex:1; min-width:60px; height:4px; accent-color:#3D6AFF; cursor:pointer; }
   #time { min-width:52px; text-align:center; color:#9A9A9A; }
   #anim { flex:1; max-width:190px; }
+  #bgcol { width:34px; height:22px; padding:0; border:1px solid rgba(255,255,255,0.12);
+           border-radius:4px; background:none; cursor:pointer; }
   #bar label { display:flex; align-items:center; gap:4px; cursor:pointer; }
   #zoomhint { position:absolute; right:12px; bottom:52px; color:#5A5A5A; }
   #back { position:absolute; right:12px; top:12px; z-index:4; color:#9A9A9A; text-decoration:none;
@@ -45,6 +47,7 @@
     <option value="1" selected>1x</option><option value="1.5">1.5x</option><option value="2">2x</option>
   </select>
   <label title="Loop the animation"><input id="loop" type="checkbox" checked>loop</label>
+  <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
   <select id="anim" title="Animation" style="visibility:hidden"></select>
 </div>
 <script src="spine-webgl.js"></script>
@@ -142,6 +145,16 @@ if (imgSrc) {
   const timeLbl = document.getElementById("time");
   const playBtn = document.getElementById("play");
   const loopCb = document.getElementById("loop");
+  /* background color: clear color for every frame; persisted, shared with the
+     index side panel via localStorage (storage event -> --czn-bg). */
+  const bgcol = document.getElementById("bgcol");
+  bgcol.value = localStorage.getItem("czn_bg") || "#000000";
+  function clearBG() {
+    const n = parseInt(bgcol.value.slice(1), 16) || 0;
+    gl.clearColor((n >> 16 & 255) / 255, (n >> 8 & 255) / 255, (n & 255) / 255, 1);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+  }
+  bgcol.oninput = function () { localStorage.setItem("czn_bg", bgcol.value); };
 
   function fitCamera() {
     if (!skeleton) return;
@@ -164,8 +177,7 @@ if (imgSrc) {
 
   function fitToDrawn() {
     // One probe render, then refit the camera to the pixels that actually got drawn.
-    gl.clearColor(0, 0, 0, 1);
-    gl.clear(gl.COLOR_BUFFER_BIT);
+    clearBG();
     renderer.begin();
     renderer.drawSkeleton(skeleton, true);
     renderer.end();
@@ -205,8 +217,7 @@ if (imgSrc) {
     cam.position.set((wx0 + wx1) / 2, (wy0 + wy1) / 2, 0);
     cam.zoom = Math.max((wx1 - wx0) / w, (wy1 - wy0) / h) * 1.1;
     if (cam.update) cam.update();
-    gl.clearColor(0, 0, 0, 1);
-    gl.clear(gl.COLOR_BUFFER_BIT);
+    clearBG();
   }
 
   function setAnim(i) {
@@ -369,8 +380,7 @@ if (imgSrc) {
     }
     if (!skeleton) return;
     skeleton.updateWorldTransform();
-    gl.clearColor(0, 0, 0, 1);
-    gl.clear(gl.COLOR_BUFFER_BIT);
+    clearBG();
     renderer.begin();
     renderer.drawSkeleton(skeleton, true);
     renderer.end();
