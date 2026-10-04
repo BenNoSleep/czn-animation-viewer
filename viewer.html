@@ -31,6 +31,18 @@
            border-radius:4px; background:none; cursor:pointer; }
   #bar label { display:flex; align-items:center; gap:4px; cursor:pointer; }
   #zoomhint { position:absolute; right:12px; bottom:88px; color:#5A5A5A; }
+  #layersPanel { position:absolute; right:10px; bottom:84px; width:232px; max-height:55vh; z-index:5;
+                 display:flex; flex-direction:column; background:#1B1B1B; color:#C9C9C9;
+                 border:1px solid rgba(255,255,255,0.14); border-radius:8px; overflow:hidden; }
+  .lp-head { display:flex; align-items:center; gap:8px; padding:7px 10px; font:600 12px Inter, sans-serif;
+             border-bottom:1px solid rgba(255,255,255,0.09); }
+  .lp-head span { flex:1; }
+  .lp-head button { background:#232323; color:#D6D6D6; border:1px solid rgba(255,255,255,0.12);
+                    border-radius:5px; padding:2px 8px; font-size:11px; cursor:pointer; }
+  #lpList { overflow-y:auto; padding:4px 0; }
+  .lp-row { display:flex; align-items:center; gap:7px; padding:3px 10px; font-size:12px; cursor:pointer; }
+  .lp-row:hover { background:rgba(255,255,255,0.05); }
+  .lp-row input { accent-color:#3D6AFF; }
   #back { position:absolute; right:12px; top:12px; z-index:4; color:#9A9A9A; text-decoration:none;
           background:#232323; border:1px solid rgba(255,255,255,0.12); border-radius:6px; padding:5px 10px; }
   #back:hover { color:#fff; background:#2C2C2C; }
@@ -40,6 +52,14 @@
 <div id="stage"><canvas id="c"></canvas><img id="img" alt="" hidden></div>
 <a id="back" href="index.html">&#8592; All characters</a>
 <div id="msg">Loading...</div>
+<div id="layersPanel" hidden>
+  <div class="lp-head">
+    <span>Layers</span>
+    <button id="lpAll" title="Show every layer">all</button>
+    <button id="lpNone" title="Hide every layer">none</button>
+  </div>
+  <div id="lpList"></div>
+</div>
 <div id="zoomhint" hidden>wheel: zoom &middot; drag: pan &middot; double-click: fit</div>
 <div id="bar" hidden>
   <div class="brow">
@@ -55,6 +75,7 @@
   </div>
   <div class="brow">
     <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
+    <button id="layers" title="Show / hide individual layers (slots)">Layers</button>
     <span class="sep"></span>
     <select id="recres" title="Recording resolution (the render is redone at this size - vector, not upscaled)">
       <option value="0">Win</option>
@@ -176,6 +197,53 @@ if (imgSrc) {
     gl.clear(gl.COLOR_BUFFER_BIT);
   }
   bgcol.oninput = function () { localStorage.setItem("czn_bg", bgcol.value); };
+  /* per-layer visibility: a slot's alpha is stomped to 0 after every animation
+     apply, so hidden layers stay hidden whatever the animation does (and the
+     recorded webm matches what you see). */
+  const hiddenSlots = new Set();
+  const lpList = document.getElementById("lpList");
+  const layersPanel = document.getElementById("layersPanel");
+  function buildLayers() {
+    lpList.innerHTML = "";
+    skeleton.slots.forEach(function (s, i) {
+      const row = document.createElement("label");
+      row.className = "lp-row";
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = !hiddenSlots.has(i);
+      cb.onchange = function () { cb.checked ? hiddenSlots.delete(i) : hiddenSlots.add(i); };
+      const nm = document.createElement("span");
+      const an = s.data.attachmentName;
+      nm.textContent = s.data.name + (an && an !== s.data.name ? "  (" + an + ")" : "");
+      row.appendChild(cb);
+      row.appendChild(nm);
+      lpList.appendChild(row);
+    });
+  }
+  document.getElementById("layers").onclick = function () { layersPanel.hidden = !layersPanel.hidden; };
+  document.getElementById("lpAll").onclick = function () { hiddenSlots.clear(); buildLayers(); };
+  document.getElementById("lpNone").onclick = function () {
+    skeleton.slots.forEach(function (_s, i) { hiddenSlots.add(i); });
+    buildLayers();
+  };
+  function applyHidden() {
+    /* restore slots we zeroed last frame (their setup alpha), then zero the
+       hidden ones - anims that track alpha keep full control of everything else */
+    if (!skeleton) return;
+    stomped.forEach(function (i) {
+      const s = skeleton.slots[i];
+      if (s && s.color) s.color.a = s.data.color.a;
+    });
+    stomped.clear();
+    hiddenSlots.forEach(function (i) {
+      const s = skeleton.slots[i];
+      if (s && s.color) {
+        s.color.a = 0;
+        stomped.add(i);
+      }
+    });
+  }
+  const stomped = new Set();
   /* record the current animation as one clean loop -> .webm. Resolution preset:
      the canvas is temporarily resized and the camera refit, so the file is a
      true vector render at that size (not an upscale). Second click stops early;
@@ -424,6 +492,7 @@ if (imgSrc) {
     document.getElementById("zoomhint").hidden = false;
     msg.style.display = "none";
     renderer.resize(spine.webgl.ResizeMode.Expand);   // backing store -> window size
+    buildLayers();
     fitCamera();
   }
 
@@ -454,6 +523,7 @@ if (imgSrc) {
         timeLbl.textContent = t.toFixed(1) + "/" + d.toFixed(1) + "s";
       }
     }
+    applyHidden();        /* also while paused: layer toggles must apply immediately */
     if (!skeleton) return;
     skeleton.updateWorldTransform();
     clearBG();
