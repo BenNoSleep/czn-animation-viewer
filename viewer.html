@@ -32,7 +32,7 @@
            border-radius:4px; background:none; cursor:pointer; }
   #bar label { display:flex; align-items:center; gap:4px; cursor:pointer; }
   #zoomhint { position:absolute; right:12px; bottom:88px; color:#5A5A5A; }
-  #layersPanel { position:absolute; right:10px; bottom:84px; width:212px; max-height:42vh; z-index:5;
+  #layersPanel { position:absolute; right:10px; top:52px; bottom:74px; width:212px; z-index:5;
                  display:flex; flex-direction:column; background:#1B1B1B; color:#C9C9C9;
                  border:1px solid rgba(255,255,255,0.14); border-radius:8px; overflow:hidden; }
   #layersPanel[hidden] { display:none; }   /* id selector beats the hidden attribute */
@@ -41,7 +41,7 @@
   .lp-head span { flex:1; }
   .lp-head button { background:#232323; color:#D6D6D6; border:1px solid rgba(255,255,255,0.12);
                     border-radius:5px; padding:2px 8px; font-size:11px; cursor:pointer; }
-  #lpList { overflow-y:auto; padding:4px 0; }
+  #lpList { flex:1; min-height:0; overflow-y:auto; padding:4px 0; }
   .lp-row { display:flex; align-items:center; gap:7px; padding:3px 10px; font-size:12px; cursor:pointer; }
   .lp-row:hover { background:rgba(255,255,255,0.05); }
   .lp-row input { accent-color:#3D6AFF; }
