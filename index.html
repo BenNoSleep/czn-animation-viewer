@@ -128,6 +128,11 @@
 <script>
 "use strict";
 var DATA = [], kind = "all", sub = "all", role = "all";
+/* Cache-buster for the viewer iframe: GitHub Pages caches viewer.html per-URL
+   for ~10 min, so a session that mixes freshly-opened and previously-visited
+   cards could show mixed builds. One stamp per page load keeps every card in
+   the session on the SAME build (and always the latest one). */
+var BUILD = String(Date.now());
 /* Character role by name - derived from pack data: Playable = card+cutin kit,
    Support = supporter_skill kit, Other = story NPC / misc. */
 var ROLE = {
@@ -163,7 +168,7 @@ function label(r) {
 }
 function href(r) {
   return r.kind === "portrait" || r.kind === "model" || r.kind === "battle" || r.kind === "event" || r.kind === "skin"
-    ? "viewer.html?m=rigs/" + r.slug
+    ? "viewer.html?m=rigs/" + r.slug + "&b=" + BUILD
     : "cutins/" + r.slug + ".webp";
 }
 function idNum(r) {
@@ -367,7 +372,7 @@ function open(r) {
   if (r.kind === "cutin" || r.kind === "gacha") {
     openWp(r.slug);
   } else {
-    sideBody.innerHTML = '<iframe src="viewer.html?m=rigs/' + r.slug + '&embed=1" allowfullscreen></iframe>';
+    sideBody.innerHTML = '<iframe src="viewer.html?m=rigs/' + r.slug + '&embed=1&b=' + BUILD + '" allowfullscreen></iframe>';
   }
   render();
 }
