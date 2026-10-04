@@ -236,23 +236,26 @@ if (imgSrc) {
     buildLayers();
   };
   function applyHidden() {
-    /* restore slots we zeroed last frame (their setup alpha), then zero the
-       hidden ones - anims that track alpha keep full control of everything else */
+    /* restore slots zeroed last frame to the alpha captured the moment they were
+       hidden (exact even while paused mid-animation - the setup alpha can differ
+       from what the animation had), then zero the hidden ones. */
     if (!skeleton) return;
     stomped.forEach(function (i) {
       const s = skeleton.slots[i];
-      if (s && s.color) s.color.a = s.data.color.a;
+      if (s && s.color) s.color.a = savedAlpha.has(i) ? savedAlpha.get(i) : s.data.color.a;
     });
     stomped.clear();
     hiddenSlots.forEach(function (i) {
       const s = skeleton.slots[i];
       if (s && s.color) {
+        savedAlpha.set(i, s.color.a);
         s.color.a = 0;
         stomped.add(i);
       }
     });
   }
   const stomped = new Set();
+  const savedAlpha = new Map();
   /* record the current animation as one clean loop -> .webm. Resolution preset:
      the canvas is temporarily resized and the camera refit, so the file is a
      true vector render at that size (not an upscale). Second click stops early;
