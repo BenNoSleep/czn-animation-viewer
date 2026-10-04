@@ -18,6 +18,7 @@
   .brow { display:flex; gap:9px; align-items:center; }
   .brow + .brow { margin-top:7px; padding-top:7px; border-top:1px solid rgba(255,255,255,.25); }
   .sep { flex:none; width:1px; height:18px; background:rgba(255,255,255,.28); margin:0 2px; }
+  .right { display:flex; align-items:center; gap:9px; margin-left:auto; }
   #bar button { background:#232323; color:#D6D6D6; border:1px solid rgba(255,255,255,0.12);
                 border-radius:6px; min-width:30px; height:26px; font:13px Inter, sans-serif; cursor:pointer; }
   #bar button:hover { background:#2C2C2C; }
@@ -31,7 +32,7 @@
            border-radius:4px; background:none; cursor:pointer; }
   #bar label { display:flex; align-items:center; gap:4px; cursor:pointer; }
   #zoomhint { position:absolute; right:12px; bottom:88px; color:#5A5A5A; }
-  #layersPanel { position:absolute; right:10px; bottom:84px; width:232px; max-height:55vh; z-index:5;
+  #layersPanel { position:absolute; right:10px; bottom:84px; width:212px; max-height:42vh; z-index:5;
                  display:flex; flex-direction:column; background:#1B1B1B; color:#C9C9C9;
                  border:1px solid rgba(255,255,255,0.14); border-radius:8px; overflow:hidden; }
   .lp-head { display:flex; align-items:center; gap:8px; padding:7px 10px; font:600 12px Inter, sans-serif;
@@ -75,7 +76,6 @@
   </div>
   <div class="brow">
     <label title="Background color - pick green/blue and key it out in your editor"><input id="bgcol" type="color" value="#000000">bg</label>
-    <button id="layers" title="Show / hide individual layers (slots)">Layers</button>
     <span class="sep"></span>
     <select id="recres" title="Recording resolution (the render is redone at this size - vector, not upscaled)">
       <option value="0">Win</option>
@@ -90,6 +90,7 @@
       <option value="60">60M</option>
     </select>
     <button id="rec" title="Record one animation loop as .webm">&#127909;</button>
+    <span class="right"><span class="sep"></span><button id="layers" title="Show / hide individual layers (slots)">Layers</button></span>
   </div>
 </div>
 <script src="spine-webgl.js"></script>
@@ -220,7 +221,15 @@ if (imgSrc) {
       lpList.appendChild(row);
     });
   }
-  document.getElementById("layers").onclick = function () { layersPanel.hidden = !layersPanel.hidden; };
+  document.getElementById("layers").onclick = function () {
+    /* the panel takes space NEXT TO the canvas instead of covering it: shrink the
+       stage, sync the GL viewport (spine's camera does not follow on its own) */
+    layersPanel.hidden = !layersPanel.hidden;
+    document.getElementById("stage").style.right = layersPanel.hidden ? "" : "234px";
+    renderer.resize(spine.webgl.ResizeMode.Expand);
+    renderer.camera.setViewport(canvas.width, canvas.height);
+    gl.viewport(0, 0, canvas.width, canvas.height);
+  };
   document.getElementById("lpAll").onclick = function () { hiddenSlots.clear(); buildLayers(); };
   document.getElementById("lpNone").onclick = function () {
     skeleton.slots.forEach(function (_s, i) { hiddenSlots.add(i); });
