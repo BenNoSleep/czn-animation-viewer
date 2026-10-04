@@ -35,6 +35,7 @@
   #layersPanel { position:absolute; right:10px; bottom:84px; width:212px; max-height:42vh; z-index:5;
                  display:flex; flex-direction:column; background:#1B1B1B; color:#C9C9C9;
                  border:1px solid rgba(255,255,255,0.14); border-radius:8px; overflow:hidden; }
+  #layersPanel[hidden] { display:none; }   /* id selector beats the hidden attribute */
   .lp-head { display:flex; align-items:center; gap:8px; padding:7px 10px; font:600 12px Inter, sans-serif;
              border-bottom:1px solid rgba(255,255,255,0.09); }
   .lp-head span { flex:1; }
