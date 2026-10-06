@@ -352,19 +352,21 @@ if (imgSrc) {
              smears (same rule the export pipeline's webpify applies).
              2) CZN pages ship premultiplied and so do most exported mod PNGs;
              multiplying an already-premultiplied image darkens soft edges (black
-             fringe). Detect straight alpha on a>=32 pixels (channel > a+24); require
-             >1% of eligible pixels so lossy ring pixels cannot flip the verdict. */
+             fringe) while NOT multiplying a straight one washes soft areas white
+             (cheek/chest shading). Discriminate on the pixels that can ever exceed:
+             a>=248 can never (channel > a+24 > 255), so count hits among 32..247
+             only. Premultiplied art measures <=0.3%, straight art 18-22% -> cut 5%. */
           const id = ctx.getImageData(0, 0, cv.width, cv.height);
           const d = id.data;
-          let hits = 0, eligible = 0;
+          let hits = 0, partial = 0;
           for (let i = 0; i < d.length; i += 4) {
             const a = d[i + 3];
             if (a < 8) { d[i] = 0; d[i + 1] = 0; d[i + 2] = 0; continue; }
-            if (a < 32) continue;
-            eligible++;
+            if (a < 32 || a >= 248) continue;
+            partial++;
             if (d[i] > a + 24 || d[i + 1] > a + 24 || d[i + 2] > a + 24) hits++;
           }
-          if (eligible && hits > eligible * 0.01) {
+          if (partial && hits > partial * 0.05) {
             for (let i = 0; i < d.length; i += 4) {
               const a = d[i + 3];
               if (a >= 8 && a < 255) { d[i] = d[i] * a / 255; d[i + 1] = d[i + 1] * a / 255; d[i + 2] = d[i + 2] * a / 255; }
