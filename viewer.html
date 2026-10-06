@@ -98,6 +98,7 @@
     <span class="right"><span class="sep"></span>
       <input id="pngin" type="file" accept="image/png,image/webp,image/*" style="display:none">
       <button id="pngbtn" title="Preview a modded texture PNG on this rig">PNG</button>
+      <button id="pngreload" title="Reload the PNG from disk - after editing it in an image editor, preview the new version">&#8635;</button>
       <button id="layers" title="Show / hide individual layers (slots)">Layers</button>
     </span>
   </div>
@@ -266,6 +267,7 @@ if (imgSrc) {
   const pngin = document.getElementById("pngin");
   const pngmsg = document.getElementById("pngmsg");
   let pngTimer = 0;
+  let pngHandle = null;   /* FileSystemFileHandle of the picked PNG - re-read on Reload */
   function pngNote(t) {
     pngmsg.textContent = t;
     pngmsg.hidden = false;
@@ -291,10 +293,32 @@ if (imgSrc) {
     } catch (e) { /* not a PNG / malformed chunk */ }
     return null;
   }
-  document.getElementById("pngbtn").onclick = function () { pngin.click(); };
+  document.getElementById("pngbtn").onclick = function () {
+    if (window.showOpenFilePicker) {
+      window.showOpenFilePicker({
+        types: [{ description: "Images", accept: { "image/*": [".png", ".webp", ".jpg", ".jpeg"] } }]
+      }).then(function (hs) {
+        pngHandle = hs[0];
+        return hs[0].getFile();
+      }).then(applyPngFile).catch(function () { /* cancelled */ });
+    } else {
+      pngin.click();                       // Firefox / Safari: plain input, no handle
+    }
+  };
+  document.getElementById("pngreload").onclick = function () {
+    if (pngHandle) {
+      pngHandle.getFile().then(applyPngFile)          // fresh bytes from disk on every call
+        .catch(function () { pngHandle = null; pngin.click(); });
+    } else {
+      pngin.click();                       // nothing picked yet: pick now
+    }
+  };
   pngin.onchange = function () {
     const f = pngin.files && pngin.files[0];
     pngin.value = "";
+    if (f) applyPngFile(f);
+  };
+  function applyPngFile(f) {
     if (!f) return;
     f.arrayBuffer().then(function (buf) {
       const tag = pngTag(new Uint8Array(buf));
