@@ -19,6 +19,9 @@
   .brow + .brow { margin-top:7px; padding-top:7px; border-top:1px solid rgba(255,255,255,.25); }
   .sep { flex:none; width:1px; height:18px; background:rgba(255,255,255,.28); margin:0 2px; }
   .right { display:flex; align-items:center; gap:9px; margin-left:auto; }
+  #pngmsg { position:absolute; left:12px; bottom:88px; max-width:58%; z-index:6;
+            color:#D6D6D6; background:rgba(27,27,27,0.9); border:1px solid rgba(255,255,255,0.14);
+            border-radius:6px; padding:5px 9px; }
   #bar button { background:#232323; color:#D6D6D6; border:1px solid rgba(255,255,255,0.12);
                 border-radius:6px; min-width:30px; height:26px; font:13px Inter, sans-serif; cursor:pointer; }
   #bar button:hover { background:#2C2C2C; }
@@ -54,6 +57,7 @@
 <div id="stage"><canvas id="c"></canvas><img id="img" alt="" hidden></div>
 <a id="back" href="index.html">&#8592; All characters</a>
 <div id="msg">Loading...</div>
+<div id="pngmsg" hidden></div>
 <div id="layersPanel" hidden>
   <div class="lp-head">
     <span>Layers</span>
@@ -91,7 +95,11 @@
       <option value="60">60M</option>
     </select>
     <button id="rec" title="Record one animation loop as .webm">&#127909;</button>
-    <span class="right"><span class="sep"></span><button id="layers" title="Show / hide individual layers (slots)">Layers</button></span>
+    <span class="right"><span class="sep"></span>
+      <input id="pngin" type="file" accept="image/png,image/webp,image/*" style="display:none">
+      <button id="pngbtn" title="Preview a modded texture PNG on this rig">PNG</button>
+      <button id="layers" title="Show / hide individual layers (slots)">Layers</button>
+    </span>
   </div>
 </div>
 <script src="spine-webgl.js"></script>
@@ -252,6 +260,90 @@ if (imgSrc) {
   }
   const stomped = new Set();
   const savedAlpha = new Map();
+  /* preview a modded texture PNG: swap it in as the atlas page texture (pages
+     AND regions - regions cache the texture reference at load). The czn-target
+     text chunk stamped by the mod tool is read and matched against this rig. */
+  const pngin = document.getElementById("pngin");
+  const pngmsg = document.getElementById("pngmsg");
+  let pngTimer = 0;
+  function pngNote(t) {
+    pngmsg.textContent = t;
+    pngmsg.hidden = false;
+    clearTimeout(pngTimer);
+    pngTimer = setTimeout(function () { pngmsg.hidden = true; }, 8000);
+  }
+  function pngTag(bytes) {
+    try {
+      const dv = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+      let off = 8;
+      while (off + 12 <= bytes.byteLength) {
+        const len = dv.getUint32(off);
+        const type = String.fromCharCode(bytes[off + 4], bytes[off + 5], bytes[off + 6], bytes[off + 7]);
+        if (type === "tEXt") {
+          let s = "";
+          for (let i = 0; i < len && off + 8 + i < bytes.byteLength; i++) s += String.fromCharCode(bytes[off + 8 + i]);
+          const z = s.indexOf("\0");
+          if (z >= 0 && s.slice(0, z) === "czn-target") return s.slice(z + 1);
+        }
+        if (type === "IEND") break;
+        off += 12 + len;
+      }
+    } catch (e) { /* not a PNG / malformed chunk */ }
+    return null;
+  }
+  document.getElementById("pngbtn").onclick = function () { pngin.click(); };
+  pngin.onchange = function () {
+    const f = pngin.files && pngin.files[0];
+    pngin.value = "";
+    if (!f) return;
+    f.arrayBuffer().then(function (buf) {
+      const tag = pngTag(new Uint8Array(buf));
+      const url = URL.createObjectURL(new Blob([buf], { type: f.type || "image/png" }));
+      const img = new Image();
+      img.onload = function () {
+        const cv = document.createElement("canvas");
+        cv.width = img.naturalWidth;
+        cv.height = img.naturalHeight;
+        const ctx = cv.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        try {                                  // premultiply: matches the site's pages
+          const id = ctx.getImageData(0, 0, cv.width, cv.height);
+          const d = id.data;
+          for (let i = 0; i < d.length; i += 4) {
+            const a = d[i + 3];
+            if (a < 255) { d[i] = d[i] * a / 255; d[i + 1] = d[i + 1] * a / 255; d[i + 2] = d[i + 2] * a / 255; }
+          }
+          ctx.putImageData(id, 0, 0);
+        } catch (e) { /* canvas unreadable - ship the un-premultiplied image */ }
+        const atlas = manager.get("skeleton.atlas");
+        if (!atlas || !atlas.pages || !atlas.pages.length) { pngNote("no atlas page to replace"); return; }
+        const tex = new spine.webgl.GLTexture(gl, cv);
+        atlas.pages.forEach(function (p) {
+          if (p.texture && p.texture !== tex) { try { p.texture.dispose(); } catch (e) {} }
+          p.texture = tex;
+          p.width = cv.width;
+          p.height = cv.height;
+        });
+        (atlas.regions || []).forEach(function (rg) { rg.texture = tex; });
+        const ent = animationState && animationState.getCurrent(0);
+        if (ent) { ent.trackTime = 0; animationState.update(0); animationState.apply(skeleton); }
+        URL.revokeObjectURL(url);
+        const slug = model.split("/").pop() || "";
+        let hint = "";
+        if (tag) {
+          const base = tag.split("/").pop().replace(/\.sct$/i, "");
+          const want = /^face\/portrait\//.test(tag) ? "portrait_" + base
+                     : /^model\//.test(tag) ? "model_" + base : null;
+          hint = want ? (want === slug ? "  ·  matches this rig" : "  ·  open " + want + " to preview")
+                      : "  ·  no rig page on the site";
+        }
+        pngNote("PNG " + cv.width + "\u00d7" + cv.height +
+                (tag ? "  ·  " + tag + hint : "  ·  no czn-target tag"));
+      };
+      img.onerror = function () { URL.revokeObjectURL(url); pngNote("cannot read that image"); };
+      img.src = url;
+    });
+  };
   /* record the current animation as one clean loop -> .webm. Resolution preset:
      the canvas is temporarily resized and the camera refit, so the file is a
      true vector render at that size (not an upscale). Second click stops early;
