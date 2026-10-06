@@ -97,8 +97,9 @@
     <button id="rec" title="Record one animation loop as .webm">&#127909;</button>
     <span class="right"><span class="sep"></span>
       <input id="pngin" type="file" accept="image/png,image/webp,image/*" style="display:none">
-      <button id="pngbtn" title="Preview a modded texture PNG on this rig">PNG</button>
+      <button id="pngbtn" title="Load a modded texture PNG and preview it on this rig">Load PNG</button>
       <button id="pngreload" title="Reload the PNG from disk - after editing it in an image editor, preview the new version">&#8635;</button>
+      <button id="pngunload" title="Unload the PNG and show the original game texture">Unload PNG</button>
       <button id="layers" title="Show / hide individual layers (slots)">Layers</button>
     </span>
   </div>
@@ -268,6 +269,7 @@ if (imgSrc) {
   const pngmsg = document.getElementById("pngmsg");
   let pngTimer = 0;
   let pngHandle = null;   /* FileSystemFileHandle of the picked PNG - re-read on Reload */
+  let origTex = null, origW = 0, origH = 0;   /* the game's own page texture - Unload restores it */
   function pngNote(t) {
     pngmsg.textContent = t;
     pngmsg.hidden = false;
@@ -313,6 +315,20 @@ if (imgSrc) {
       pngin.click();                       // nothing picked yet: pick now
     }
   };
+  document.getElementById("pngunload").onclick = function () {
+    if (!origTex) { pngNote("no PNG loaded - this is the original game texture"); return; }
+    const atlas = manager.get("skeleton.atlas");
+    if (atlas) {
+      const cur = atlas.pages[0] && atlas.pages[0].texture;
+      if (cur && cur !== origTex) { try { cur.dispose(); } catch (e) {} }
+      atlas.pages.forEach(function (p) { p.texture = origTex; p.width = origW; p.height = origH; });
+      (atlas.regions || []).forEach(function (rg) { rg.texture = origTex; });
+    }
+    origTex = null;
+    const ent = animationState && animationState.getCurrent(0);
+    if (ent) { ent.trackTime = 0; animationState.update(0); animationState.apply(skeleton); }
+    pngNote("PNG unloaded - original game texture restored");
+  };
   pngin.onchange = function () {
     const f = pngin.files && pngin.files[0];
     pngin.value = "";
@@ -330,20 +346,39 @@ if (imgSrc) {
         cv.height = img.naturalHeight;
         const ctx = cv.getContext("2d");
         ctx.drawImage(img, 0, 0);
-        try {                                  // premultiply: matches the site's pages
+        try {
+          /* CZN pages ship premultiplied and so do most exported mod PNGs; multiplying
+             an already-premultiplied image darkens every soft edge (= black fringe).
+             Detect straight alpha: pixels with a>=32 whose channel exceeds a+24.
+             Require >1% of eligible pixels to match - a few lossy-encoding ring pixels
+             must not flip the whole image to "straight" (edge-case darkening). */
           const id = ctx.getImageData(0, 0, cv.width, cv.height);
           const d = id.data;
+          let hits = 0, eligible = 0;
           for (let i = 0; i < d.length; i += 4) {
             const a = d[i + 3];
-            if (a < 255) { d[i] = d[i] * a / 255; d[i + 1] = d[i + 1] * a / 255; d[i + 2] = d[i + 2] * a / 255; }
+            if (a < 32) continue;
+            eligible++;
+            if (d[i] > a + 24 || d[i + 1] > a + 24 || d[i + 2] > a + 24) hits++;
           }
-          ctx.putImageData(id, 0, 0);
-        } catch (e) { /* canvas unreadable - ship the un-premultiplied image */ }
+          if (eligible && hits > eligible * 0.01) {
+            for (let i = 0; i < d.length; i += 4) {
+              const a = d[i + 3];
+              if (a < 255) { d[i] = d[i] * a / 255; d[i + 1] = d[i + 1] * a / 255; d[i + 2] = d[i + 2] * a / 255; }
+            }
+            ctx.putImageData(id, 0, 0);
+          }
+        } catch (e) { /* canvas unreadable - ship the image as-is */ }
         const atlas = manager.get("skeleton.atlas");
         if (!atlas || !atlas.pages || !atlas.pages.length) { pngNote("no atlas page to replace"); return; }
+        if (!origTex && atlas.pages[0].texture) {   /* stash the game texture once - Unload restores it */
+          origTex = atlas.pages[0].texture;
+          origW = atlas.pages[0].width;
+          origH = atlas.pages[0].height;
+        }
         const tex = new spine.webgl.GLTexture(gl, cv);
         atlas.pages.forEach(function (p) {
-          if (p.texture && p.texture !== tex) { try { p.texture.dispose(); } catch (e) {} }
+          if (p.texture && p.texture !== tex && p.texture !== origTex) { try { p.texture.dispose(); } catch (e) {} }
           p.texture = tex;
           p.width = cv.width;
           p.height = cv.height;
