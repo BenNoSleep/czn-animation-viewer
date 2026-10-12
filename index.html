@@ -364,7 +364,19 @@ function openWp(slug) {
         if (g !== wp.gen) return;
         wp.starts = starts; wp.dur = total || 1; wp.t = 0; wp.idx = -1;
         wpDraw(0);
-        wpPlay(true);
+        if (track.frameCount <= 1) {      /* static art: no timeline, no recorder */
+          var bar2 = document.getElementById("wpb");
+          if (bar2) bar2.querySelector(".brow").style.display = "none";
+          ["wpRec", "wpMbps"].forEach(function (id) {
+            var el = document.getElementById(id);
+            if (el) el.style.display = "none";
+          });
+          var row2 = bar2 && bar2.querySelectorAll(".brow")[1];
+          var sepEl = row2 && row2.querySelector(".sep");
+          if (sepEl) sepEl.style.display = "none";
+        } else {
+          wpPlay(true);
+        }
       });
     });
   }).catch(function () {

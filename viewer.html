@@ -535,6 +535,9 @@ if (imgSrc) {
     playBtn.innerHTML = "&#10074;&#10074;";
     animationState.setAnimation(0, names[i], loopCb.checked);
     seek.value = 0;
+    const e = animationState.getCurrent(0);
+    /* static pose (no motion): no timeline to show; motion returns with a moving anim */
+    bar.querySelector(".brow").style.display = (e && e.animation.duration > 0) ? "" : "none";
   }
 
   function wireView() {
@@ -576,6 +579,7 @@ if (imgSrc) {
   function wireControls(data) {
     bar.hidden = false;
     names = (data.animations || []).map(function (a) { return a.name; });
+    if (!names.length) bar.querySelector(".brow").style.display = "none";   /* nothing to animate */
     if (names.length > 0) {
       animSel.style.visibility = "visible";
       names.forEach(function (n) {
