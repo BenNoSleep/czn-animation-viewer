@@ -1360,6 +1360,66 @@
 /rigs/model_30118/skeleton.json
   Content-Encoding: gzip
 
+/rigs/npc_uk_alice/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_cergac/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_earth_eating_human/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_earth_eating_human_survive/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_eve/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_invader_researcher/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_nerike/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_blackmarket_guard_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_blackmarket_guard_02/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_critias_shaman/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_armor_elephant/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_elite_soldier/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_hanging_slave_00/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_merchant_01/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_pathfinder/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_pubesco/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_pythoness/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_robbery/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_spaitz_npc_theif/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/npc_uk_survivor_02/skeleton.json
+  Content-Encoding: gzip
+
 /rigs/portrait_1001010/skeleton.json
   Content-Encoding: gzip
 

@@ -1,0 +1,90 @@
+
+uk_spaitz_prison_slaves_01.webp
+size: 132,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sa_armc1
+  rotate: false
+  xy: 2, 5
+  size: 10, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+sa_armc2
+  rotate: false
+  xy: 12, 10
+  size: 14, 9
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+sa_armc3
+  rotate: false
+  xy: 2, 17
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+sa_arml
+  rotate: true
+  xy: 28, 73
+  size: 71, 80
+  orig: 71, 80
+  offset: 0, 0
+  index: -1
+sa_armr
+  rotate: 270
+  xy: 44, 36
+  size: 44, 76
+  orig: 44, 76
+  offset: 0, 0
+  index: -1
+sa_body1
+  rotate: 180
+  xy: 2, 140
+  size: 123, 132
+  orig: 123, 132
+  offset: 0, 0
+  index: -1
+sa_handl
+  rotate: false
+  xy: 34, 4
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1
+sa_handr
+  rotate: 180
+  xy: 92, 81
+  size: 33, 28
+  orig: 33, 28
+  offset: 0, 0
+  index: -1
+sa_head1
+  rotate: false
+  xy: 2, 258
+  size: 119, 137
+  orig: 119, 137
+  offset: 0, 0
+  index: -1
+sa_legr
+  rotate: true
+  xy: 74, 3
+  size: 35, 48
+  orig: 35, 48
+  offset: 0, 0
+  index: -1
+sa_tail
+  rotate: 180
+  xy: 78, 246
+  size: 49, 41
+  orig: 49, 41
+  offset: 0, 0
+  index: -1
+salegl
+  rotate: false
+  xy: 2, 27
+  size: 39, 51
+  orig: 39, 51
+  offset: 0, 0
+  index: -1

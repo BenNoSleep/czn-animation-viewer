@@ -43,6 +43,7 @@
   .badge.k-cutin { color:#C9A7FF; border-color:#5b3d8f; }
   .badge.k-gacha { color:#FFC96B; border-color:#8f6b2f; }
   .badge.k-event { color:#7FD4A8; border-color:#2f6f4f; }
+  .badge.k-npc { color:#9FD0FF; border-color:#2f5f8f; }
   .badge.k-skin { color:#FF9BC2; border-color:#8f2f5b; }
   #subrow { display:none; gap:6px; }
   #subrow.show { display:flex; border-left:1px solid rgba(255,255,255,.22); margin-left:6px; padding-left:12px; }
@@ -92,6 +93,7 @@
   <span class="chip" data-k="model">Model</span>
   <span class="chip" data-k="battle">Battle</span>
   <span class="chip" data-k="event">Event</span>
+  <span class="chip" data-k="npc">NPC</span>
   <span class="chip" data-k="skin">Skin</span>
   <span class="chip" data-k="cutin">Cutin</span>
   <span class="chip" data-k="gacha">Gacha</span>
@@ -168,7 +170,7 @@ function label(r) {
   return r.name || (r.id ? "ID " + r.id : r.slug.replace(/_/g, " "));
 }
 function href(r) {
-  return r.kind === "portrait" || r.kind === "model" || r.kind === "battle" || r.kind === "event" || r.kind === "skin"
+  return r.kind === "portrait" || r.kind === "model" || r.kind === "battle" || r.kind === "event" || r.kind === "skin" || r.kind === "npc"
     ? "viewer.html?m=rigs/" + r.slug + "&b=" + BUILD
     : "cutins/" + r.slug + ".webp";
 }

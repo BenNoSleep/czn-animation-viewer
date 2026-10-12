@@ -1,0 +1,48 @@
+
+uk_spawning_incubation.webp
+size: 792,204
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+larva_egg_01
+  rotate: false
+  xy: 2, 74
+  size: 382, 125
+  orig: 382, 125
+  offset: 0, 0
+  index: -1
+larva_egg_01_acc
+  rotate: false
+  xy: 2, 3
+  size: 378, 71
+  orig: 381, 112
+  offset: 3, 5
+  index: -1
+larva_egg_02
+  rotate: false
+  xy: 386, 59
+  size: 113, 140
+  orig: 113, 140
+  offset: 0, 0
+  index: -1
+larva_egg_02_acc
+  rotate: true
+  xy: 678, 6
+  size: 174, 110
+  orig: 178, 119
+  offset: 3, 3
+  index: -1
+larva_egg_03
+  rotate: false
+  xy: 501, 64
+  size: 93, 135
+  orig: 93, 135
+  offset: 0, 0
+  index: -1
+larva_egg_03_acc
+  rotate: 180
+  xy: 539, 8
+  size: 211, 112
+  orig: 218, 120
+  offset: 3, 5
+  index: -1

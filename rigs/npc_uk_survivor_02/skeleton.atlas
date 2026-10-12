@@ -1,0 +1,174 @@
+
+uk_survivor_02.webp
+size: 332,532
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+03_acc_01
+  rotate: false
+  xy: 2, 113
+  size: 90, 208
+  orig: 90, 208
+  offset: 0, 0
+  index: -1
+03_acc_02_1
+  rotate: false
+  xy: 94, 93
+  size: 98, 87
+  orig: 98, 87
+  offset: 0, 0
+  index: -1
+03_acc_02_2
+  rotate: false
+  xy: 92, 2
+  size: 71, 89
+  orig: 71, 89
+  offset: 0, 0
+  index: -1
+03_acc_02_3
+  rotate: false
+  xy: 312, 318
+  size: 15, 65
+  orig: 15, 65
+  offset: 0, 0
+  index: -1
+03_acc_03
+  rotate: true
+  xy: 200, 191
+  size: 7, 25
+  orig: 7, 25
+  offset: 0, 0
+  index: -1
+03_acc_04
+  rotate: false
+  xy: 2, 323
+  size: 140, 207
+  orig: 140, 207
+  offset: 0, 0
+  index: -1
+03_belt_01
+  rotate: true
+  xy: 209, 13
+  size: 78, 38
+  orig: 78, 38
+  offset: 0, 0
+  index: -1
+03_chest_01
+  rotate: false
+  xy: 200, 200
+  size: 71, 86
+  orig: 71, 86
+  offset: 0, 0
+  index: -1
+03_face_01_1
+  rotate: false
+  xy: 94, 182
+  size: 104, 104
+  orig: 104, 104
+  offset: 0, 0
+  index: -1
+03_face_01_2
+  rotate: false
+  xy: 280, 198
+  size: 38, 39
+  orig: 38, 39
+  offset: 0, 0
+  index: -1
+03_hair_01_1
+  rotate: false
+  xy: 144, 401
+  size: 130, 129
+  orig: 130, 129
+  offset: 0, 0
+  index: -1
+03_hair_01_2
+  rotate: false
+  xy: 144, 288
+  size: 117, 111
+  orig: 117, 111
+  offset: 0, 0
+  index: -1
+03_l_leg_01
+  rotate: false
+  xy: 165, 3
+  size: 42, 88
+  orig: 42, 88
+  offset: 0, 0
+  index: -1
+03_l_shoulder_01
+  rotate: false
+  xy: 235, 105
+  size: 43, 93
+  orig: 43, 93
+  offset: 0, 0
+  index: -1
+03_l_thigh_01
+  rotate: false
+  xy: 2, 4
+  size: 88, 107
+  orig: 88, 107
+  offset: 0, 0
+  index: -1
+03_r_arm_01
+  rotate: false
+  xy: 273, 239
+  size: 38, 41
+  orig: 38, 41
+  offset: 0, 0
+  index: -1
+03_r_arm_02
+  rotate: true
+  xy: 276, 385
+  size: 46, 53
+  orig: 46, 53
+  offset: 0, 0
+  index: -1
+03_r_hand_01
+  rotate: false
+  xy: 273, 282
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+03_r_hand_02
+  rotate: false
+  xy: 249, 4
+  size: 40, 35
+  orig: 40, 35
+  offset: 0, 0
+  index: -1
+03_r_leg_01
+  rotate: false
+  xy: 194, 93
+  size: 39, 87
+  orig: 39, 87
+  offset: 0, 0
+  index: -1
+03_r_shoulder_01
+  rotate: false
+  xy: 263, 322
+  size: 47, 61
+  orig: 47, 61
+  offset: 0, 0
+  index: -1
+03_r_shoulder_02
+  rotate: false
+  xy: 249, 41
+  size: 46, 62
+  orig: 46, 62
+  offset: 0, 0
+  index: -1
+03_r_thigh_01
+  rotate: false
+  xy: 276, 433
+  size: 52, 97
+  orig: 52, 97
+  offset: 0, 0
+  index: -1
+03_r_thigh_acc_01
+  rotate: true
+  xy: 94, 298
+  size: 23, 48
+  orig: 23, 48
+  offset: 0, 0
+  index: -1

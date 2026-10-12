@@ -1,0 +1,34 @@
+
+uk_spaitz_blackmarket_tower.webp
+size: 656,1644
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flash
+  rotate: false
+  xy: 2, 2
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_tower_normal
+  rotate: false
+  xy: 2, 1176
+  size: 651, 464
+  orig: 651, 464
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_tower_stance1
+  rotate: false
+  xy: 2, 710
+  size: 651, 464
+  orig: 651, 464
+  offset: 0, 0
+  index: -1
+p_spaitz_blackmarket_tower_stance2
+  rotate: false
+  xy: 2, 244
+  size: 651, 464
+  orig: 651, 464
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,181 @@
+
+uk_spaitz_npc_robbery.webp
+size: 1180,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: 270
+  xy: 2, 6
+  size: 48, 28
+  orig: 48, 28
+  offset: 0, 0
+  index: -1
+02
+  rotate: false
+  xy: 520, 5
+  size: 120, 100
+  orig: 120, 100
+  offset: 0, 0
+  index: -1
+02_1
+  rotate: 180
+  xy: 1115, 7
+  size: 59, 34
+  orig: 120, 100
+  offset: 52, 66
+  index: -1
+03
+  rotate: false
+  xy: 1161, 43
+  size: 10, 56
+  orig: 10, 56
+  offset: 0, 0
+  index: -1
+04
+  rotate: false
+  xy: 349, 7
+  size: 9, 30
+  orig: 9, 30
+  offset: 0, 0
+  index: -1
+05
+  rotate: 180
+  xy: 1065, 69
+  size: 59, 36
+  orig: 59, 36
+  offset: 0, 0
+  index: -1
+06
+  rotate: false
+  xy: 806, 23
+  size: 71, 81
+  orig: 71, 81
+  offset: 0, 0
+  index: -1
+06_1
+  rotate: false
+  xy: 447, 22
+  size: 71, 81
+  orig: 71, 81
+  offset: 0, 0
+  index: -1
+07
+  rotate: 270
+  xy: 354, 7
+  size: 98, 92
+  orig: 98, 92
+  offset: 0, 0
+  index: -1
+08
+  rotate: true
+  xy: 600, 5
+  size: 40, 29
+  orig: 40, 29
+  offset: 0, 0
+  index: -1
+09
+  rotate: false
+  xy: 215, 10
+  size: 140, 84
+  orig: 140, 84
+  offset: 0, 0
+  index: -1
+10
+  rotate: true
+  xy: 699, 3
+  size: 50, 122
+  orig: 50, 122
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 112, 8
+  size: 23, 18
+  orig: 23, 18
+  offset: 0, 0
+  index: -1
+12
+  rotate: false
+  xy: 1121, 52
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: -1
+13
+  rotate: 270
+  xy: 1019, 15
+  size: 64, 55
+  orig: 64, 55
+  offset: 0, 0
+  index: -1
+13_1
+  rotate: false
+  xy: 642, 6
+  size: 55, 97
+  orig: 55, 97
+  offset: 0, 0
+  index: -1
+14
+  rotate: true
+  xy: 124, 5
+  size: 99, 107
+  orig: 128, 176
+  offset: 24, 69
+  index: -1
+14_1
+  rotate: false
+  xy: 2, 5
+  size: 128, 99
+  orig: 128, 176
+  offset: 0, 0
+  index: -1
+15
+  rotate: 180
+  xy: 960, 8
+  size: 54, 81
+  orig: 54, 81
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 997, 28
+  size: 49, 77
+  orig: 49, 77
+  offset: 0, 0
+  index: -1
+17
+  rotate: true
+  xy: 860, 8
+  size: 60, 108
+  orig: 60, 108
+  offset: 0, 0
+  index: -1
+18
+  rotate: 270
+  xy: 1068, 4
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1
+19
+  rotate: true
+  xy: 1096, 17
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+20
+  rotate: false
+  xy: 699, 47
+  size: 120, 57
+  orig: 120, 57
+  offset: 0, 0
+  index: -1
+shadow_mob
+  rotate: false
+  xy: 2, 98
+  size: 34, 5
+  orig: 34, 5
+  offset: 0, 0
+  index: -1
