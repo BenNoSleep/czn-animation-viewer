@@ -1,0 +1,167 @@
+
+god_fate_vitor_f.webp
+size: 2040,2032
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle_g
+  rotate: false
+  xy: 1416, 21
+  size: 169, 169
+  orig: 169, 169
+  offset: 0, 0
+  index: -1
+eye_12_01
+  rotate: false
+  xy: 1439, 389
+  size: 237, 234
+  orig: 237, 234
+  offset: 0, 0
+  index: -1
+eye_12_02
+  rotate: false
+  xy: 1876, 250
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1
+eye_12_03
+  rotate: false
+  xy: 1954, 1320
+  size: 56, 55
+  orig: 56, 55
+  offset: 0, 0
+  index: -1
+eye_12_04
+  rotate: false
+  xy: 1234, 290
+  size: 188, 213
+  orig: 188, 213
+  offset: 0, 0
+  index: -1
+eye_12_body_01
+  rotate: false
+  xy: 2, 1190
+  size: 940, 837
+  orig: 940, 837
+  offset: 0, 0
+  index: -1
+eye_12_body_01_fx
+  rotate: false
+  xy: 944, 1190
+  size: 940, 837
+  orig: 940, 837
+  offset: 0, 0
+  index: -1
+eye_12_body_01_glow
+  rotate: false
+  xy: 1678, 408
+  size: 231, 215
+  orig: 231, 215
+  offset: 0, 0
+  index: -1
+eye_13_01
+  rotate: true
+  xy: 1234, 505
+  size: 347, 203
+  orig: 347, 203
+  offset: 0, 0
+  index: -1
+eye_13_02
+  rotate: false
+  xy: 1234, 109
+  size: 180, 179
+  orig: 180, 179
+  offset: 0, 0
+  index: -1
+eye_13_03
+  rotate: false
+  xy: 1886, 1309
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+eye_13_04
+  rotate: true
+  xy: 1886, 1538
+  size: 241, 133
+  orig: 241, 133
+  offset: 0, 0
+  index: -1
+eye_13_body_01
+  rotate: false
+  xy: 2, 596
+  size: 1230, 592
+  orig: 1230, 592
+  offset: 0, 0
+  index: -1
+eye_13_body_01_fx
+  rotate: false
+  xy: 2, 2
+  size: 1230, 592
+  orig: 1230, 592
+  offset: 0, 0
+  index: -1
+eye_13_body_01_glow
+  rotate: true
+  xy: 1886, 1781
+  size: 246, 143
+  orig: 246, 143
+  offset: 0, 0
+  index: -1
+eye_1_2
+  rotate: false
+  xy: 1886, 1452
+  size: 139, 84
+  orig: 139, 84
+  offset: 0, 0
+  index: -1
+eyeball_1
+  rotate: false
+  xy: 1886, 1377
+  size: 104, 73
+  orig: 104, 73
+  offset: 0, 0
+  index: -1
+gradient1
+  rotate: true
+  xy: 1570, 625
+  size: 252, 402
+  orig: 252, 402
+  offset: 0, 0
+  index: -1
+prismlight_01
+  rotate: false
+  xy: 1234, 854
+  size: 334, 334
+  orig: 334, 334
+  offset: 0, 0
+  index: -1
+prismlight_02
+  rotate: false
+  xy: 1570, 879
+  size: 353, 309
+  orig: 353, 309
+  offset: 0, 0
+  index: -1
+slaughter_bff_cross11
+  rotate: true
+  xy: 1678, 211
+  size: 195, 196
+  orig: 195, 196
+  offset: 0, 0
+  index: -1
+slaughter_bff_cross21
+  rotate: true
+  xy: 1424, 192
+  size: 195, 196
+  orig: 195, 196
+  offset: 0, 0
+  index: -1
+slaughter_bff_cross31
+  rotate: false
+  xy: 1622, 13
+  size: 195, 196
+  orig: 195, 196
+  offset: 0, 0
+  index: -1
