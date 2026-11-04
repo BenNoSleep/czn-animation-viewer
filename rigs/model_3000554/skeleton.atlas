@@ -1,0 +1,90 @@
+
+3000554.webp
+size: 1184,468
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+action0_idle
+  rotate: false
+  xy: 2, 74
+  size: 438, 389
+  orig: 438, 389
+  offset: 0, 0
+  index: -1
+action1_idle
+  rotate: 180
+  xy: 275, 77
+  size: 436, 386
+  orig: 436, 386
+  offset: 0, 0
+  index: -1
+action2_idle
+  rotate: false
+  xy: 628, 74
+  size: 482, 389
+  orig: 482, 389
+  offset: 0, 0
+  index: -1
+right_01
+  rotate: false
+  xy: 2, 46
+  size: 121, 125
+  orig: 121, 125
+  offset: 0, 0
+  index: -1
+right_02
+  rotate: false
+  xy: 1011, 74
+  size: 60, 192
+  orig: 60, 192
+  offset: 0, 0
+  index: -1
+right_03
+  rotate: false
+  xy: 1073, 74
+  size: 60, 173
+  orig: 60, 173
+  offset: 0, 0
+  index: -1
+rune_action0_idle
+  rotate: false
+  xy: 1112, 249
+  size: 45, 181
+  orig: 45, 181
+  offset: 0, 0
+  index: -1
+rune_action1_idle
+  rotate: false
+  xy: 1135, 74
+  size: 45, 148
+  orig: 45, 148
+  offset: 0, 0
+  index: -1
+rune_off
+  rotate: false
+  xy: 187, 4
+  size: 70, 67
+  orig: 70, 67
+  offset: 0, 0
+  index: -1
+rune_on
+  rotate: false
+  xy: 114, 3
+  size: 72, 69
+  orig: 72, 69
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 744, 8
+  size: 419, 64
+  orig: 419, 64
+  offset: 0, 0
+  index: -1
+shadow_action2
+  rotate: false
+  xy: 260, 11
+  size: 482, 64
+  orig: 482, 64
+  offset: 0, 0
+  index: -1

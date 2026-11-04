@@ -1,0 +1,20 @@
+
+3000555.webp
+size: 428,548
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p_nivalis_black_tablet
+  rotate: false
+  xy: 2, 2
+  size: 421, 542
+  orig: 421, 542
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 40
+  size: 422, 61
+  orig: 422, 61
+  offset: 0, 0
+  index: -1

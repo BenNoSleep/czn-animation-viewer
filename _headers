@@ -151,6 +151,9 @@
 /rigs/liveevent_30117/skeleton.json
   Content-Encoding: gzip
 
+/rigs/liveevent_30134/skeleton.json
+  Content-Encoding: gzip
+
 /rigs/model_1001002/skeleton.json
   Content-Encoding: gzip
 
@@ -1240,10 +1243,34 @@
 /rigs/model_3000531/skeleton.json
   Content-Encoding: gzip
 
+/rigs/model_3000532/skeleton.json
+  Content-Encoding: gzip
+
 /rigs/model_3000533/skeleton.json
   Content-Encoding: gzip
 
+/rigs/model_3000543/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000544/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000547/skeleton.json
+  Content-Encoding: gzip
+
 /rigs/model_3000548/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000549/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000550/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000561/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_3000574/skeleton.json
   Content-Encoding: gzip
 
 /rigs/model_30036/skeleton.json
@@ -1367,6 +1394,15 @@
   Content-Encoding: gzip
 
 /rigs/model_30118/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30134/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30134_battle_ready/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/model_30135/skeleton.json
   Content-Encoding: gzip
 
 /rigs/npc_uk_alice/skeleton.json
@@ -1610,6 +1646,9 @@
   Content-Encoding: gzip
 
 /rigs/portrait_30134/skeleton.json
+  Content-Encoding: gzip
+
+/rigs/portrait_30134_02/skeleton.json
   Content-Encoding: gzip
 
 /rigs/portrait_30136/skeleton.json
